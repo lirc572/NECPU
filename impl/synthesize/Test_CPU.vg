@@ -1,0 +1,1679 @@
+//
+//Written by GowinSynthesis
+//Product Version "GowinSynthesis V1.9.2.02Beta"
+//Thu Mar 26 07:25:21 2020
+
+//Source file index table:
+//file0 "\/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v"
+//file1 "\/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v"
+//file2 "\/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v"
+//file3 "\/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v"
+`timescale 100 ps/100 ps
+module \cpu_instance/iR  (\ir_addr[0] ,\ir_addr[1] ,\ir_addr[2] ,\ir_addr[3] ,\ir_addr[4] ,\ir_addr[5] ,\ir_addr[6] ,\ir_addr[7] ,n4,n8_3,n8,n8_7,n12,n16);
+input \ir_addr[0] ;
+input \ir_addr[1] ;
+input \ir_addr[2] ;
+input \ir_addr[3] ;
+input \ir_addr[4] ;
+input \ir_addr[5] ;
+input \ir_addr[6] ;
+input \ir_addr[7] ;
+output n4;
+output n8_3;
+output n8;
+output n8_7;
+output n12;
+output n16;
+wire n4;
+wire n8_3;
+wire n8;
+wire n8_7;
+wire n12;
+wire n16;
+wire VCC;
+wire GND;
+LUT3 n4_ins5499 (
+.I0(\ir_addr[0] ),
+.I1(\ir_addr[1] ),
+.I2(n12),
+.F(n4) 
+);
+defparam n4_ins5499.INIT=8'h01;
+LUT4 n8_ins5500 (
+.I0(\ir_addr[0] ),
+.I1(\ir_addr[1] ),
+.I2(n8),
+.I3(n8_7),
+.F(n8_3) 
+);
+defparam n8_ins5500.INIT=16'h4000;
+LUT4 n8_ins5539 (
+.I0(\ir_addr[2] ),
+.I1(\ir_addr[3] ),
+.I2(\ir_addr[4] ),
+.I3(\ir_addr[5] ),
+.F(n8) 
+);
+defparam n8_ins5539.INIT=16'h0001;
+LUT2 n8_ins5540 (
+.I0(\ir_addr[6] ),
+.I1(\ir_addr[7] ),
+.F(n8_7) 
+);
+defparam n8_ins5540.INIT=4'h1;
+LUT3 n12_ins5554 (
+.I0(n8),
+.I1(\ir_addr[6] ),
+.I2(\ir_addr[7] ),
+.F(n12) 
+);
+defparam n12_ins5554.INIT=8'hFD;
+LUT4 n16_ins5556 (
+.I0(\ir_addr[0] ),
+.I1(n8),
+.I2(\ir_addr[6] ),
+.I3(\ir_addr[7] ),
+.F(n16) 
+);
+defparam n16_ins5556.INIT=16'h0004;
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[15]/dff[7]  (\rf_wdata[0][7] ,clk_3,buttonA_3,out);
+input \rf_wdata[0][7] ;
+input clk_3;
+input buttonA_3;
+output out;
+wire out;
+wire VCC;
+wire GND;
+DFFR out_ins4902 (
+.D(\rf_wdata[0][7] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[15]/dff[6]  (\rf_wdata[0][6] ,clk_3,buttonA_3,out_3);
+input \rf_wdata[0][6] ;
+input clk_3;
+input buttonA_3;
+output out_3;
+wire out_3;
+wire VCC;
+wire GND;
+DFFR out_ins4903 (
+.D(\rf_wdata[0][6] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out_3) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[15]/dff[5]  (\rf_wdata[0][5] ,clk_3,buttonA_3,out_3_0);
+input \rf_wdata[0][5] ;
+input clk_3;
+input buttonA_3;
+output out_3_0;
+wire out_3_0;
+wire VCC;
+wire GND;
+DFFR out_ins4904 (
+.D(\rf_wdata[0][5] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out_3_0) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[15]/dff[4]  (\rf_wdata[0][4] ,clk_3,buttonA_3,out_3_1);
+input \rf_wdata[0][4] ;
+input clk_3;
+input buttonA_3;
+output out_3_1;
+wire out_3_1;
+wire VCC;
+wire GND;
+DFFR out_ins4905 (
+.D(\rf_wdata[0][4] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out_3_1) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[15]/dff[3]  (\rf_wdata[0][3] ,clk_3,buttonA_3,out_3_2);
+input \rf_wdata[0][3] ;
+input clk_3;
+input buttonA_3;
+output out_3_2;
+wire out_3_2;
+wire VCC;
+wire GND;
+DFFR out_ins4906 (
+.D(\rf_wdata[0][3] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out_3_2) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[15]/dff[2]  (\rf_wdata[0][2] ,clk_3,buttonA_3,out_3_3);
+input \rf_wdata[0][2] ;
+input clk_3;
+input buttonA_3;
+output out_3_3;
+wire out_3_3;
+wire VCC;
+wire GND;
+DFFR out_ins4907 (
+.D(\rf_wdata[0][2] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out_3_3) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[15]/dff[1]  (\rf_wdata[0][1] ,clk_3,buttonA_3,out_3_4);
+input \rf_wdata[0][1] ;
+input clk_3;
+input buttonA_3;
+output out_3_4;
+wire out_3_4;
+wire VCC;
+wire GND;
+DFFR out_ins4908 (
+.D(\rf_wdata[0][1] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out_3_4) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[15]/dff[0]  (\rf_wdata[0][0] ,clk_3,buttonA_3,out_3_5);
+input \rf_wdata[0][0] ;
+input clk_3;
+input buttonA_3;
+output out_3_5;
+wire out_3_5;
+wire VCC;
+wire GND;
+DFFR out_ins4909 (
+.D(\rf_wdata[0][0] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out_3_5) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[15]  (\rf_wdata[0][7] ,clk_3,buttonA_3,\rf_wdata[0][6] ,\rf_wdata[0][5] ,\rf_wdata[0][4] ,\rf_wdata[0][3] ,\rf_wdata[0][2] ,\rf_wdata[0][1] ,\rf_wdata[0][0] ,out,out_3,out_3_0,out_3_1,out_3_2,out_3_3,out_3_4,out_3_5);
+input \rf_wdata[0][7] ;
+input clk_3;
+input buttonA_3;
+input \rf_wdata[0][6] ;
+input \rf_wdata[0][5] ;
+input \rf_wdata[0][4] ;
+input \rf_wdata[0][3] ;
+input \rf_wdata[0][2] ;
+input \rf_wdata[0][1] ;
+input \rf_wdata[0][0] ;
+output out;
+output out_3;
+output out_3_0;
+output out_3_1;
+output out_3_2;
+output out_3_3;
+output out_3_4;
+output out_3_5;
+wire out;
+wire out_3;
+wire out_3_0;
+wire out_3_1;
+wire out_3_2;
+wire out_3_3;
+wire out_3_4;
+wire out_3_5;
+wire VCC;
+wire GND;
+\cpu_instance/rf[15]/dff[7]  \dff[7]  (
+.\rf_wdata[0][7] (\rf_wdata[0][7] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out(out) 
+);
+\cpu_instance/rf[15]/dff[6]  \dff[6]  (
+.\rf_wdata[0][6] (\rf_wdata[0][6] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out_3(out_3) 
+);
+\cpu_instance/rf[15]/dff[5]  \dff[5]  (
+.\rf_wdata[0][5] (\rf_wdata[0][5] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out_3_0(out_3_0) 
+);
+\cpu_instance/rf[15]/dff[4]  \dff[4]  (
+.\rf_wdata[0][4] (\rf_wdata[0][4] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out_3_1(out_3_1) 
+);
+\cpu_instance/rf[15]/dff[3]  \dff[3]  (
+.\rf_wdata[0][3] (\rf_wdata[0][3] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out_3_2(out_3_2) 
+);
+\cpu_instance/rf[15]/dff[2]  \dff[2]  (
+.\rf_wdata[0][2] (\rf_wdata[0][2] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out_3_3(out_3_3) 
+);
+\cpu_instance/rf[15]/dff[1]  \dff[1]  (
+.\rf_wdata[0][1] (\rf_wdata[0][1] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out_3_4(out_3_4) 
+);
+\cpu_instance/rf[15]/dff[0]  \dff[0]  (
+.\rf_wdata[0][0] (\rf_wdata[0][0] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out_3_5(out_3_5) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[14]/dff[7]  (\rf_wdata[1][7] ,clk_3,buttonA_3,out_3_6);
+input \rf_wdata[1][7] ;
+input clk_3;
+input buttonA_3;
+output out_3_6;
+wire out_3_6;
+wire VCC;
+wire GND;
+DFFR out_ins4910 (
+.D(\rf_wdata[1][7] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out_3_6) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[14]/dff[6]  (\rf_wdata[1][6] ,clk_3,buttonA_3,out_3_7);
+input \rf_wdata[1][6] ;
+input clk_3;
+input buttonA_3;
+output out_3_7;
+wire out_3_7;
+wire VCC;
+wire GND;
+DFFR out_ins4911 (
+.D(\rf_wdata[1][6] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out_3_7) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[14]/dff[5]  (\rf_wdata[1][5] ,clk_3,buttonA_3,out_3_8);
+input \rf_wdata[1][5] ;
+input clk_3;
+input buttonA_3;
+output out_3_8;
+wire out_3_8;
+wire VCC;
+wire GND;
+DFFR out_ins4912 (
+.D(\rf_wdata[1][5] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out_3_8) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[14]/dff[4]  (\rf_wdata[1][4] ,clk_3,buttonA_3,out_3_9);
+input \rf_wdata[1][4] ;
+input clk_3;
+input buttonA_3;
+output out_3_9;
+wire out_3_9;
+wire VCC;
+wire GND;
+DFFR out_ins4913 (
+.D(\rf_wdata[1][4] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out_3_9) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[14]  (\rf_wdata[1][7] ,clk_3,buttonA_3,\rf_wdata[1][6] ,\rf_wdata[1][5] ,\rf_wdata[1][4] ,out_3_6,out_3_7,out_3_8,out_3_9);
+input \rf_wdata[1][7] ;
+input clk_3;
+input buttonA_3;
+input \rf_wdata[1][6] ;
+input \rf_wdata[1][5] ;
+input \rf_wdata[1][4] ;
+output out_3_6;
+output out_3_7;
+output out_3_8;
+output out_3_9;
+wire out_3_6;
+wire out_3_7;
+wire out_3_8;
+wire out_3_9;
+wire VCC;
+wire GND;
+\cpu_instance/rf[14]/dff[7]  \dff[7]  (
+.\rf_wdata[1][7] (\rf_wdata[1][7] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out_3_6(out_3_6) 
+);
+\cpu_instance/rf[14]/dff[6]  \dff[6]  (
+.\rf_wdata[1][6] (\rf_wdata[1][6] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out_3_7(out_3_7) 
+);
+\cpu_instance/rf[14]/dff[5]  \dff[5]  (
+.\rf_wdata[1][5] (\rf_wdata[1][5] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out_3_8(out_3_8) 
+);
+\cpu_instance/rf[14]/dff[4]  \dff[4]  (
+.\rf_wdata[1][4] (\rf_wdata[1][4] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out_3_9(out_3_9) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[13]/dff[7]  (\rf_wdata[2][7] ,clk_3,buttonA_3,out_3_10);
+input \rf_wdata[2][7] ;
+input clk_3;
+input buttonA_3;
+output out_3_10;
+wire out_3_10;
+wire VCC;
+wire GND;
+DFFR out_ins4918 (
+.D(\rf_wdata[2][7] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out_3_10) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[13]/dff[6]  (\rf_wdata[2][6] ,clk_3,buttonA_3,out_3_11);
+input \rf_wdata[2][6] ;
+input clk_3;
+input buttonA_3;
+output out_3_11;
+wire out_3_11;
+wire VCC;
+wire GND;
+DFFR out_ins4919 (
+.D(\rf_wdata[2][6] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out_3_11) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[13]/dff[5]  (\rf_wdata[2][5] ,clk_3,buttonA_3,out_3_12);
+input \rf_wdata[2][5] ;
+input clk_3;
+input buttonA_3;
+output out_3_12;
+wire out_3_12;
+wire VCC;
+wire GND;
+DFFR out_ins4920 (
+.D(\rf_wdata[2][5] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out_3_12) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[13]/dff[4]  (\rf_wdata[2][4] ,clk_3,buttonA_3,out_3_13);
+input \rf_wdata[2][4] ;
+input clk_3;
+input buttonA_3;
+output out_3_13;
+wire out_3_13;
+wire VCC;
+wire GND;
+DFFR out_ins4921 (
+.D(\rf_wdata[2][4] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out_3_13) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[13]  (\rf_wdata[2][7] ,clk_3,buttonA_3,\rf_wdata[2][6] ,\rf_wdata[2][5] ,\rf_wdata[2][4] ,out_3_10,out_3_11,out_3_12,out_3_13);
+input \rf_wdata[2][7] ;
+input clk_3;
+input buttonA_3;
+input \rf_wdata[2][6] ;
+input \rf_wdata[2][5] ;
+input \rf_wdata[2][4] ;
+output out_3_10;
+output out_3_11;
+output out_3_12;
+output out_3_13;
+wire out_3_10;
+wire out_3_11;
+wire out_3_12;
+wire out_3_13;
+wire VCC;
+wire GND;
+\cpu_instance/rf[13]/dff[7]  \dff[7]  (
+.\rf_wdata[2][7] (\rf_wdata[2][7] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out_3_10(out_3_10) 
+);
+\cpu_instance/rf[13]/dff[6]  \dff[6]  (
+.\rf_wdata[2][6] (\rf_wdata[2][6] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out_3_11(out_3_11) 
+);
+\cpu_instance/rf[13]/dff[5]  \dff[5]  (
+.\rf_wdata[2][5] (\rf_wdata[2][5] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out_3_12(out_3_12) 
+);
+\cpu_instance/rf[13]/dff[4]  \dff[4]  (
+.\rf_wdata[2][4] (\rf_wdata[2][4] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out_3_13(out_3_13) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[12]/dff[7]  (\rf_wdata[3][7] ,clk_3,buttonA_3,out_3_14);
+input \rf_wdata[3][7] ;
+input clk_3;
+input buttonA_3;
+output out_3_14;
+wire out_3_14;
+wire VCC;
+wire GND;
+DFFR out_ins4926 (
+.D(\rf_wdata[3][7] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out_3_14) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[12]/dff[6]  (\rf_wdata[3][6] ,clk_3,buttonA_3,out_3_15);
+input \rf_wdata[3][6] ;
+input clk_3;
+input buttonA_3;
+output out_3_15;
+wire out_3_15;
+wire VCC;
+wire GND;
+DFFR out_ins4927 (
+.D(\rf_wdata[3][6] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out_3_15) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[12]/dff[5]  (\rf_wdata[3][5] ,clk_3,buttonA_3,out_3_16);
+input \rf_wdata[3][5] ;
+input clk_3;
+input buttonA_3;
+output out_3_16;
+wire out_3_16;
+wire VCC;
+wire GND;
+DFFR out_ins4928 (
+.D(\rf_wdata[3][5] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out_3_16) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[12]/dff[4]  (\rf_wdata[3][4] ,clk_3,buttonA_3,out_3_17);
+input \rf_wdata[3][4] ;
+input clk_3;
+input buttonA_3;
+output out_3_17;
+wire out_3_17;
+wire VCC;
+wire GND;
+DFFR out_ins4929 (
+.D(\rf_wdata[3][4] ),
+.CLK(clk_3),
+.RESET(buttonA_3),
+.Q(out_3_17) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module \cpu_instance/rf[12]  (\rf_wdata[3][7] ,clk_3,buttonA_3,\rf_wdata[3][6] ,\rf_wdata[3][5] ,\rf_wdata[3][4] ,out_3_14,out_3_15,out_3_16,out_3_17);
+input \rf_wdata[3][7] ;
+input clk_3;
+input buttonA_3;
+input \rf_wdata[3][6] ;
+input \rf_wdata[3][5] ;
+input \rf_wdata[3][4] ;
+output out_3_14;
+output out_3_15;
+output out_3_16;
+output out_3_17;
+wire out_3_14;
+wire out_3_15;
+wire out_3_16;
+wire out_3_17;
+wire VCC;
+wire GND;
+\cpu_instance/rf[12]/dff[7]  \dff[7]  (
+.\rf_wdata[3][7] (\rf_wdata[3][7] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out_3_14(out_3_14) 
+);
+\cpu_instance/rf[12]/dff[6]  \dff[6]  (
+.\rf_wdata[3][6] (\rf_wdata[3][6] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out_3_15(out_3_15) 
+);
+\cpu_instance/rf[12]/dff[5]  \dff[5]  (
+.\rf_wdata[3][5] (\rf_wdata[3][5] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out_3_16(out_3_16) 
+);
+\cpu_instance/rf[12]/dff[4]  \dff[4]  (
+.\rf_wdata[3][4] (\rf_wdata[3][4] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.out_3_17(out_3_17) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module cpu_instance (clk_3,\cpu_din[7] ,\cpu_din[5] ,\cpu_din[6] ,buttonA_3,\address[7] ,\address[6] ,\address[5] ,\address[4] ,\address[3] ,\address[2] ,\address[1] ,\address[0] ,\dout[7] ,\dout[6] ,\dout[5] ,write,n8,n8_7,n12);
+input clk_3;
+input \cpu_din[7] ;
+input \cpu_din[5] ;
+input \cpu_din[6] ;
+input buttonA_3;
+output \address[7] ;
+output \address[6] ;
+output \address[5] ;
+output \address[4] ;
+output \address[3] ;
+output \address[2] ;
+output \address[1] ;
+output \address[0] ;
+output \dout[7] ;
+output \dout[6] ;
+output \dout[5] ;
+output write;
+output n8;
+output n8_7;
+output n12;
+wire VCC;
+wire \address[7] ;
+wire \address[6] ;
+wire \address[5] ;
+wire \address[4] ;
+wire \address[3] ;
+wire \address[2] ;
+wire \address[1] ;
+wire \address[0] ;
+wire \dout[7] ;
+wire \dout[6] ;
+wire \dout[5] ;
+wire \ir_addr[7] ;
+wire \ir_addr[6] ;
+wire \ir_addr[5] ;
+wire \ir_addr[4] ;
+wire \ir_addr[3] ;
+wire \ir_addr[2] ;
+wire \ir_addr[1] ;
+wire \ir_addr[0] ;
+wire \rf_wdata[0][7] ;
+wire \rf_wdata[0][6] ;
+wire \rf_wdata[0][5] ;
+wire \rf_wdata[0][4] ;
+wire \rf_wdata[0][3] ;
+wire \rf_wdata[0][2] ;
+wire \rf_wdata[0][1] ;
+wire \rf_wdata[0][0] ;
+wire write;
+wire \rf_wdata[1][7] ;
+wire \rf_wdata[1][6] ;
+wire \rf_wdata[1][5] ;
+wire \rf_wdata[1][4] ;
+wire \rf_wdata[2][7] ;
+wire \rf_wdata[2][6] ;
+wire \rf_wdata[2][5] ;
+wire \rf_wdata[2][4] ;
+wire \rf_wdata[3][7] ;
+wire \rf_wdata[3][6] ;
+wire \rf_wdata[3][5] ;
+wire \rf_wdata[3][4] ;
+wire n3;
+wire n3_459;
+wire n3_461;
+wire n1_675;
+wire n1_677;
+wire n1_679;
+wire n1_681;
+wire n1_683;
+wire n2_487;
+wire n1_685;
+wire n2_489;
+wire n1_687;
+wire n2_491;
+wire n3_463;
+wire n3_465;
+wire n2;
+wire n2_495;
+wire \rf_wdata[1][7]_11 ;
+wire n1_689;
+wire n1_691;
+wire n1_693;
+wire n1_695;
+wire n1_697;
+wire n1_699;
+wire n1_701;
+wire n1_703;
+wire n3_467;
+wire n3_469;
+wire n3_473;
+wire o_319;
+wire o_321;
+wire o_323;
+wire o;
+wire n3_477;
+wire n1_705;
+wire n1_707;
+wire n1;
+wire n1_711;
+wire n3_479;
+wire n3_481;
+wire n3_483;
+wire n3_485;
+wire o_327;
+wire n3_489;
+wire n3_491;
+wire n3_493;
+wire n2_501;
+wire n3_495;
+wire n2_503;
+wire n4;
+wire n8_3;
+wire n8;
+wire n8_7;
+wire n12;
+wire n16;
+wire out;
+wire out_3;
+wire out_3_0;
+wire out_3_1;
+wire out_3_2;
+wire out_3_3;
+wire out_3_4;
+wire out_3_5;
+wire out_3_6;
+wire out_3_7;
+wire out_3_8;
+wire out_3_9;
+wire out_3_10;
+wire out_3_11;
+wire out_3_12;
+wire out_3_13;
+wire out_3_14;
+wire out_3_15;
+wire out_3_16;
+wire out_3_17;
+wire GND;
+VCC VCC_ins4526 (
+.V(VCC) 
+);
+GSR VCC_ins4660 (
+.GSRI(VCC) 
+);
+DFF \address[7]_ins4817  (
+.D(n1),
+.CLK(clk_3),
+.Q(\address[7] ) 
+);
+DFF \address[6]_ins4818  (
+.D(n1_705),
+.CLK(clk_3),
+.Q(\address[6] ) 
+);
+DFF \address[5]_ins4819  (
+.D(n1_711),
+.CLK(clk_3),
+.Q(\address[5] ) 
+);
+DFF \address[4]_ins4820  (
+.D(n1_707),
+.CLK(clk_3),
+.Q(\address[4] ) 
+);
+DFF \address[3]_ins4821  (
+.D(o),
+.CLK(clk_3),
+.Q(\address[3] ) 
+);
+DFF \address[2]_ins4822  (
+.D(o_323),
+.CLK(clk_3),
+.Q(\address[2] ) 
+);
+DFF \address[1]_ins4823  (
+.D(o_321),
+.CLK(clk_3),
+.Q(\address[1] ) 
+);
+DFF \address[0]_ins4824  (
+.D(o_319),
+.CLK(clk_3),
+.Q(\address[0] ) 
+);
+DFF \dout[7]_ins4825  (
+.D(n3),
+.CLK(clk_3),
+.Q(\dout[7] ) 
+);
+DFF \dout[6]_ins4826  (
+.D(n3_459),
+.CLK(clk_3),
+.Q(\dout[6] ) 
+);
+DFF \dout[5]_ins4827  (
+.D(n3_461),
+.CLK(clk_3),
+.Q(\dout[5] ) 
+);
+DFF \ir_addr[7]_ins4828  (
+.D(out),
+.CLK(clk_3),
+.Q(\ir_addr[7] ) 
+);
+DFF \ir_addr[6]_ins4829  (
+.D(out_3),
+.CLK(clk_3),
+.Q(\ir_addr[6] ) 
+);
+DFF \ir_addr[5]_ins4830  (
+.D(out_3_0),
+.CLK(clk_3),
+.Q(\ir_addr[5] ) 
+);
+DFF \ir_addr[4]_ins4831  (
+.D(out_3_1),
+.CLK(clk_3),
+.Q(\ir_addr[4] ) 
+);
+DFF \ir_addr[3]_ins4832  (
+.D(out_3_2),
+.CLK(clk_3),
+.Q(\ir_addr[3] ) 
+);
+DFF \ir_addr[2]_ins4833  (
+.D(out_3_3),
+.CLK(clk_3),
+.Q(\ir_addr[2] ) 
+);
+DFF \ir_addr[1]_ins4834  (
+.D(out_3_4),
+.CLK(clk_3),
+.Q(\ir_addr[1] ) 
+);
+DFF \ir_addr[0]_ins4835  (
+.D(out_3_5),
+.CLK(clk_3),
+.Q(\ir_addr[0] ) 
+);
+DFF \rf_wdata[0][7]_ins4836  (
+.D(n3_493),
+.CLK(clk_3),
+.Q(\rf_wdata[0][7] ) 
+);
+DFF \rf_wdata[0][6]_ins4837  (
+.D(n3_463),
+.CLK(clk_3),
+.Q(\rf_wdata[0][6] ) 
+);
+DFF \rf_wdata[0][5]_ins4838  (
+.D(n3_477),
+.CLK(clk_3),
+.Q(\rf_wdata[0][5] ) 
+);
+DFF \rf_wdata[0][4]_ins4839  (
+.D(n3_465),
+.CLK(clk_3),
+.Q(\rf_wdata[0][4] ) 
+);
+DFF \rf_wdata[0][3]_ins4840  (
+.D(n3_473),
+.CLK(clk_3),
+.Q(\rf_wdata[0][3] ) 
+);
+DFF \rf_wdata[0][2]_ins4841  (
+.D(n3_495),
+.CLK(clk_3),
+.Q(\rf_wdata[0][2] ) 
+);
+DFF \rf_wdata[0][1]_ins4842  (
+.D(n3_469),
+.CLK(clk_3),
+.Q(\rf_wdata[0][1] ) 
+);
+DFF \rf_wdata[0][0]_ins4843  (
+.D(n3_467),
+.CLK(clk_3),
+.Q(\rf_wdata[0][0] ) 
+);
+DFFR write_ins4900 (
+.D(n8_3),
+.CLK(clk_3),
+.RESET(n12),
+.Q(write) 
+);
+DFFE \rf_wdata[1][7]_ins4967  (
+.D(n2),
+.CLK(clk_3),
+.CE(\rf_wdata[1][7]_11 ),
+.Q(\rf_wdata[1][7] ) 
+);
+defparam \rf_wdata[1][7]_ins4967 .INIT=1'b0;
+DFFE \rf_wdata[1][6]_ins4970  (
+.D(n2_503),
+.CLK(clk_3),
+.CE(\rf_wdata[1][7]_11 ),
+.Q(\rf_wdata[1][6] ) 
+);
+defparam \rf_wdata[1][6]_ins4970 .INIT=1'b0;
+DFFE \rf_wdata[1][5]_ins4973  (
+.D(n2_495),
+.CLK(clk_3),
+.CE(\rf_wdata[1][7]_11 ),
+.Q(\rf_wdata[1][5] ) 
+);
+defparam \rf_wdata[1][5]_ins4973 .INIT=1'b0;
+DFFE \rf_wdata[1][4]_ins4976  (
+.D(n8_3),
+.CLK(clk_3),
+.CE(\rf_wdata[1][7]_11 ),
+.Q(\rf_wdata[1][4] ) 
+);
+defparam \rf_wdata[1][4]_ins4976 .INIT=1'b0;
+DFFE \rf_wdata[2][7]_ins4991  (
+.D(n2),
+.CLK(clk_3),
+.CE(n4),
+.Q(\rf_wdata[2][7] ) 
+);
+defparam \rf_wdata[2][7]_ins4991 .INIT=1'b0;
+DFFE \rf_wdata[2][6]_ins4994  (
+.D(n2_503),
+.CLK(clk_3),
+.CE(n4),
+.Q(\rf_wdata[2][6] ) 
+);
+defparam \rf_wdata[2][6]_ins4994 .INIT=1'b0;
+DFFE \rf_wdata[2][5]_ins4997  (
+.D(n2_495),
+.CLK(clk_3),
+.CE(n4),
+.Q(\rf_wdata[2][5] ) 
+);
+defparam \rf_wdata[2][5]_ins4997 .INIT=1'b0;
+DFFE \rf_wdata[2][4]_ins5000  (
+.D(n8_3),
+.CLK(clk_3),
+.CE(n4),
+.Q(\rf_wdata[2][4] ) 
+);
+defparam \rf_wdata[2][4]_ins5000 .INIT=1'b0;
+DFFE \rf_wdata[3][7]_ins5015  (
+.D(n2),
+.CLK(clk_3),
+.CE(GND),
+.Q(\rf_wdata[3][7] ) 
+);
+defparam \rf_wdata[3][7]_ins5015 .INIT=1'b0;
+DFFE \rf_wdata[3][6]_ins5018  (
+.D(n2_503),
+.CLK(clk_3),
+.CE(GND),
+.Q(\rf_wdata[3][6] ) 
+);
+defparam \rf_wdata[3][6]_ins5018 .INIT=1'b0;
+DFFE \rf_wdata[3][5]_ins5021  (
+.D(n2_495),
+.CLK(clk_3),
+.CE(GND),
+.Q(\rf_wdata[3][5] ) 
+);
+defparam \rf_wdata[3][5]_ins5021 .INIT=1'b0;
+DFFE \rf_wdata[3][4]_ins5024  (
+.D(n8_3),
+.CLK(clk_3),
+.CE(GND),
+.Q(\rf_wdata[3][4] ) 
+);
+defparam \rf_wdata[3][4]_ins5024 .INIT=1'b0;
+MUX2_LUT5 n3_ins5489 (
+.I0(n1_683),
+.I1(n2_487),
+.S0(n16),
+.O(n3) 
+);
+MUX2_LUT5 n3_ins5490 (
+.I0(n1_685),
+.I1(n2_489),
+.S0(n16),
+.O(n3_459) 
+);
+MUX2_LUT5 n3_ins5491 (
+.I0(n1_687),
+.I1(n2_491),
+.S0(n16),
+.O(n3_461) 
+);
+MUX2_LUT5 n1_ins5492 (
+.I0(n1_689),
+.I1(n1_691),
+.S0(n4),
+.O(n1_675) 
+);
+MUX2_LUT5 n1_ins5493 (
+.I0(n1_693),
+.I1(n1_695),
+.S0(n4),
+.O(n1_677) 
+);
+MUX2_LUT5 n1_ins5494 (
+.I0(n1_697),
+.I1(n1_699),
+.S0(n4),
+.O(n1_679) 
+);
+MUX2_LUT5 n1_ins5495 (
+.I0(n1_701),
+.I1(n1_703),
+.S0(n4),
+.O(n1_681) 
+);
+LUT3 n1_ins5503 (
+.I0(out_3_6),
+.I1(out),
+.I2(\rf_wdata[1][7]_11 ),
+.F(n1_683) 
+);
+defparam n1_ins5503.INIT=8'hAC;
+LUT3 n2_ins5504 (
+.I0(out_3_14),
+.I1(out_3_10),
+.I2(\rf_wdata[1][7]_11 ),
+.F(n2_487) 
+);
+defparam n2_ins5504.INIT=8'hAC;
+LUT3 n1_ins5505 (
+.I0(out_3_7),
+.I1(out_3),
+.I2(\rf_wdata[1][7]_11 ),
+.F(n1_685) 
+);
+defparam n1_ins5505.INIT=8'hAC;
+LUT3 n2_ins5506 (
+.I0(out_3_15),
+.I1(out_3_11),
+.I2(\rf_wdata[1][7]_11 ),
+.F(n2_489) 
+);
+defparam n2_ins5506.INIT=8'hAC;
+LUT3 n1_ins5507 (
+.I0(out_3_8),
+.I1(out_3_0),
+.I2(\rf_wdata[1][7]_11 ),
+.F(n1_687) 
+);
+defparam n1_ins5507.INIT=8'hAC;
+LUT3 n2_ins5508 (
+.I0(out_3_16),
+.I1(out_3_12),
+.I2(\rf_wdata[1][7]_11 ),
+.F(n2_491) 
+);
+defparam n2_ins5508.INIT=8'hAC;
+LUT4 n3_ins5509 (
+.I0(n3_479),
+.I1(n3_481),
+.I2(n3_483),
+.I3(out_3),
+.F(n3_463) 
+);
+defparam n3_ins5509.INIT=16'h0708;
+LUT3 n3_ins5510 (
+.I0(n3_483),
+.I1(out_3_1),
+.I2(n3_479),
+.F(n3_465) 
+);
+defparam n3_ins5510.INIT=8'h14;
+LUT3 n2_ins5511 (
+.I0(n12),
+.I1(\cpu_din[7] ),
+.I2(n2_501),
+.F(n2) 
+);
+defparam n2_ins5511.INIT=8'hF8;
+LUT4 n2_ins5512 (
+.I0(\ir_addr[1] ),
+.I1(\ir_addr[0] ),
+.I2(\cpu_din[5] ),
+.I3(n12),
+.F(n2_495) 
+);
+defparam n2_ins5512.INIT=16'hF011;
+LUT4 \rf_wdata[1][7]_ins5514  (
+.I0(\ir_addr[1] ),
+.I1(\ir_addr[0] ),
+.I2(n8),
+.I3(n8_7),
+.F(\rf_wdata[1][7]_11 ) 
+);
+defparam \rf_wdata[1][7]_ins5514 .INIT=16'h4000;
+LUT3 n1_ins5516 (
+.I0(out_3_6),
+.I1(out),
+.I2(n8_3),
+.F(n1_689) 
+);
+defparam n1_ins5516.INIT=8'hAC;
+LUT3 n1_ins5517 (
+.I0(out_3_14),
+.I1(out_3_10),
+.I2(n8_3),
+.F(n1_691) 
+);
+defparam n1_ins5517.INIT=8'hAC;
+LUT3 n1_ins5518 (
+.I0(out_3_7),
+.I1(out_3),
+.I2(n8_3),
+.F(n1_693) 
+);
+defparam n1_ins5518.INIT=8'hAC;
+LUT3 n1_ins5519 (
+.I0(out_3_15),
+.I1(out_3_11),
+.I2(n8_3),
+.F(n1_695) 
+);
+defparam n1_ins5519.INIT=8'hAC;
+LUT3 n1_ins5520 (
+.I0(out_3_8),
+.I1(out_3_0),
+.I2(n8_3),
+.F(n1_697) 
+);
+defparam n1_ins5520.INIT=8'hAC;
+LUT3 n1_ins5521 (
+.I0(out_3_16),
+.I1(out_3_12),
+.I2(n8_3),
+.F(n1_699) 
+);
+defparam n1_ins5521.INIT=8'hAC;
+LUT3 n1_ins5522 (
+.I0(out_3_9),
+.I1(out_3_1),
+.I2(n8_3),
+.F(n1_701) 
+);
+defparam n1_ins5522.INIT=8'hAC;
+LUT3 n1_ins5523 (
+.I0(out_3_17),
+.I1(out_3_13),
+.I2(n8_3),
+.F(n1_703) 
+);
+defparam n1_ins5523.INIT=8'hAC;
+LUT2 n3_ins5524 (
+.I0(out_3_5),
+.I1(n3_483),
+.F(n3_467) 
+);
+defparam n3_ins5524.INIT=4'h1;
+LUT3 n3_ins5525 (
+.I0(n3_483),
+.I1(out_3_4),
+.I2(out_3_5),
+.F(n3_469) 
+);
+defparam n3_ins5525.INIT=8'h14;
+LUT4 n3_ins5527 (
+.I0(out_3_3),
+.I1(n3_485),
+.I2(n3_483),
+.I3(out_3_2),
+.F(n3_473) 
+);
+defparam n3_ins5527.INIT=16'h0708;
+LUT2 o_ins5528 (
+.I0(o_327),
+.I1(out_3_5),
+.F(o_319) 
+);
+defparam o_ins5528.INIT=4'h4;
+LUT2 o_ins5529 (
+.I0(o_327),
+.I1(out_3_4),
+.F(o_321) 
+);
+defparam o_ins5529.INIT=4'h4;
+LUT2 o_ins5530 (
+.I0(o_327),
+.I1(out_3_3),
+.F(o_323) 
+);
+defparam o_ins5530.INIT=4'h4;
+LUT2 o_ins5531 (
+.I0(o_327),
+.I1(out_3_2),
+.F(o) 
+);
+defparam o_ins5531.INIT=4'h4;
+LUT4 n3_ins5534 (
+.I0(out_3_1),
+.I1(n3_479),
+.I2(n3_483),
+.I3(out_3_0),
+.F(n3_477) 
+);
+defparam n3_ins5534.INIT=16'h0708;
+LUT2 n1_ins5535 (
+.I0(n2_501),
+.I1(n1_677),
+.F(n1_705) 
+);
+defparam n1_ins5535.INIT=4'h4;
+LUT2 n1_ins5536 (
+.I0(n2_501),
+.I1(n1_681),
+.F(n1_707) 
+);
+defparam n1_ins5536.INIT=4'h4;
+LUT2 n1_ins5537 (
+.I0(n2_501),
+.I1(n1_675),
+.F(n1) 
+);
+defparam n1_ins5537.INIT=4'h4;
+LUT2 n1_ins5538 (
+.I0(n2_501),
+.I1(n1_679),
+.F(n1_711) 
+);
+defparam n1_ins5538.INIT=4'h4;
+LUT4 n3_ins5541 (
+.I0(out_3_4),
+.I1(out_3_5),
+.I2(out_3_3),
+.I3(out_3_2),
+.F(n3_479) 
+);
+defparam n3_ins5541.INIT=16'h8000;
+LUT2 n3_ins5542 (
+.I0(out_3_0),
+.I1(out_3_1),
+.F(n3_481) 
+);
+defparam n3_ins5542.INIT=4'h8;
+LUT4 n3_ins5543 (
+.I0(\ir_addr[0] ),
+.I1(\ir_addr[1] ),
+.I2(n8),
+.I3(n8_7),
+.F(n3_483) 
+);
+defparam n3_ins5543.INIT=16'h8000;
+LUT2 n3_ins5547 (
+.I0(out_3_4),
+.I1(out_3_5),
+.F(n3_485) 
+);
+defparam n3_ins5547.INIT=4'h8;
+LUT4 o_ins5548 (
+.I0(\ir_addr[1] ),
+.I1(\ir_addr[0] ),
+.I2(n8),
+.I3(n8_7),
+.F(o_327) 
+);
+defparam o_ins5548.INIT=16'h7000;
+LUT4 n3_ins5550 (
+.I0(out),
+.I1(n3_483),
+.I2(n3_481),
+.I3(n3_479),
+.F(n3_489) 
+);
+defparam n3_ins5550.INIT=16'h2222;
+LUT4 n3_ins5551 (
+.I0(out),
+.I1(n3_483),
+.I2(n3_481),
+.I3(n3_479),
+.F(n3_491) 
+);
+defparam n3_ins5551.INIT=16'h1222;
+MUX2_LUT5 n3_ins5552 (
+.I0(n3_489),
+.I1(n3_491),
+.S0(out_3),
+.O(n3_493) 
+);
+LUT4 n2_ins5553 (
+.I0(\ir_addr[1] ),
+.I1(n8),
+.I2(\ir_addr[6] ),
+.I3(\ir_addr[7] ),
+.F(n2_501) 
+);
+defparam n2_ins5553.INIT=16'h0004;
+LUT4 n3_ins5555 (
+.I0(n3_483),
+.I1(out_3_3),
+.I2(out_3_4),
+.I3(out_3_5),
+.F(n3_495) 
+);
+defparam n3_ins5555.INIT=16'h1444;
+LUT4 n2_ins5557 (
+.I0(\cpu_din[6] ),
+.I1(n8),
+.I2(\ir_addr[6] ),
+.I3(\ir_addr[7] ),
+.F(n2_503) 
+);
+defparam n2_ins5557.INIT=16'hAAA2;
+\cpu_instance/iR  iR (
+.\ir_addr[0] (\ir_addr[0] ),
+.\ir_addr[1] (\ir_addr[1] ),
+.\ir_addr[2] (\ir_addr[2] ),
+.\ir_addr[3] (\ir_addr[3] ),
+.\ir_addr[4] (\ir_addr[4] ),
+.\ir_addr[5] (\ir_addr[5] ),
+.\ir_addr[6] (\ir_addr[6] ),
+.\ir_addr[7] (\ir_addr[7] ),
+.n4(n4),
+.n8_3(n8_3),
+.n8(n8),
+.n8_7(n8_7),
+.n12(n12),
+.n16(n16) 
+);
+\cpu_instance/rf[15]  \rf[15]  (
+.\rf_wdata[0][7] (\rf_wdata[0][7] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.\rf_wdata[0][6] (\rf_wdata[0][6] ),
+.\rf_wdata[0][5] (\rf_wdata[0][5] ),
+.\rf_wdata[0][4] (\rf_wdata[0][4] ),
+.\rf_wdata[0][3] (\rf_wdata[0][3] ),
+.\rf_wdata[0][2] (\rf_wdata[0][2] ),
+.\rf_wdata[0][1] (\rf_wdata[0][1] ),
+.\rf_wdata[0][0] (\rf_wdata[0][0] ),
+.out(out),
+.out_3(out_3),
+.out_3_0(out_3_0),
+.out_3_1(out_3_1),
+.out_3_2(out_3_2),
+.out_3_3(out_3_3),
+.out_3_4(out_3_4),
+.out_3_5(out_3_5) 
+);
+\cpu_instance/rf[14]  \rf[14]  (
+.\rf_wdata[1][7] (\rf_wdata[1][7] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.\rf_wdata[1][6] (\rf_wdata[1][6] ),
+.\rf_wdata[1][5] (\rf_wdata[1][5] ),
+.\rf_wdata[1][4] (\rf_wdata[1][4] ),
+.out_3_6(out_3_6),
+.out_3_7(out_3_7),
+.out_3_8(out_3_8),
+.out_3_9(out_3_9) 
+);
+\cpu_instance/rf[13]  \rf[13]  (
+.\rf_wdata[2][7] (\rf_wdata[2][7] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.\rf_wdata[2][6] (\rf_wdata[2][6] ),
+.\rf_wdata[2][5] (\rf_wdata[2][5] ),
+.\rf_wdata[2][4] (\rf_wdata[2][4] ),
+.out_3_10(out_3_10),
+.out_3_11(out_3_11),
+.out_3_12(out_3_12),
+.out_3_13(out_3_13) 
+);
+\cpu_instance/rf[12]  \rf[12]  (
+.\rf_wdata[3][7] (\rf_wdata[3][7] ),
+.clk_3(clk_3),
+.buttonA_3(buttonA_3),
+.\rf_wdata[3][6] (\rf_wdata[3][6] ),
+.\rf_wdata[3][5] (\rf_wdata[3][5] ),
+.\rf_wdata[3][4] (\rf_wdata[3][4] ),
+.out_3_14(out_3_14),
+.out_3_15(out_3_15),
+.out_3_16(out_3_16),
+.out_3_17(out_3_17) 
+);
+GND GND_cZ (
+.G(GND)
+);
+endmodule
+module top ( clk,buttonA,buttonB,led_R,led_G,led_B);
+input clk;
+input buttonA;
+input buttonB;
+output led_R;
+output led_G;
+output led_B;
+wire clk_3;
+wire buttonA_3;
+wire \cpu_din[6] ;
+wire \cpu_din[5] ;
+wire led_B_6;
+wire led_G_6;
+wire led_R_6;
+wire \cpu_din[7] ;
+wire n25;
+wire n26;
+wire n27;
+wire n28;
+wire GND;
+wire n28_7;
+wire n28_9;
+wire \address[7] ;
+wire \address[6] ;
+wire \address[5] ;
+wire \address[4] ;
+wire \address[3] ;
+wire \address[2] ;
+wire \address[1] ;
+wire \address[0] ;
+wire \dout[7] ;
+wire \dout[6] ;
+wire \dout[5] ;
+wire write;
+wire n8;
+wire n8_7;
+wire n12;
+wire VCC;
+IBUF clk_ibuf4522 (
+.I(clk),
+.O(clk_3) 
+);
+IBUF buttonA_ibuf4523 (
+.I(buttonA),
+.O(buttonA_3) 
+);
+OBUF led_R_obuf4657 (
+.I(led_R_6),
+.O(led_R) 
+);
+OBUF led_G_obuf4658 (
+.I(led_G_6),
+.O(led_G) 
+);
+OBUF led_B_obuf4659 (
+.I(led_B_6),
+.O(led_B) 
+);
+DFF \cpu_din[6]_ins4811  (
+.D(n26),
+.CLK(clk_3),
+.Q(\cpu_din[6] ) 
+);
+DFF \cpu_din[5]_ins4812  (
+.D(n25),
+.CLK(clk_3),
+.Q(\cpu_din[5] ) 
+);
+DFFE led_B_ins4813 (
+.D(\dout[5] ),
+.CLK(clk_3),
+.CE(n28),
+.Q(led_B_6) 
+);
+DFFE led_G_ins4814 (
+.D(\dout[6] ),
+.CLK(clk_3),
+.CE(n28),
+.Q(led_G_6) 
+);
+DFFE led_R_ins4815 (
+.D(\dout[7] ),
+.CLK(clk_3),
+.CE(n28),
+.Q(led_R_6) 
+);
+DFF \cpu_din[7]_ins4816  (
+.D(n27),
+.CLK(clk_3),
+.Q(\cpu_din[7] ) 
+);
+LUT3 n25_ins5496 (
+.I0(\dout[5] ),
+.I1(led_B_6),
+.I2(write),
+.F(n25) 
+);
+defparam n25_ins5496.INIT=8'hAC;
+LUT3 n26_ins5497 (
+.I0(led_G_6),
+.I1(\dout[6] ),
+.I2(write),
+.F(n26) 
+);
+defparam n26_ins5497.INIT=8'hCA;
+LUT3 n27_ins5498 (
+.I0(led_R_6),
+.I1(\dout[7] ),
+.I2(write),
+.F(n27) 
+);
+defparam n27_ins5498.INIT=8'hCA;
+LUT3 n28_ins5513 (
+.I0(write),
+.I1(n28_7),
+.I2(n28_9),
+.F(n28) 
+);
+defparam n28_ins5513.INIT=8'h80;
+GND GND_ins5515 (
+.G(GND) 
+);
+LUT4 n28_ins5545 (
+.I0(\address[4] ),
+.I1(\address[5] ),
+.I2(\address[6] ),
+.I3(\address[7] ),
+.F(n28_7) 
+);
+defparam n28_ins5545.INIT=16'h0100;
+LUT4 n28_ins5546 (
+.I0(\address[0] ),
+.I1(\address[1] ),
+.I2(\address[2] ),
+.I3(\address[3] ),
+.F(n28_9) 
+);
+defparam n28_ins5546.INIT=16'h0001;
+cpu_instance cpu_instance (
+.clk_3(clk_3),
+.\cpu_din[7] (\cpu_din[7] ),
+.\cpu_din[5] (\cpu_din[5] ),
+.\cpu_din[6] (\cpu_din[6] ),
+.buttonA_3(buttonA_3),
+.\address[7] (\address[7] ),
+.\address[6] (\address[6] ),
+.\address[5] (\address[5] ),
+.\address[4] (\address[4] ),
+.\address[3] (\address[3] ),
+.\address[2] (\address[2] ),
+.\address[1] (\address[1] ),
+.\address[0] (\address[0] ),
+.\dout[7] (\dout[7] ),
+.\dout[6] (\dout[6] ),
+.\dout[5] (\dout[5] ),
+.write(write),
+.n8(n8),
+.n8_7(n8_7),
+.n12(n12) 
+);
+VCC VCC_cZ (
+.V(VCC)
+);
+endmodule

@@ -1,0 +1,18 @@
+Info    (PA0001) : "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.vm" | Reading netlist file.
+Info    (PA0004) : Parsing netlist file '/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.vm' completed.
+Info    (PA0006) : Processing netlist completed.
+Info    (CT0002) : Physical Constraint parsed completed.
+Info    (PR0001) : Placement in progress......
+Info    (PR0005) : Routing in progress......
+Info    (PR0002) : Placement and routing completed.
+Info    (TA0001) : Timing analysis completed.
+Info    (FS0001) : Bitstream generation in progress......
+Info    (FS0002) : Bitstream generation completed.
+Info    (PW0001) : Power analysis completed.
+Info    (CM0008) : Generate '/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/pnr/Test_CPU.power.html' file completed.
+Info    (CM0008) : Generate '/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/pnr/Test_CPU.pin.html' file completed.
+Info    (CM0008) : Generate '/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/pnr/Test_CPU.rpt.html' file completed.
+Info    (CM0008) : Generate '/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/pnr/Test_CPU.rpt.txt' file completed.
+Info    (CM0008) : Generate '/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/pnr/Test_CPU.tr.html' file completed.
+Info    (CM0001) : Thu Mar 26 07:27:21 2020
+

@@ -1,0 +1,109 @@
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing sequential instance cpu_instance.rf_wdata[15][7:0] because it is equivalent to instance cpu_instance.rf_wdata[14][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing sequential instance cpu_instance.rf_wdata[14][7:0] because it is equivalent to instance cpu_instance.rf_wdata[13][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing sequential instance cpu_instance.rf_wdata[13][7:0] because it is equivalent to instance cpu_instance.rf_wdata[12][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing sequential instance cpu_instance.rf_wdata[12][7:0] because it is equivalent to instance cpu_instance.rf_wdata[11][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing sequential instance cpu_instance.rf_wdata[11][7:0] because it is equivalent to instance cpu_instance.rf_wdata[10][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing sequential instance cpu_instance.rf_wdata[9][7:0] because it is equivalent to instance cpu_instance.rf_wdata[10][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing sequential instance cpu_instance.rf_wdata[8][7:0] because it is equivalent to instance cpu_instance.rf_wdata[10][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing sequential instance cpu_instance.rf_wdata[7][7:0] because it is equivalent to instance cpu_instance.rf_wdata[10][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing sequential instance cpu_instance.rf_wdata[6][7:0] because it is equivalent to instance cpu_instance.rf_wdata[10][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing sequential instance cpu_instance.rf_wdata[5][7:0] because it is equivalent to instance cpu_instance.rf_wdata[10][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing sequential instance cpu_instance.rf_wdata[4][7:0] because it is equivalent to instance cpu_instance.rf_wdata[10][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":30:11:30:12|Removing user instance cpu_instance.rf[11] because it is equivalent to instance cpu_instance.rf[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":30:11:30:12|Removing user instance cpu_instance.rf[9] because it is equivalent to instance cpu_instance.rf[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":30:11:30:12|Removing user instance cpu_instance.rf[8] because it is equivalent to instance cpu_instance.rf[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":30:11:30:12|Removing user instance cpu_instance.rf[7] because it is equivalent to instance cpu_instance.rf[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":30:11:30:12|Removing user instance cpu_instance.rf[6] because it is equivalent to instance cpu_instance.rf[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":30:11:30:12|Removing user instance cpu_instance.rf[3] because it is equivalent to instance cpu_instance.rf[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":30:11:30:12|Removing user instance cpu_instance.rf[1] because it is equivalent to instance cpu_instance.rf[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":30:11:30:12|Removing user instance cpu_instance.rf[10] because it is equivalent to instance cpu_instance.rf[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":30:11:30:12|Removing user instance cpu_instance.rf[2] because it is equivalent to instance cpu_instance.rf[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":30:11:30:12|Removing user instance cpu_instance.rf[4] because it is equivalent to instance cpu_instance.rf[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":30:11:30:12|Removing user instance cpu_instance.rf[5] because it is equivalent to instance cpu_instance.rf[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing instance cpu_instance.rf_wdata[2][1] because it is equivalent to instance cpu_instance.rf_wdata[2][0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing instance cpu_instance.rf_wdata[2][2] because it is equivalent to instance cpu_instance.rf_wdata[2][0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing instance cpu_instance.rf_wdata[2][3] because it is equivalent to instance cpu_instance.rf_wdata[2][0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing instance cpu_instance.rf_wdata[1][1] because it is equivalent to instance cpu_instance.rf_wdata[1][0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing instance cpu_instance.rf_wdata[1][2] because it is equivalent to instance cpu_instance.rf_wdata[1][0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing instance cpu_instance.rf_wdata[1][3] because it is equivalent to instance cpu_instance.rf_wdata[1][0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing instance cpu_instance.rf_wdata[3][1] because it is equivalent to instance cpu_instance.rf_wdata[3][0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing instance cpu_instance.rf_wdata[3][2] because it is equivalent to instance cpu_instance.rf_wdata[3][0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing instance cpu_instance.rf_wdata[3][3] because it is equivalent to instance cpu_instance.rf_wdata[3][0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v":7:4:7:9|Removing instance cpu_instance.rf[12].dff[3].out because it is equivalent to instance cpu_instance.rf[12].dff[2].out. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v":7:4:7:9|Removing instance cpu_instance.rf[12].dff[2].out because it is equivalent to instance cpu_instance.rf[12].dff[1].out. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v":7:4:7:9|Removing instance cpu_instance.rf[12].dff[1].out because it is equivalent to instance cpu_instance.rf[12].dff[0].out. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v":7:4:7:9|Removing instance cpu_instance.rf[13].dff[3].out because it is equivalent to instance cpu_instance.rf[13].dff[2].out. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v":7:4:7:9|Removing instance cpu_instance.rf[13].dff[2].out because it is equivalent to instance cpu_instance.rf[13].dff[1].out. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v":7:4:7:9|Removing instance cpu_instance.rf[13].dff[1].out because it is equivalent to instance cpu_instance.rf[13].dff[0].out. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v":7:4:7:9|Removing instance cpu_instance.rf[14].dff[3].out because it is equivalent to instance cpu_instance.rf[14].dff[2].out. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v":7:4:7:9|Removing instance cpu_instance.rf[14].dff[2].out because it is equivalent to instance cpu_instance.rf[14].dff[1].out. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v":7:4:7:9|Removing instance cpu_instance.rf[14].dff[1].out because it is equivalent to instance cpu_instance.rf[14].dff[0].out. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing instance cpu_instance.rf_wdata[2][7] because it is equivalent to instance cpu_instance.rf_wdata[2][6]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:7|Removing instance cpu_instance.rf_wdata[2][6] because it is equivalent to instance cpu_instance.rf_wdata[2][5]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v":7:4:7:9|Removing instance cpu_instance.rf[13].dff[7].out because it is equivalent to instance cpu_instance.rf[13].dff[6].out. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v":7:4:7:9|Removing instance cpu_instance.rf[13].dff[6].out because it is equivalent to instance cpu_instance.rf[13].dff[5].out. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W: MT420 |Found inferred clock top|clk with period 10.00ns. Please declare a user-defined clock on port clk.

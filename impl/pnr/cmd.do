@@ -1,0 +1,10 @@
+-d /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.vm
+-p GW1N-1-QFN48-6
+-pn GW1N-LV1QN48C6/I5
+-cst /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/Test_CPU.cst
+-cfg /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/pnr/device.cfg
+-sdc /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/Test_CPU.sdc
+-bit
+-tr
+-ph
+-timing
