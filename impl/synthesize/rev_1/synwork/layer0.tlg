@@ -2,8 +2,8 @@ Selecting top level module top
 @N: CG364 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":4:7:4:13|Synthesizing module instRom in library work.
 Running optimization stage 1 on instRom .......
 @N: CG364 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":8:7:8:9|Synthesizing module cpu in library work.
-@W: CG532 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":46:2:46:8|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
-@W: CG133 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":45:10:45:11|Object ha is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG532 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:8|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@W: CG133 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":50:10:50:11|Object ha is declared but not assigned. Either assign a value or remove the declaration.
 Running optimization stage 1 on cpu .......
 @N: CG364 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":1:7:1:9|Synthesizing module top in library work.
 @W: CS263 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":18:9:18:15|Port-width mismatch for port din. The port definition is 32 bits, but the actual port connection bit width is 8. Adjust either the definition or the instantiation of this port.
@@ -19,10 +19,6 @@ Running optimization stage 1 on top .......
 Running optimization stage 2 on top .......
 @N: CL159 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":4:10:4:16|Input buttonB is unused.
 Running optimization stage 2 on cpu .......
-@N: CL134 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|Found RAM rf_wdata, depth=32, width=32
-@N: CL134 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|Found RAM rf_wdata, depth=32, width=32
-@N: CL134 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|Found RAM rf_wdata, depth=32, width=32
-@N: CL134 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|Found RAM rf_wdata, depth=32, width=32
 @N: CL159 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":10:10:10:12|Input rst is unused.
 Running optimization stage 2 on instRom .......
 

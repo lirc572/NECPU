@@ -6,22 +6,28 @@ module instRom (
     output reg [`InstBusWidth-1:0] inst
   );
   
-  parameter InstNOP   = 4'd0;  // 0 filled
-  parameter InstLOAD  = 4'd1;  // dest, op1, offset  : R[dest] = M[R[op1] + offset]
-  parameter InstSTORE = 4'd2;  // src, op1, offset   : M[R[op1] + offset] = R[src]
-  parameter InstSET   = 4'd3;  // dest, const        : R[dest] = const
-  parameter InstLT    = 4'd4;  // dest, op1, op2     : R[dest] = R[op1] < R[op2]
-  parameter InstEQ    = 4'd5;  // dest, op1, op2     : R[dest] = R[op1] == R[op2]
-  parameter InstBEQ   = 4'd6;  // op1, const         : R[0] = R[0] + (R[op1] == const ? 2 : 1)
-  parameter InstBNE   = 4'd7;  // op1, const         : R[0] = R[0] + (R[op1] != const ? 2 : 1)
-  parameter InstADD   = 4'd8;  // dest, op1, op2     : R[dest] = R[op1] + R[op2]
-  parameter InstSUB   = 4'd9;  // dest, op1, op2     : R[dest] = R[op1] - R[op2]
-  parameter InstSHL   = 4'd10; // dest, op1, op2     : R[dest] = R[op1] << R[op2]
-  parameter InstSHR   = 4'd11; // dest, op1, op2     : R[dest] = R[op1] >> R[op2]
-  parameter InstAND   = 4'd12; // dest, op1, op2     : R[dest] = R[op1] & R[op2]
-  parameter InstOR    = 4'd13; // dest, op1, op2     : R[dest] = R[op1] | R[op2]
-  parameter InstINV   = 4'd14; // dest, op1          : R[dest] = ~R[op1]
-  parameter InstXOR   = 4'd15; // dest, op1, op2     : R[dest] = R[op1] ^ R[op2]
+  parameter InstNOP     = 6'd0;  // No-Op                 0 filled
+  parameter InstLW      = 6'd1;  // Load-Word             rd, rs, rt         : R[rd] = M[R[rs] + offset]
+  parameter InstSW      = 6'd2;  // Store-Word            src, rs, rt        : M[R[rs] + offset] = R[src]
+  parameter InstLLI     = 6'd3;  // Load-Lower-Immediate  rd, immediate      : R[rd] = immediate
+  parameter InstLUI     = 6'd4;  // Load-Upper-Immediate  rd, immediate      : R[rd] = immediate
+  parameter InstSLT     = 6'd5;  // Shift-Less-Than       rd, rs, rt         : R[rd] = R[rs] < R[rt]
+  parameter InstSEQ     = 6'd6;  // Shift-Equal           rd, rs, rt         : R[rd] = R[rs] == R[rt]
+  parameter InstBEQ     = 6'd7;  // Branch-if-Equal       rs, immediate      : PC = PC + (R[rs] == immediate ? 2 : 1)
+  parameter InstBNE     = 6'd8;  // Branch-if-Not-Equal   rs, immediate      : PC = PC + (R[rs] != immediate ? 2 : 1)
+  parameter InstADD     = 6'd9;  // Add                   rd, rs, rt         : R[rd] = R[rs] + R[rt]
+  parameter InstADDi    = 6'd10; // Add-Immediate         rd, rs, immediate  : R[rd] = R[rs] + immediate
+  parameter InstSUB     = 6'd11; // Subtract              rd, rs, rt         : R[rd] = R[rs] - R[rt]
+  parameter InstSUBi    = 6'd12; // Subtract-Immediate    rd, rs, immediate  : R[rd] = R[rs] - immediate
+  parameter InstSLL     = 6'd13; // Shift-Left-Logical    rd, rs, rt         : R[rd] = R[rs] << R[rt]
+  parameter InstSRL     = 6'd14; // Shift-Right-Logical   rd, rs, rt         : R[rd] = R[rs] >> R[rt]
+  parameter InstAND     = 6'd15; // AND                   rd, rs, rt         : R[rd] = R[rs] & R[rt]
+  parameter InstANDi    = 6'd16; // AND-Immediate         rd, rs, immediate  : R[rd] = R[rs] & immediate
+  parameter InstOR      = 6'd17; // OR                    rd, rs, rt         : R[rd] = R[rs] | R[rt]
+  parameter InstORi     = 6'd18; // OR-Immediate          rd, rs, immediate  : R[rd] = R[rs] | immediate
+  parameter InstINV     = 6'd19; // INVERT                rd, rs             : R[rd] = ~R[rs]
+  parameter InstXOR     = 6'd20; // XOR                   rd, rs, rt         : R[rd] = R[rs] ^ R[rt]
+  parameter InstXORi    = 6'd21; // XOR-Immediate         rd, rs, immediate  : R[rd] = R[rs] ^ immediate
   
   
   always @ (address) begin
@@ -29,15 +35,15 @@ module instRom (
  
     case (address)
       // begin:
-      0:  inst = {InstSET,   4'd2, 8'b001};       // SET R2, 32
-      1:  inst = {InstSET,   4'd1, 8'd128};       // SET R1, 128
-      2:  inst = {InstSET,   4'd3, 8'b001};       // SET R3, 32
-      3:  inst = {InstSET,   4'd4, 8'd0};         // SET R4, 0
+      0:  inst = {InstLLI,   4'd2, 8'b001};       // LLI R2, 32
+      1:  inst = {InstLLI,   4'd1, 8'd128};       // LLI R1, 128
+      2:  inst = {InstLLI,   4'd3, 8'b001};       // LLI R3, 32
+      3:  inst = {InstLLI,   4'd4, 8'd0};         // LLI R4, 0
       4:  inst = {InstINV,   4'd4, 4'd4, 4'd0};   // INV R4, R4
       5:  inst = {InstADD,   4'd2, 4'd2, 4'd3};   // ADD R2, R2, R3
       6:  inst = {InstBNE,   4'd4, 8'd0};         // BNE R4, 0
-      7:  inst = {InstSET,   4'd0, 8'd4};         // goto 4
-      8:  inst = {InstSTORE, 4'd2, 4'd1, 4'd0};   // STORE R2, R1, 0
+      7:  inst = {InstLLI,   4'd0, 8'd4};         // goto 4
+      8:  inst = {InstSW,    4'd2, 4'd1, 4'd0};   // SW R2, R1, 0
     endcase
   end
 endmodule

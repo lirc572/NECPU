@@ -4,15 +4,8 @@
 @N: FX493 |Applying initial value "1" on instance led_B.
 @N: FX493 |Applying initial value "1" on instance led_G.
 @N: FX493 |Applying initial value "1" on instance led_R.
-@N: BN115 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":54:10:54:11|Removing instance iR (in view: work.cpu(verilog)) of type view:work.instRom(verilog) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Removing sequential instance led_B (in view: work.top(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Removing sequential instance led_G (in view: work.top(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Removing sequential instance led_R (in view: work.top(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|Removing sequential instance ir_addr[31:0] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|Removing sequential instance address[31:0] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 @N: BN115 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":11:6:11:17|Removing instance cpu_instance (in view: work.top(verilog)) of type view:work.cpu(verilog) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|Removing sequential instance rf_wdata_1[31:0] (in view: work.cpu(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|Removing sequential instance dout[31:0] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|Removing sequential instance rf_wdata[31:0] (in view: work.cpu(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN115 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":59:10:59:11|Removing instance iR (in view: work.cpu(verilog)) of type view:work.instRom(verilog) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":75:2:75:7|Removing sequential instance ir_addr[31:0] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 @N: BN225 |Writing default property annotation file /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.sap.

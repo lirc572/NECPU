@@ -2,7 +2,7 @@
 // Written by Synplify Pro 
 // Product Version "P-2019.03G"
 // Program "Synplify Pro", Mapper "mapgw, Build 1450R"
-// Thu Mar 26 17:00:36 2020
+// Thu Mar 26 17:22:27 2020
 //
 // Source file index table:
 // Object locations will have the form <file>:<line>
@@ -39,9 +39,6 @@ wire led_R ;
 wire led_G ;
 wire led_B ;
 wire VCC ;
-wire N_11 ;
-wire N_12 ;
-wire N_13 ;
 wire GND ;
   GSR GSR_INST (
 	.GSRI(VCC)

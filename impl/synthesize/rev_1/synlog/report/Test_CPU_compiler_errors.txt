@@ -1,2 +1,2 @@
-@E: No component with name top.v to synthesize
+@E: CG906 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":38:18:38:24|Reference to unknown variable InstSET.
 

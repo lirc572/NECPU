@@ -16,22 +16,27 @@ module cpu (
   );
   
   parameter InstNOP     = 6'd0;  // No-Op                 0 filled
-  parameter InstLD      = 6'd1;  // Load-Word             rd, rs, rt     : R[rd] = M[R[rs] + offset]
-  parameter InstSW      = 6'd2;  // Store-Word            src, rs, rt    : M[R[rs] + offset] = R[src]
-  parameter InstLLI     = 6'd3;  // Load-Lower-Immediate  rd, immediate  : R[rd] = immediate
-  parameter InstLUI     = 6'd4;  // Load-Upper-Immediate  rd, immediate  : R[rd] = immediate
-  parameter InstSLT     = 6'd5;  // Shift-Less-Than       rd, rs, rt     : R[rd] = R[rs] < R[rt]
-  parameter InstSEQ     = 6'd6;  // Shift-Equal           rd, rs, rt     : R[rd] = R[rs] == R[rt]
-  parameter InstBEQ     = 6'd7;  // Branch-if-Equal       rs, immediate  : PC = PC + (R[rs] == immediate ? 2 : 1)
-  parameter InstBNE     = 6'd8;  // Branch-if-Not-Equal   rs, immediate  : PC = PC + (R[rs] != immediate ? 2 : 1)
-  parameter InstADD     = 6'd9;  // Add                   rd, rs, rt     : R[rd] = R[rs] + R[rt]
-  parameter InstSUB     = 6'd10; // Subtract              rd, rs, rt     : R[rd] = R[rs] - R[rt]
-  parameter InstSLL     = 6'd11; // Shift-Left-Logical    rd, rs, rt     : R[rd] = R[rs] << R[rt]
-  parameter InstSRL     = 6'd12; // Shift-Right-Logical   rd, rs, rt     : R[rd] = R[rs] >> R[rt]
-  parameter InstAND     = 6'd13; // AND                   rd, rs, rt     : R[rd] = R[rs] & R[rt]
-  parameter InstOR      = 6'd14; // OR                    rd, rs, rt     : R[rd] = R[rs] | R[rt]
-  parameter InstINV     = 6'd15; // INVERT                rd, rs         : R[rd] = ~R[rs]
-  parameter InstXOR     = 6'd16; // XOR                   rd, rs, rt     : R[rd] = R[rs] ^ R[rt]
+  parameter InstLW      = 6'd1;  // Load-Word             rd, rs, rt         : R[rd] = M[R[rs] + offset]
+  parameter InstSW      = 6'd2;  // Store-Word            src, rs, rt        : M[R[rs] + offset] = R[src]
+  parameter InstLLI     = 6'd3;  // Load-Lower-Immediate  rd, immediate      : R[rd] = immediate
+  parameter InstLUI     = 6'd4;  // Load-Upper-Immediate  rd, immediate      : R[rd] = immediate
+  parameter InstSLT     = 6'd5;  // Shift-Less-Than       rd, rs, rt         : R[rd] = R[rs] < R[rt]
+  parameter InstSEQ     = 6'd6;  // Shift-Equal           rd, rs, rt         : R[rd] = R[rs] == R[rt]
+  parameter InstBEQ     = 6'd7;  // Branch-if-Equal       rs, immediate      : PC = PC + (R[rs] == immediate ? 2 : 1)
+  parameter InstBNE     = 6'd8;  // Branch-if-Not-Equal   rs, immediate      : PC = PC + (R[rs] != immediate ? 2 : 1)
+  parameter InstADD     = 6'd9;  // Add                   rd, rs, rt         : R[rd] = R[rs] + R[rt]
+  parameter InstADDi    = 6'd10; // Add-Immediate         rd, rs, immediate  : R[rd] = R[rs] + immediate
+  parameter InstSUB     = 6'd11; // Subtract              rd, rs, rt         : R[rd] = R[rs] - R[rt]
+  parameter InstSUBi    = 6'd12; // Subtract-Immediate    rd, rs, immediate  : R[rd] = R[rs] - immediate
+  parameter InstSLL     = 6'd13; // Shift-Left-Logical    rd, rs, rt         : R[rd] = R[rs] << R[rt]
+  parameter InstSRL     = 6'd14; // Shift-Right-Logical   rd, rs, rt         : R[rd] = R[rs] >> R[rt]
+  parameter InstAND     = 6'd15; // AND                   rd, rs, rt         : R[rd] = R[rs] & R[rt]
+  parameter InstANDi    = 6'd16; // AND-Immediate         rd, rs, immediate  : R[rd] = R[rs] & immediate
+  parameter InstOR      = 6'd17; // OR                    rd, rs, rt         : R[rd] = R[rs] | R[rt]
+  parameter InstORi     = 6'd18; // OR-Immediate          rd, rs, immediate  : R[rd] = R[rs] | immediate
+  parameter InstINV     = 6'd19; // INVERT                rd, rs             : R[rd] = ~R[rs]
+  parameter InstXOR     = 6'd20; // XOR                   rd, rs, rt         : R[rd] = R[rs] ^ R[rt]
+  parameter InstXORi    = 6'd21; // XOR-Immediate         rd, rs, immediate  : R[rd] = R[rs] ^ immediate
   
   reg  [`RegBusWidth-1:0] rf_wdata [`RegWidth-1:0];
   wire [`RegBusWidth-1:0] rf_rdata [`RegWidth-1:0];
@@ -75,11 +80,11 @@ module cpu (
     dout    = 8'hxx;           // don't care
     
     ir_addr  = PC;             // reg 0 is program counter
-    PC = PC + 1;      // increment PC by default
+    PC = PC + 1;               // increment PC by default
     
     // Perform the operation
     case (op)
-      InstLD   : begin
+      InstLW   : begin
         read = 1;                                     // request a read
         rf_wdata[rd] = din;                           // save the data
         address = rf_rdata[rs] + rf_rdata[rt];        // set the address
@@ -90,7 +95,9 @@ module cpu (
         address = rf_rdata[rs] + rf_rdata[rt];        // set the address
       end
       InstLLI:
-        rf_wdata[rd] = immediate;                     // set the reg to immediate
+        rf_wdata[rd][15:0]  = immediate;              // set the lower half of reg to immediate
+      InstLUI:
+        rf_wdata[rd][31:16] = immediate;              // set the upper half of reg to immediate
       InstSLT:
         rf_wdata[rd] = rf_rdata[rs] < rf_rdata[rt];   // less-than comparison
       InstSEQ:
@@ -102,7 +109,7 @@ module cpu (
         if (rf_rdata[rd] != immediate)                // if R[rd] != immediate
           PC = PC + 2;                                // skip next instruction
       InstADD:
-        rf_wdata[rd] = rf_rdata[rs] + rf_rdata[rt];   // addition
+          rf_wdata[rd] = rf_rdata[rs] + rf_rdata[rt]; // addition
       InstSUB:
         rf_wdata[rd] = rf_rdata[rs] - rf_rdata[rt];   // subtraction
       InstSLL:

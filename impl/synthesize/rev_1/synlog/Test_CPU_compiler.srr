@@ -52,15 +52,12 @@ Synopsys Verilog Compiler, Version comp2019q1p1, Build 307R, Built Sep 25 2019 0
 @I::"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v" (library work)
 @I::"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v" (library work)
 Verilog syntax check successful!
-File /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v changed - recompiling
-File /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v changed - recompiling
-File /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v changed - recompiling
 Selecting top level module top
 @N: CG364 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":4:7:4:13|Synthesizing module instRom in library work.
 Running optimization stage 1 on instRom .......
 @N: CG364 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":8:7:8:9|Synthesizing module cpu in library work.
-@W: CG532 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":46:2:46:8|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
-@W: CG133 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":45:10:45:11|Object ha is declared but not assigned. Either assign a value or remove the declaration.
+@W: CG532 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":51:2:51:8|Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.
+@W: CG133 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":50:10:50:11|Object ha is declared but not assigned. Either assign a value or remove the declaration.
 Running optimization stage 1 on cpu .......
 @N: CG364 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":1:7:1:9|Synthesizing module top in library work.
 @W: CS263 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":18:9:18:15|Port-width mismatch for port din. The port definition is 32 bits, but the actual port connection bit width is 8. Adjust either the definition or the instantiation of this port.
@@ -76,10 +73,6 @@ Running optimization stage 1 on top .......
 Running optimization stage 2 on top .......
 @N: CL159 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":4:10:4:16|Input buttonB is unused.
 Running optimization stage 2 on cpu .......
-@N: CL134 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|Found RAM rf_wdata, depth=32, width=32
-@N: CL134 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|Found RAM rf_wdata, depth=32, width=32
-@N: CL134 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|Found RAM rf_wdata, depth=32, width=32
-@N: CL134 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|Found RAM rf_wdata, depth=32, width=32
 @N: CL159 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":10:10:10:12|Input rst is unused.
 Running optimization stage 2 on instRom .......
 
@@ -88,12 +81,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 179MB peak: 179MB)
+At c_ver Exit (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 323MB peak: 326MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+Process took 0h:00m:14s realtime, 0h:00m:14s cputime
 
 Process completed successfully.
-# Thu Mar 26 17:00:30 2020
+# Thu Mar 26 17:22:21 2020
 
 ###########################################################]
 ###########################################################[
@@ -118,12 +111,12 @@ Synopsys Synopsys Netlist Linker, Version comp2019q1p1, Build 307R, Built Sep 25
 
 @N|Running in 64-bit mode
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 143MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 145MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Mar 26 17:00:30 2020
+# Thu Mar 26 17:22:21 2020
 
 ###########################################################]
 
@@ -133,11 +126,11 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 55MB peak: 55MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 55MB peak: 55MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+Process took 0h:00m:14s realtime, 0h:00m:14s cputime
 
 Process completed successfully.
-# Thu Mar 26 17:00:30 2020
+# Thu Mar 26 17:22:21 2020
 
 ###########################################################]
