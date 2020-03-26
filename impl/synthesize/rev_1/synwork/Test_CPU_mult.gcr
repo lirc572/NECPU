@@ -1,8 +1,8 @@
 i clk
 m 0 0
-u 20 127
+u 24 159
 p {p:clk}{t:led_R.C}
-e ckid0_0 {t:led_R.C} dffe
+e ckid0_0 {t:led_R.C} dffse
 c ckid0_0 {p:clk} port Unsupported/too complex instance on clock path
 l 0 0 0 0 0
 r 0 0 0 0 0 0 0 0

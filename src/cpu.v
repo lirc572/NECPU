@@ -15,7 +15,7 @@ module cpu (
   parameter InstLT    = 4'd4;  // dest, op1, op2     : R[dest] = R[op1] < R[op2]
   parameter InstEQ    = 4'd5;  // dest, op1, op2     : R[dest] = R[op1] == R[op2]
   parameter InstBEQ   = 4'd6;  // op1, const         : R[0] = R[0] + (R[op1] == const ? 2 : 1)
-  parameter InstBNEQ  = 4'd7;  // op1, const         : R[0] = R[0] + (R[op1] != const ? 2 : 1)
+  parameter InstBNE   = 4'd7;  // op1, const         : R[0] = R[0] + (R[op1] != const ? 2 : 1)
   parameter InstADD   = 4'd8;  // dest, op1, op2     : R[dest] = R[op1] + R[op2]
   parameter InstSUB   = 4'd9;  // dest, op1, op2     : R[dest] = R[op1] - R[op2]
   parameter InstSHL   = 4'd10; // dest, op1, op2     : R[dest] = R[op1] << R[op2]
@@ -95,7 +95,7 @@ module cpu (
       InstBEQ:
         if (rf_rdata[dest] == constant)                  // if R[dest] == constant
           rf_wdata[0] = rf_rdata[0] + 2;                 // skip next instruction
-      InstBNEQ:
+      InstBNE:
         if (rf_rdata[dest] != constant)                  // if R[dest] != constant
           rf_wdata[0] = rf_rdata[0] + 2;                 // skip next instruction
       InstADD:

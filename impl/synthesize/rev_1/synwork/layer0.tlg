@@ -7,12 +7,12 @@ Running optimization stage 1 on instRom .......
 Running optimization stage 1 on cpu .......
 @N: CG364 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":1:7:1:9|Synthesizing module top in library work.
 Running optimization stage 1 on top .......
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[7] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[6] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[5] is always 0.
 @N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[4] is always 0.
 @N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[3] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[2] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[1] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[0] is always 0.
-@W: CL279 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Pruning register bits 4 to 0 of cpu_din[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL279 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Pruning register bits 7 to 3 of cpu_din[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 Running optimization stage 2 on top .......
 @N: CL159 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":4:10:4:16|Input buttonB is unused.
 Running optimization stage 2 on cpu .......

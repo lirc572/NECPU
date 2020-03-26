@@ -1,10 +1,9 @@
 @N: MF916 |Option synthesis_strategy=base is enabled. 
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":67:2:67:7|Removing sequential instance rf_wdata\[12\][7:0] (in view: work.cpu(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":67:2:67:7|Removing sequential instance rf_wdata\[13\][7:0] (in view: work.cpu(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":67:2:67:7|Removing sequential instance rf_wdata\[14\][7:0] (in view: work.cpu(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":67:2:67:7|Removing sequential instance rf_wdata\[15\][7:0] (in view: work.cpu(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: FX493 |Applying initial value "1" on instance led_B.
+@N: FX493 |Applying initial value "1" on instance led_G.
+@N: FX493 |Applying initial value "1" on instance led_R.
 @N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":67:2:67:7|Removing sequential instance read (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 @N: BN225 |Writing default property annotation file /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.sap.

@@ -2,7 +2,7 @@ module top (
     input clk,
     input buttonA,
     input buttonB,
-    output reg led_R, led_G, led_B
+    output reg led_R = 1, led_G = 1, led_B = 1
   );
   wire cpu_write, cpu_read;
   wire [7:0] cpu_addr;
@@ -22,11 +22,11 @@ module top (
     cpu_din = 8'hxx;
     if (cpu_write) begin
       if (cpu_addr == 'd128) begin
-        {led_R, led_G, led_B} = cpu_dout[7:5];
+        {led_R, led_G, led_B} = ~cpu_dout[2:0];
       end
     end else if (cpu_read) begin
       if (cpu_addr == 'd128) begin
-        cpu_din = {led_R, led_G, led_B, 5'd0};
+        cpu_din = {5'd0, ~led_R, ~led_G, ~led_B};
       end
     end
   end
