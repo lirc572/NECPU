@@ -3,7 +3,7 @@
 #OS: Linux 
 #Hostname: rochor-Swift-SF315-51G
 
-# Thu Mar 26 17:22:06 2020
+# Thu Mar 26 18:56:17 2020
 
 #Implementation: rev_1
 
@@ -61,6 +61,8 @@ Synopsys Verilog Compiler, Version comp2019q1p1, Build 307R, Built Sep 25 2019 0
 @I::"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v" (library work)
 @I::"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v" (library work)
 Verilog syntax check successful!
+File /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v changed - recompiling
+File /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v changed - recompiling
 Selecting top level module top
 @N: CG364 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":4:7:4:13|Synthesizing module instRom in library work.
 Running optimization stage 1 on instRom .......
@@ -90,12 +92,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 323MB peak: 326MB)
+At c_ver Exit (Real Time elapsed 0h:00m:20s; CPU Time elapsed 0h:00m:20s; Memory used current: 308MB peak: 308MB)
 
-Process took 0h:00m:14s realtime, 0h:00m:14s cputime
+Process took 0h:00m:20s realtime, 0h:00m:20s cputime
 
 Process completed successfully.
-# Thu Mar 26 17:22:21 2020
+# Thu Mar 26 18:56:39 2020
 
 ###########################################################]
 ###########################################################[
@@ -120,12 +122,12 @@ Synopsys Synopsys Netlist Linker, Version comp2019q1p1, Build 307R, Built Sep 25
 
 @N|Running in 64-bit mode
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 145MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 146MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Mar 26 17:22:21 2020
+# Thu Mar 26 18:56:39 2020
 
 ###########################################################]
 
@@ -135,12 +137,12 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:14s; CPU Time elapsed 0h:00m:14s; Memory used current: 55MB peak: 55MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:21s; CPU Time elapsed 0h:00m:20s; Memory used current: 55MB peak: 55MB)
 
-Process took 0h:00m:14s realtime, 0h:00m:14s cputime
+Process took 0h:00m:21s realtime, 0h:00m:20s cputime
 
 Process completed successfully.
-# Thu Mar 26 17:22:21 2020
+# Thu Mar 26 18:56:39 2020
 
 ###########################################################]
 ###########################################################[
@@ -171,10 +173,10 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Mar 26 17:22:22 2020
+# Thu Mar 26 18:56:40 2020
 
 ###########################################################]
-# Thu Mar 26 17:22:22 2020
+# Thu Mar 26 18:56:40 2020
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -214,7 +216,7 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 235MB peak: 235MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 248MB peak: 248MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 249MB peak: 249MB)
 
 @N: FX493 |Applying initial value "1" on instance led_B.
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
@@ -294,10 +296,10 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 331MB peak: 331MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Mar 26 17:22:24 2020
+# Thu Mar 26 18:56:42 2020
 
 ###########################################################]
-# Thu Mar 26 17:22:25 2020
+# Thu Mar 26 18:56:43 2020
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -403,7 +405,7 @@ Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:0
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Thu Mar 26 17:22:27 2020
+# Timing report written on Thu Mar 26 18:56:45 2020
 #
 
 
@@ -480,6 +482,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 323MB peak: 323MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Thu Mar 26 17:22:27 2020
+# Thu Mar 26 18:56:45 2020
 
 ###########################################################]

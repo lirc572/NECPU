@@ -1,4 +1,4 @@
-# Thu Mar 26 17:22:22 2020
+# Thu Mar 26 18:56:40 2020
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -38,7 +38,7 @@ Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 235MB peak: 235MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 248MB peak: 248MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 249MB peak: 249MB)
 
 @N: FX493 |Applying initial value "1" on instance led_B.
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
@@ -118,6 +118,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 331MB peak: 331MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Mar 26 17:22:24 2020
+# Thu Mar 26 18:56:42 2020
 
 ###########################################################]

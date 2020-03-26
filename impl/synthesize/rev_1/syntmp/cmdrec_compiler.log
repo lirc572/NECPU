@@ -1,11 +1,11 @@
 /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/SynplifyPro/bin/c_hdl  -osyn  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/Test_CPU_comp.srs  -top  top  -hdllog  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synlog/Test_CPU_compiler.srr  -encrypt  -mp  1  -verification_mode 0  -verilog  -prodtype  synplify_pro  -primux -fixsmult -sdff_counter -nram -divnmod -nostructver -gowin -infer_seqShift  -D_MULTIPLE_FILE_COMPILATION_UNIT_   -I /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/  -I /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/SynplifyPro/lib   -sysv  -devicelib  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/SynplifyPro/lib/generic/gw1n.v  -encrypt  -pro  -dmgen  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/dm  -ui -fid2 -ram -sharing on -ll 2000 -autosm  -D_MULTIPLE_FILE_COMPILATION_UNIT_  -lib work /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v -lib work /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v -lib work /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v  -jobname  "compiler" 
 relcom:../../../../../../SynplifyPro/bin/c_hdl -osyn ../synwork/Test_CPU_comp.srs -top top -hdllog ../synlog/Test_CPU_compiler.srr -encrypt -mp 1 -verification_mode 0 -verilog -prodtype synplify_pro -primux -fixsmult -sdff_counter -nram -divnmod -nostructver -gowin -infer_seqShift -D_MULTIPLE_FILE_COMPILATION_UNIT_ -I ../../ -I ../../../../../../SynplifyPro/lib -sysv -devicelib ../../../../../../SynplifyPro/lib/generic/gw1n.v -encrypt -pro -dmgen ../dm -ui -fid2 -ram -sharing on -ll 2000 -autosm -D_MULTIPLE_FILE_COMPILATION_UNIT_ -lib work ../../../../src/top.v -lib work ../../../../src/cpu.v -lib work ../../../../src/instRom.v -jobname "compiler"
-rc:0 success:1 runtime:16
-file:../synwork/Test_CPU_comp.srs|io:o|time:1585214541|size:22420|exec:0|csum:
-file:../synlog/Test_CPU_compiler.srr|io:o|time:1585214541|size:8105|exec:0|csum:
+rc:0 success:1 runtime:23
+file:../synwork/Test_CPU_comp.srs|io:o|time:1585220199|size:26570|exec:0|csum:
+file:../synlog/Test_CPU_compiler.srr|io:o|time:1585220199|size:8321|exec:0|csum:
 file:../../../../../../SynplifyPro/lib/generic/gw1n.v|io:i|time:1569718772|size:118127|exec:0|csum:00EFB57D0C2F299C9ACC9ECAF122653A
 file:../../../../src/top.v|io:i|time:1585210597|size:882|exec:0|csum:D54B3CA267A91BCEDCDF91EAACAB0AF7
-file:../../../../src/cpu.v|io:i|time:1585214401|size:6374|exec:0|csum:13A8D9541DF785989E0A8F661836DF85
-file:../../../../src/instRom.v|io:i|time:1585214512|size:3193|exec:0|csum:55A333D0FE3D4DD5AC335ABEA8C417D7
+file:../../../../src/cpu.v|io:i|time:1585220138|size:6812|exec:0|csum:63E224E9B6179C0AD9A90262D342B38B
+file:../../../../src/instRom.v|io:i|time:1585219856|size:3189|exec:0|csum:2455F1B7D0B5F7577DBFEA5837E3A20A
 file:../../../../../../SynplifyPro/linux_a_64/c_hdl|io:i|time:1569718778|size:8871656|exec:1|csum:F8CA74204C4E5DC1052F0438B545A05C
 file:../../../../../../SynplifyPro/bin/c_hdl|io:i|time:1569718771|size:367|exec:1|csum:E52A0D56112AD6C22F02B648B6F508CE

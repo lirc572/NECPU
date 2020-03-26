@@ -1,8 +1,8 @@
 /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/SynplifyPro/bin/syn_nfilter  -link  -top  top  -multisrs  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/Test_CPU_comp.srs  -osyn  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/Test_CPU_mult.srs  -log  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synlog/Test_CPU_multi_srs_gen.srr 
 relcom:../../../../../../SynplifyPro/bin/syn_nfilter -link -top top -multisrs ../synwork/Test_CPU_comp.srs -osyn ../synwork/Test_CPU_mult.srs -log ../synlog/Test_CPU_multi_srs_gen.srr
 rc:0 success:1 runtime:0
-file:../synwork/Test_CPU_comp.srs|io:i|time:1585214541|size:22420|exec:0|csum:5286995BD42AAD565CCB2A457B8E66C4
-file:../synwork/Test_CPU_mult.srs|io:o|time:1585214542|size:3155|exec:0|csum:
-file:../synlog/Test_CPU_multi_srs_gen.srr|io:o|time:1585214542|size:1285|exec:0|csum:
+file:../synwork/Test_CPU_comp.srs|io:i|time:1585220199|size:26570|exec:0|csum:335CFB7DCD94EC455F050DE404988E9A
+file:../synwork/Test_CPU_mult.srs|io:o|time:1585220200|size:3154|exec:0|csum:
+file:../synlog/Test_CPU_multi_srs_gen.srr|io:o|time:1585220200|size:1285|exec:0|csum:
 file:../../../../../../SynplifyPro/linux_a_64/syn_nfilter|io:i|time:1569718778|size:12227208|exec:1|csum:18284B4AC353E19B6E892F8B94C3504D
 file:../../../../../../SynplifyPro/bin/syn_nfilter|io:i|time:1569718771|size:368|exec:1|csum:004E4455B64BA10AD6A92FB2301610E0

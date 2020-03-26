@@ -1,14 +1,14 @@
 /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/SynplifyPro/bin/m_generic  -prodtype  synplify_pro   -encrypt  -pro  -rundir  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1   -part GW1N_1  -package QFN48  -grade -6    -maxfan 10000 -RWCheckOnRam 1 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -csa_carry_chain_maxlen 0 -infer_seqShift -enable_gcc_in_premap -preserve_slash_names -summaryfile /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synlog/report/Test_CPU_premap.xml -merge_inferred_clocks 0  -top_level_module  top  -implementation  rev_1  -ovm  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.vm  -conchk_prepass  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU_cck.rpt   -autoconstraint  -freq 100.000   /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/Test_CPU_mult.srs  -flow prepass  -gcc_prepass  -osrd  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/Test_CPU_prem.srd  -qsap  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.sap  -devicelib  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/SynplifyPro/lib/generic/gw1n.v  -ologparam  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/syntmp/Test_CPU.plg  -osyn  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/Test_CPU_prem.srd  -prjdir  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/  -prjname  Test_CPU  -log  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synlog/Test_CPU_premap.srr  -sn  2019.03  -jobname  "premap" 
 relcom:../../../../../../SynplifyPro/bin/m_generic -prodtype synplify_pro -encrypt -pro -rundir ../../rev_1 -part GW1N_1 -package QFN48 -grade -6 -maxfan 10000 -RWCheckOnRam 1 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -csa_carry_chain_maxlen 0 -infer_seqShift -enable_gcc_in_premap -preserve_slash_names -summaryfile ../synlog/report/Test_CPU_premap.xml -merge_inferred_clocks 0 -top_level_module top -implementation rev_1 -ovm ../Test_CPU.vm -conchk_prepass ../Test_CPU_cck.rpt -autoconstraint -freq 100.000 ../synwork/Test_CPU_mult.srs -flow prepass -gcc_prepass -osrd ../synwork/Test_CPU_prem.srd -qsap ../Test_CPU.sap -devicelib ../../../../../../SynplifyPro/lib/generic/gw1n.v -ologparam Test_CPU.plg -osyn ../synwork/Test_CPU_prem.srd -prjdir ../../ -prjname Test_CPU -log ../synlog/Test_CPU_premap.srr -sn 2019.03 -jobname "premap"
 rc:1 success:1 runtime:2
-file:../Test_CPU.vm|io:o|time:1585213236|size:1660|exec:0|csum:
-file:../Test_CPU_cck.rpt|io:o|time:1585214544|size:2113|exec:0|csum:
-file:../synwork/Test_CPU_mult.srs|io:i|time:1585214542|size:3155|exec:0|csum:72AFE94FC046FA5CCC5E031B27B4FEC1
-file:../synwork/Test_CPU_prem.srd|io:o|time:1585214543|size:1468|exec:0|csum:
-file:../Test_CPU.sap|io:o|time:1585214544|size:113|exec:0|csum:
+file:../Test_CPU.vm|io:o|time:1585214547|size:1624|exec:0|csum:
+file:../Test_CPU_cck.rpt|io:o|time:1585220202|size:2113|exec:0|csum:
+file:../synwork/Test_CPU_mult.srs|io:i|time:1585220200|size:3154|exec:0|csum:2303D0926F76870362240A3C55136CD8
+file:../synwork/Test_CPU_prem.srd|io:o|time:1585220202|size:1467|exec:0|csum:
+file:../Test_CPU.sap|io:o|time:1585220202|size:113|exec:0|csum:
 file:../../../../../../SynplifyPro/lib/generic/gw1n.v|io:i|time:1569718772|size:118127|exec:0|csum:00EFB57D0C2F299C9ACC9ECAF122653A
-file:Test_CPU.plg|io:o|time:1585214542|size:0|exec:0|csum:
-file:../synwork/Test_CPU_prem.srd|io:o|time:1585214543|size:1468|exec:0|csum:
-file:../synlog/Test_CPU_premap.srr|io:o|time:1585214544|size:5848|exec:0|csum:
+file:Test_CPU.plg|io:o|time:1585220200|size:0|exec:0|csum:
+file:../synwork/Test_CPU_prem.srd|io:o|time:1585220202|size:1467|exec:0|csum:
+file:../synlog/Test_CPU_premap.srr|io:o|time:1585220202|size:5848|exec:0|csum:
 file:../../../../../../SynplifyPro/linux_a_64/m_generic|io:i|time:1569718777|size:40818992|exec:1|csum:98EA4A83866408E2DF4D7F373A7EE46A
 file:../../../../../../SynplifyPro/bin/m_generic|io:i|time:1569718771|size:347|exec:1|csum:04851DFC0CBB288ED81DA3E420127D0D

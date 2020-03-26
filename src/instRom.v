@@ -11,8 +11,8 @@ module instRom (
   parameter InstSW      = 6'd2;  // Store-Word            src, rs, rt        : M[R[rs] + offset] = R[src]
   parameter InstLLI     = 6'd3;  // Load-Lower-Immediate  rd, immediate      : R[rd] = immediate
   parameter InstLUI     = 6'd4;  // Load-Upper-Immediate  rd, immediate      : R[rd] = immediate
-  parameter InstSLT     = 6'd5;  // Shift-Less-Than       rd, rs, rt         : R[rd] = R[rs] < R[rt]
-  parameter InstSEQ     = 6'd6;  // Shift-Equal           rd, rs, rt         : R[rd] = R[rs] == R[rt]
+  parameter InstSLT     = 6'd5;  // Set-Less-Than       rd, rs, rt         : R[rd] = R[rs] < R[rt]
+  parameter InstSEQ     = 6'd6;  // Set-Equal           rd, rs, rt         : R[rd] = R[rs] == R[rt]
   parameter InstBEQ     = 6'd7;  // Branch-if-Equal       rs, immediate      : PC = PC + (R[rs] == immediate ? 2 : 1)
   parameter InstBNE     = 6'd8;  // Branch-if-Not-Equal   rs, immediate      : PC = PC + (R[rs] != immediate ? 2 : 1)
   parameter InstADD     = 6'd9;  // Add                   rd, rs, rt         : R[rd] = R[rs] + R[rt]
