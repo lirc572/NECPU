@@ -26,10 +26,11 @@ module instRom (
  
     case (address)
       // begin:
-      0:  inst = {InstSET, 4'd2, 8'b11111111};       // SET R2, 0
-      1:  inst = {InstSET, 4'd1, 8'd128};            // SET R1, 128
-      2:  inst = {InstSTORE, 4'd2, 4'd1, 4'd0};      // STORE R2, R1, 0
-      3:  inst = {InstSET, 4'd0, 8'd0};              // SET R0, begin
+      0:  inst = {InstSET,   4'd2, 8'b00100000};       // SET R2, 0b00100000
+      1:  inst = {InstSET,   4'd1, 8'd128};            // SET R1, 128
+      3:  inst = {InstSET,   4'd3, 8'b00100000};       // SET R3, ???
+      4:  inst = {InstADD,   4'd4, 4'd2, 4'd3};        // ADD R4, R2, R3
+      5:  inst = {InstSTORE, 4'd4, 4'd1, 4'd0};        // STORE R4, R1, 0
     endcase
   end
 endmodule

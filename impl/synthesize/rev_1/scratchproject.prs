@@ -6,7 +6,6 @@
 add_file -verilog "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v"
 add_file -verilog "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v"
 add_file -verilog "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v"
-add_file -verilog "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v"
 
 
 
@@ -21,6 +20,7 @@ set_option -speed_grade -6
 set_option -part_companion ""
 
 #compilation/mapping options
+set_option -top_module "top"
 
 # hdl_compiler_options
 set_option -distributed_compile 0

@@ -25,12 +25,28 @@ module cpu (
   parameter InstINV   = 4'd14; // dest, op1          : R[dest] = ~R[op1]
   parameter InstXOR   = 4'd15; // dest, op1, op2     : R[dest] = R[op1] ^ R[op2]
   
-  reg  [7:0] rf_wdata [16];
-  wire [7:0] rf_rdata [16];
-  register rf[15:0] ( .clk(clk),
-                       .rst(rst),
-                       .wdata(rf_wdata),
-                       .rdata(rf_rdata) );
+  reg  [7:0] rf_wdata [15:0];
+  wire [7:0] rf_rdata [15:0];
+  /*
+  generate
+    genvar i;
+    for (i=0; i<16; i=i+1) begin
+  	  register rf ( .clk(clk),
+                    .rst(rst),
+                    .wdata(rf_wdata[i]),
+                    .rdata(rf_rdata[i]) );
+    end
+  endgenerate*/
+  genvar i;
+  for (i=0; i<16; i=i+1) begin
+    assign rf_rdata = rf_wdata;
+  end
+  
+  integer ha;
+  initial begin
+    for (ha=0; ha<16; ha=ha+1)
+      rf_wdata[ha] = 0;
+  end
   
   reg  [7:0]  ir_addr;
   wire [15:0] ir_inst;

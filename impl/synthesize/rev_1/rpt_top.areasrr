@@ -27,19 +27,20 @@ Part:			GW1N_1QFN48-6 (GoWin)
 SEQUENTIAL ELEMENTS
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-REGISTERS     43                 100 %                
+REGISTERS     63                 100 %                
 ======================================================
-Total SEQUENTIAL ELEMENTS in the block top:	43 (31.39 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block top:	63 (22.26 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-LUTS          46                 100 %                
-MUX2_LUT5     1                  100 %                
-ALU           8                  100 %                
+LUTS          163                100 %                
+MUX2_LUT5     13                 100 %                
+MUX2_LUT6     2                  100 %                
+ALU           31                 100 %                
 ======================================================
-Total COMBINATIONAL LOGIC in the block top:	55 (40.15 % Utilization)
+Total COMBINATIONAL LOGIC in the block top:	209 (73.85 % Utilization)
 
 ---------------------------------------------------------
 ########   Utilization report for  cell:   cpu   ########
@@ -49,19 +50,20 @@ Instance path:   top.cpu
 SEQUENTIAL ELEMENTS
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-REGISTERS     40                 93 %                 
+REGISTERS     58                 92.1 %               
 ======================================================
-Total SEQUENTIAL ELEMENTS in the block top.cpu:	40 (29.20 % Utilization)
+Total SEQUENTIAL ELEMENTS in the block top.cpu:	58 (20.49 % Utilization)
 
 
 COMBINATIONAL LOGIC
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-LUTS          41                 89.1 %               
-MUX2_LUT5     1                  100 %                
-ALU           8                  100 %                
+LUTS          146                89.6 %               
+MUX2_LUT5     13                 100 %                
+MUX2_LUT6     2                  100 %                
+ALU           31                 100 %                
 ======================================================
-Total COMBINATIONAL LOGIC in the block top.cpu:	50 (36.50 % Utilization)
+Total COMBINATIONAL LOGIC in the block top.cpu:	192 (67.84 % Utilization)
 
 -------------------------------------------------------------
 ########   Utilization report for  cell:   instRom   ########
@@ -69,167 +71,13 @@ Instance path:   cpu.instRom
 =============================================================
 
 COMBINATIONAL LOGIC
-Name     Total elements     Utilization     Notes
--------------------------------------------------
-LUTS     2                  4.35 %               
-=================================================
-Total COMBINATIONAL LOGIC in the block cpu.instRom:	2 (1.46 % Utilization)
-
------------------------------------------------------------------
-########   Utilization report for  cell:   register_12   ########
-Instance path:   cpu.register_12                                 
-=================================================================
-
-SEQUENTIAL ELEMENTS
 Name          Total elements     Utilization     Notes
 ------------------------------------------------------
-REGISTERS     1                  2.33 %               
+LUTS          25                 15.3 %               
+MUX2_LUT5     2                  15.4 %               
+MUX2_LUT6     1                  50 %                 
 ======================================================
-Total SEQUENTIAL ELEMENTS in the block cpu.register_12:	1 (0.73 % Utilization)
-
-----------------------------------------------------------------
-########   Utilization report for  cell:   My_Dff_108   ########
-Instance path:   register_12.My_Dff_108                         
-================================================================
-
-SEQUENTIAL ELEMENTS
-Name          Total elements     Utilization     Notes
-------------------------------------------------------
-REGISTERS     1                  2.33 %               
-======================================================
-Total SEQUENTIAL ELEMENTS in the block register_12.My_Dff_108:	1 (0.73 % Utilization)
-
------------------------------------------------------------------
-########   Utilization report for  cell:   register_13   ########
-Instance path:   cpu.register_13                                 
-=================================================================
-
-SEQUENTIAL ELEMENTS
-Name          Total elements     Utilization     Notes
-------------------------------------------------------
-REGISTERS     1                  2.33 %               
-======================================================
-Total SEQUENTIAL ELEMENTS in the block cpu.register_13:	1 (0.73 % Utilization)
-
-----------------------------------------------------------------
-########   Utilization report for  cell:   My_Dff_118   ########
-Instance path:   register_13.My_Dff_118                         
-================================================================
-
-SEQUENTIAL ELEMENTS
-Name          Total elements     Utilization     Notes
-------------------------------------------------------
-REGISTERS     1                  2.33 %               
-======================================================
-Total SEQUENTIAL ELEMENTS in the block register_13.My_Dff_118:	1 (0.73 % Utilization)
-
------------------------------------------------------------------
-########   Utilization report for  cell:   register_14   ########
-Instance path:   cpu.register_14                                 
-=================================================================
-
-SEQUENTIAL ELEMENTS
-Name          Total elements     Utilization     Notes
-------------------------------------------------------
-REGISTERS     8                  18.6 %               
-======================================================
-Total SEQUENTIAL ELEMENTS in the block cpu.register_14:	8 (5.84 % Utilization)
-
-----------------------------------------------------------------
-########   Utilization report for  cell:   My_Dff_119   ########
-Instance path:   register_14.My_Dff_119                         
-================================================================
-
-SEQUENTIAL ELEMENTS
-Name          Total elements     Utilization     Notes
-------------------------------------------------------
-REGISTERS     1                  2.33 %               
-======================================================
-Total SEQUENTIAL ELEMENTS in the block register_14.My_Dff_119:	1 (0.73 % Utilization)
-
-----------------------------------------------------------------
-########   Utilization report for  cell:   My_Dff_120   ########
-Instance path:   register_14.My_Dff_120                         
-================================================================
-
-SEQUENTIAL ELEMENTS
-Name          Total elements     Utilization     Notes
-------------------------------------------------------
-REGISTERS     1                  2.33 %               
-======================================================
-Total SEQUENTIAL ELEMENTS in the block register_14.My_Dff_120:	1 (0.73 % Utilization)
-
-----------------------------------------------------------------
-########   Utilization report for  cell:   My_Dff_121   ########
-Instance path:   register_14.My_Dff_121                         
-================================================================
-
-SEQUENTIAL ELEMENTS
-Name          Total elements     Utilization     Notes
-------------------------------------------------------
-REGISTERS     1                  2.33 %               
-======================================================
-Total SEQUENTIAL ELEMENTS in the block register_14.My_Dff_121:	1 (0.73 % Utilization)
-
-----------------------------------------------------------------
-########   Utilization report for  cell:   My_Dff_122   ########
-Instance path:   register_14.My_Dff_122                         
-================================================================
-
-SEQUENTIAL ELEMENTS
-Name          Total elements     Utilization     Notes
-------------------------------------------------------
-REGISTERS     1                  2.33 %               
-======================================================
-Total SEQUENTIAL ELEMENTS in the block register_14.My_Dff_122:	1 (0.73 % Utilization)
-
-----------------------------------------------------------------
-########   Utilization report for  cell:   My_Dff_123   ########
-Instance path:   register_14.My_Dff_123                         
-================================================================
-
-SEQUENTIAL ELEMENTS
-Name          Total elements     Utilization     Notes
-------------------------------------------------------
-REGISTERS     1                  2.33 %               
-======================================================
-Total SEQUENTIAL ELEMENTS in the block register_14.My_Dff_123:	1 (0.73 % Utilization)
-
-----------------------------------------------------------------
-########   Utilization report for  cell:   My_Dff_124   ########
-Instance path:   register_14.My_Dff_124                         
-================================================================
-
-SEQUENTIAL ELEMENTS
-Name          Total elements     Utilization     Notes
-------------------------------------------------------
-REGISTERS     1                  2.33 %               
-======================================================
-Total SEQUENTIAL ELEMENTS in the block register_14.My_Dff_124:	1 (0.73 % Utilization)
-
-----------------------------------------------------------------
-########   Utilization report for  cell:   My_Dff_125   ########
-Instance path:   register_14.My_Dff_125                         
-================================================================
-
-SEQUENTIAL ELEMENTS
-Name          Total elements     Utilization     Notes
-------------------------------------------------------
-REGISTERS     1                  2.33 %               
-======================================================
-Total SEQUENTIAL ELEMENTS in the block register_14.My_Dff_125:	1 (0.73 % Utilization)
-
-----------------------------------------------------------------
-########   Utilization report for  cell:   My_Dff_126   ########
-Instance path:   register_14.My_Dff_126                         
-================================================================
-
-SEQUENTIAL ELEMENTS
-Name          Total elements     Utilization     Notes
-------------------------------------------------------
-REGISTERS     1                  2.33 %               
-======================================================
-Total SEQUENTIAL ELEMENTS in the block register_14.My_Dff_126:	1 (0.73 % Utilization)
+Total COMBINATIONAL LOGIC in the block cpu.instRom:	28 (9.89 % Utilization)
 
 
 ##### END OF AREA REPORT #####]

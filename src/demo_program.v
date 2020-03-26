@@ -26,31 +26,35 @@ module instRom (
  
     case (address)
       // begin:
-      0:  inst = {InstSET, 4'd2, 8'd0};              // SET R2, 0
+      0:  inst = {InstSET, 4'd2, 8'b00000000};       // SET R2, 0
       // loop:
-      1:  inst = {InstSET, 4'd1, 8'd128};            // SET R1, 128
+      1:  inst = {InstSET, 4'd1, 8'b00100000};       // SET R1, 32
       2:  inst = {InstSTORE, 4'd2, 4'd1, 4'd0};      // STORE R2, R1, 0
       3:  inst = {InstSET, 4'd1, 8'd1};              // SET R1, 1
       4:  inst = {InstADD, 4'd2, 4'd2, 4'd1};        // ADD R2, R2, R1
       5:  inst = {InstSET, 4'd15, 8'd1};             // SET R15, loop
       6:  inst = {InstSET, 4'd0, 8'd7};              // SET R0, delay
       // delay:
-      7:  inst = {InstSET, 4'd11, 8'd0};             // SET R11, 0
+      7:  inst = {InstSET, 4'd10, 8'd0};             // SET R10, 0
+      8:  inst = {InstSET, 4'd11, 8'd0};             // SET R11, 0
       8:  inst = {InstSET, 4'd12, 8'd0};             // SET R12, 0
-      9:  inst = {InstSET, 4'd13, 8'd0};             // SET R13, 0
-      10: inst = {InstSET, 4'd1, 8'd1};              // SET R1, 1
+      10: inst = {InstSET, 4'd13, 8'd0};             // SET R13, 0
+      11: inst = {InstSET, 4'd1, 8'd1};              // SET R1, 1
       // delay_loop:
-      11: inst = {InstADD, 4'd11, 4'd11, 4'd1};      // ADD R11, R11, R1
-      12: inst = {InstBEQ, 4'd11, 8'd0};             // BEQ R11, 0
-      13: inst = {InstSET, 4'd0, 8'd11};             // SET R0, delay_loop
-      14: inst = {InstADD, 4'd12, 4'd12, 4'd1};      // ADD R12, R12, R1
-      15: inst = {InstBEQ, 4'd12, 8'd0};             // BEQ R12, 0
-      16: inst = {InstSET, 4'd0, 8'd11};             // SET R0, delay_loop
-      17: inst = {InstADD, 4'd13, 4'd13, 4'd1};      // ADD R13, R13, R1
-      18: inst = {InstBEQ, 4'd13, 8'd0};             // BEQ R13, 0
-      19: inst = {InstSET, 4'd0, 8'd11};             // SET R0, delay_loop
-      20: inst = {InstSET, 4'd1, 8'd0};              // SET R1, 0
-      21: inst = {InstADD, 4'd0, 4'd15, 4'd1};       // ADD R0, R15, R1
+      12: inst = {InstADD, 4'd11, 4'd11, 4'd1};      // ADD R11, R11, R1
+      13: inst = {InstBEQ, 4'd11, 8'd0};             // BEQ R11, 0
+      14: inst = {InstSET, 4'd0, 8'd12};             // SET R0, delay_loop
+      15: inst = {InstADD, 4'd12, 4'd12, 4'd1};      // ADD R12, R12, R1
+      16: inst = {InstBEQ, 4'd12, 8'd0};             // BEQ R12, 0
+      17: inst = {InstSET, 4'd0, 8'd12};             // SET R0, delay_loop
+      18: inst = {InstADD, 4'd13, 4'd13, 4'd1};      // ADD R13, R13, R1
+      19: inst = {InstBEQ, 4'd13, 8'd0};             // BEQ R13, 0
+      20: inst = {InstSET, 4'd0, 8'd12};             // SET R0, delay_loop
+      21: inst = {InstADD, 4'd10, 4'd10, 4'd1};      // ADD R10, R10, R1
+      22: inst = {InstBEQ, 4'd10, 8'd0};             // BEQ R10, 0
+      23: inst = {InstSET, 4'd0, 8'd12};             // SET R0, delay_loop
+      24: inst = {InstSET, 4'd1, 8'd0};              // SET R1, 0
+      25: inst = {InstADD, 4'd0, 4'd15, 4'd1};       // ADD R0, R15, R1
     endcase
   end
 endmodule

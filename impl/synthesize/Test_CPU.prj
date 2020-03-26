@@ -2,7 +2,6 @@
 add_file -verilog "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v"
 add_file -verilog "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v"
 add_file -verilog "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v"
-add_file -verilog "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v"
 
 # implementation: "rev_1"
 impl -add rev_1 -type fpga
@@ -29,6 +28,7 @@ set_option -compiler_compatible 0
 set_option -multi_file_compilation_unit 1
 set_option -looplimit 2000
 set_option -fix_gated_and_generated_clocks 1
+set_option -top_module top
 
 # set result format/file
 project -result_file "Test_CPU.vm"

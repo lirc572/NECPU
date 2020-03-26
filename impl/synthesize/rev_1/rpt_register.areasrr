@@ -1,0 +1,132 @@
+
+Copyright (C) 1994-2019 Synopsys, Inc.
+This Synopsys software and all associated documentation are proprietary to Synopsys, Inc.
+and may only be used pursuant to the terms and conditions of a written license agreement
+with Synopsys, Inc. All other use, reproduction, modification, or distribution of the
+Synopsys software or the associated documentation is strictly prohibited.
+Tool: Synplify Pro (R)
+Build: P-2019.03G
+Install: /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/SynplifyPro
+OS: Linux Mint 19.3
+Hostname: rochor-Swift-SF315-51G
+max virtual memory: unlimited (bytes)
+max user processes: 31116
+max stack size: 8388608 (bytes)
+
+
+Implementation : rev_1
+
+#### START OF AREA REPORT #####[
+
+Part:			GW1N_1QFN48-6 (GoWin)
+
+------------------------------------------------------------------------
+########   Utilization report for  Top level view:   register   ########
+========================================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     8                  100 %                
+======================================================
+Total SEQUENTIAL ELEMENTS in the block register:	8 (17.78 % Utilization)
+
+------------------------------------------------------------
+########   Utilization report for  cell:   My_Dff   ########
+Instance path:   register.My_Dff                            
+============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     1                  12.5 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block register.My_Dff:	1 (2.22 % Utilization)
+
+--------------------------------------------------------------
+########   Utilization report for  cell:   My_Dff_0   ########
+Instance path:   register.My_Dff_0                            
+==============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     1                  12.5 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block register.My_Dff_0:	1 (2.22 % Utilization)
+
+--------------------------------------------------------------
+########   Utilization report for  cell:   My_Dff_1   ########
+Instance path:   register.My_Dff_1                            
+==============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     1                  12.5 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block register.My_Dff_1:	1 (2.22 % Utilization)
+
+--------------------------------------------------------------
+########   Utilization report for  cell:   My_Dff_2   ########
+Instance path:   register.My_Dff_2                            
+==============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     1                  12.5 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block register.My_Dff_2:	1 (2.22 % Utilization)
+
+--------------------------------------------------------------
+########   Utilization report for  cell:   My_Dff_3   ########
+Instance path:   register.My_Dff_3                            
+==============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     1                  12.5 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block register.My_Dff_3:	1 (2.22 % Utilization)
+
+--------------------------------------------------------------
+########   Utilization report for  cell:   My_Dff_4   ########
+Instance path:   register.My_Dff_4                            
+==============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     1                  12.5 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block register.My_Dff_4:	1 (2.22 % Utilization)
+
+--------------------------------------------------------------
+########   Utilization report for  cell:   My_Dff_5   ########
+Instance path:   register.My_Dff_5                            
+==============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     1                  12.5 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block register.My_Dff_5:	1 (2.22 % Utilization)
+
+--------------------------------------------------------------
+########   Utilization report for  cell:   My_Dff_6   ########
+Instance path:   register.My_Dff_6                            
+==============================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     1                  12.5 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block register.My_Dff_6:	1 (2.22 % Utilization)
+
+
+##### END OF AREA REPORT #####]
+

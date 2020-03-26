@@ -1,14 +1,13 @@
 #--  Synopsys, Inc.
 #--  Version P-2019.03G
 #--  Project file /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/run_options.txt
-#--  Written on Thu Mar 26 07:27:07 2020
+#--  Written on Thu Mar 26 14:03:23 2020
 
 
 #project files
 add_file -verilog "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v"
 add_file -verilog "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v"
 add_file -verilog "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v"
-add_file -verilog "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v"
 
 
 
@@ -23,6 +22,7 @@ set_option -speed_grade -6
 set_option -part_companion ""
 
 #compilation/mapping options
+set_option -top_module "top"
 
 # hdl_compiler_options
 set_option -distributed_compile 0

@@ -1,4 +1,2 @@
-@E: CS180 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":25:9:25:13|Assignment target led_R must be a register or integer
-@E: CS180 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":25:16:25:20|Assignment target led_G must be a register or integer
-@E: CS180 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":25:23:25:27|Assignment target led_B must be a register or integer
+@E: No component with name top.v to synthesize
 

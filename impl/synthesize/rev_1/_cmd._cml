@@ -1,1 +1,1 @@
--link -encrypt -top NoName -osyn /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/Test_CPU_comp.srs /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/layer0.srs  -jobname linker  
+-link -encrypt -top top -osyn /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/Test_CPU_comp.srs /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/layer0.srs  -jobname linker  

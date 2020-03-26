@@ -1,11 +1,11 @@
 <html><body><samp><pre>
-<!@TC:1585178827>
+<!@TC:1585202603>
 #Build: Synplify Pro (R) P-2019.03G, Build 307R, Sep 25 2019
 #install: /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/SynplifyPro
 #OS: Linux 
 #Hostname: rochor-Swift-SF315-51G
 
-# Thu Mar 26 07:27:07 2020
+# Thu Mar 26 14:03:23 2020
 
 #Implementation: rev_1
 
@@ -28,7 +28,7 @@ max stack size: 8388608 (bytes)
 Implementation : rev_1
 <a name=compilerReport1></a>Synopsys HDL Compiler, Version comp2019q1p1, Build 307R, Built Sep 25 2019 09:31:06</a>
 
-@N: : <!@TM:1585178828> | Running in 64-bit mode 
+@N: : <!@TM:1585202606> | Running in 64-bit mode 
 ###########################################################[
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -49,10 +49,10 @@ max stack size: 8388608 (bytes)
 Implementation : rev_1
 <a name=compilerReport2></a>Synopsys Verilog Compiler, Version comp2019q1p1, Build 307R, Built Sep 25 2019 09:31:06</a>
 
-@N: : <!@TM:1585178828> | Running in 64-bit mode 
-@N:<a href="@N:CG1349:@XP_HELP">CG1349</a> : <!@TM:1585178828> | Running Verilog Compiler in System Verilog mode 
+@N: : <!@TM:1585202606> | Running in 64-bit mode 
+@N:<a href="@N:CG1349:@XP_HELP">CG1349</a> : <!@TM:1585202606> | Running Verilog Compiler in System Verilog mode 
 
-@N:<a href="@N:CG1350:@XP_HELP">CG1350</a> : <!@TM:1585178828> | Running Verilog Compiler in Multiple File Compilation Unit mode 
+@N:<a href="@N:CG1350:@XP_HELP">CG1350</a> : <!@TM:1585202606> | Running Verilog Compiler in Multiple File Compilation Unit mode 
 
 @I::"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/SynplifyPro/lib/generic/gw1n.v" (library work)
 @I::"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/SynplifyPro/lib/vlog/hypermods.v" (library __hyper__lib__)
@@ -62,44 +62,40 @@ Implementation : rev_1
 @I::"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v" (library work)
 @I::"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v" (library work)
 @I::"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v" (library work)
-@I::"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v" (library work)
 Verilog syntax check successful!
-File /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v changed - recompiling
+Options changed - recompiling
 Selecting top level module top
-@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:6:7:6:13:@N:CG364:@XP_MSG">regfile.v(6)</a><!@TM:1585178828> | Synthesizing module My_Dff in library work.
-Running optimization stage 1 on My_Dff .......
-@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:12:7:12:15:@N:CG364:@XP_MSG">regfile.v(12)</a><!@TM:1585178828> | Synthesizing module register in library work.
-Running optimization stage 1 on register .......
-@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v:1:7:1:14:@N:CG364:@XP_MSG">instRom.v(1)</a><!@TM:1585178828> | Synthesizing module instRom in library work.
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v:1:7:1:14:@N:CG364:@XP_MSG">instRom.v(1)</a><!@TM:1585202606> | Synthesizing module instRom in library work.
 Running optimization stage 1 on instRom .......
-@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:1:7:1:10:@N:CG364:@XP_MSG">cpu.v(1)</a><!@TM:1585178828> | Synthesizing module cpu in library work.
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:1:7:1:10:@N:CG364:@XP_MSG">cpu.v(1)</a><!@TM:1585202606> | Synthesizing module cpu in library work.
+<font color=#A52A2A>@W:<a href="@W:CG532:@XP_HELP">CG532</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:46:2:46:9:@W:CG532:@XP_MSG">cpu.v(46)</a><!@TM:1585202606> | Within an initial block, only Verilog force statements and memory $readmemh/$readmemb initialization statements are recognized, and all other content is ignored.</font>
+<font color=#A52A2A>@W:<a href="@W:CG133:@XP_HELP">CG133</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:45:10:45:12:@W:CG133:@XP_MSG">cpu.v(45)</a><!@TM:1585202606> | Object ha is declared but not assigned. Either assign a value or remove the declaration.</font>
 Running optimization stage 1 on cpu .......
-@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:1:7:1:10:@N:CG364:@XP_MSG">top.v(1)</a><!@TM:1585178828> | Synthesizing module top in library work.
+@N:<a href="@N:CG364:@XP_HELP">CG364</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:1:7:1:10:@N:CG364:@XP_MSG">top.v(1)</a><!@TM:1585202606> | Synthesizing module top in library work.
 Running optimization stage 1 on top .......
-@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:21:2:21:8:@N:CL189:@XP_MSG">top.v(21)</a><!@TM:1585178828> | Register bit cpu_din[4] is always 0.
-@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:21:2:21:8:@N:CL189:@XP_MSG">top.v(21)</a><!@TM:1585178828> | Register bit cpu_din[3] is always 0.
-@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:21:2:21:8:@N:CL189:@XP_MSG">top.v(21)</a><!@TM:1585178828> | Register bit cpu_din[2] is always 0.
-@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:21:2:21:8:@N:CL189:@XP_MSG">top.v(21)</a><!@TM:1585178828> | Register bit cpu_din[1] is always 0.
-@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:21:2:21:8:@N:CL189:@XP_MSG">top.v(21)</a><!@TM:1585178828> | Register bit cpu_din[0] is always 0.
-<font color=#A52A2A>@W:<a href="@W:CL279:@XP_HELP">CL279</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:21:2:21:8:@W:CL279:@XP_MSG">top.v(21)</a><!@TM:1585178828> | Pruning register bits 4 to 0 of cpu_din[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</font>
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:21:2:21:8:@N:CL189:@XP_MSG">top.v(21)</a><!@TM:1585202606> | Register bit cpu_din[4] is always 0.
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:21:2:21:8:@N:CL189:@XP_MSG">top.v(21)</a><!@TM:1585202606> | Register bit cpu_din[3] is always 0.
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:21:2:21:8:@N:CL189:@XP_MSG">top.v(21)</a><!@TM:1585202606> | Register bit cpu_din[2] is always 0.
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:21:2:21:8:@N:CL189:@XP_MSG">top.v(21)</a><!@TM:1585202606> | Register bit cpu_din[1] is always 0.
+@N:<a href="@N:CL189:@XP_HELP">CL189</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:21:2:21:8:@N:CL189:@XP_MSG">top.v(21)</a><!@TM:1585202606> | Register bit cpu_din[0] is always 0.
+<font color=#A52A2A>@W:<a href="@W:CL279:@XP_HELP">CL279</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:21:2:21:8:@W:CL279:@XP_MSG">top.v(21)</a><!@TM:1585202606> | Pruning register bits 4 to 0 of cpu_din[7:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.</font>
 Running optimization stage 2 on top .......
-@N:<a href="@N:CL159:@XP_HELP">CL159</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:4:10:4:17:@N:CL159:@XP_MSG">top.v(4)</a><!@TM:1585178828> | Input buttonB is unused.
+@N:<a href="@N:CL159:@XP_HELP">CL159</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:4:10:4:17:@N:CL159:@XP_MSG">top.v(4)</a><!@TM:1585202606> | Input buttonB is unused.
 Running optimization stage 2 on cpu .......
+@N:<a href="@N:CL159:@XP_HELP">CL159</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:3:10:3:13:@N:CL159:@XP_MSG">cpu.v(3)</a><!@TM:1585202606> | Input rst is unused.
 Running optimization stage 2 on instRom .......
-Running optimization stage 2 on register .......
-Running optimization stage 2 on My_Dff .......
 
 For a summary of runtime and memory usage per design unit, please see file:
 ==========================================================
 Linked File:  <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/layer0.rt.csv:@XP_FILE">layer0.rt.csv</a>
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 165MB peak: 165MB)
+At c_ver Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 176MB peak: 176MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
 
 Process completed successfully.
-# Thu Mar 26 07:27:08 2020
+# Thu Mar 26 14:03:26 2020
 
 ###########################################################]
 ###########################################################[
@@ -122,16 +118,14 @@ max stack size: 8388608 (bytes)
 Implementation : rev_1
 <a name=compilerReport3></a>Synopsys Synopsys Netlist Linker, Version comp2019q1p1, Build 307R, Built Sep 25 2019 09:31:06</a>
 
-@N: : <!@TM:1585178828> | Running in 64-bit mode 
-@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:1:7:1:10:@N:NF107:@XP_MSG">top.v(1)</a><!@TM:1585178828> | Selected library: work cell: top view verilog as top level
-@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:1:7:1:10:@N:NF107:@XP_MSG">top.v(1)</a><!@TM:1585178828> | Selected library: work cell: top view verilog as top level
+@N: : <!@TM:1585202606> | Running in 64-bit mode 
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 142MB peak: 142MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Mar 26 07:27:08 2020
+# Thu Mar 26 14:03:26 2020
 
 ###########################################################]
 
@@ -141,18 +135,18 @@ Linked File:  <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projec
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 55MB peak: 55MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:02s; Memory used current: 55MB peak: 55MB)
 
-Process took 0h:00m:01s realtime, 0h:00m:01s cputime
+Process took 0h:00m:03s realtime, 0h:00m:02s cputime
 
 Process completed successfully.
-# Thu Mar 26 07:27:08 2020
+# Thu Mar 26 14:03:26 2020
 
 ###########################################################]
 
 </pre></samp></body></html>
 <html><body><samp><pre>
-<!@TC:1585178827>
+<!@TC:1585202603>
 ###########################################################[
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -173,24 +167,22 @@ max stack size: 8388608 (bytes)
 Implementation : rev_1
 <a name=compilerReport4></a>Synopsys Synopsys Netlist Linker, Version comp2019q1p1, Build 307R, Built Sep 25 2019 09:31:06</a>
 
-@N: : <!@TM:1585178830> | Running in 64-bit mode 
+@N: : <!@TM:1585202608> | Running in 64-bit mode 
 File /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/Test_CPU_comp.srs changed - recompiling
-@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:1:7:1:10:@N:NF107:@XP_MSG">top.v(1)</a><!@TM:1585178830> | Selected library: work cell: top view verilog as top level
-@N:<a href="@N:NF107:@XP_HELP">NF107</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:1:7:1:10:@N:NF107:@XP_MSG">top.v(1)</a><!@TM:1585178830> | Selected library: work cell: top view verilog as top level
 
 At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 143MB peak: 143MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Thu Mar 26 07:27:10 2020
+# Thu Mar 26 14:03:28 2020
 
 ###########################################################]
 
 </pre></samp></body></html>
 <html><body><samp><pre>
-<!@TC:1585178827>
-# Thu Mar 26 07:27:10 2020
+<!@TC:1585202603>
+# Thu Mar 26 14:03:28 2020
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -214,12 +206,12 @@ Implementation : rev_1
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 219MB peak: 219MB)
 
-@A:<a href="@A:MF827:@XP_HELP">MF827</a> : <!@TM:1585178832> | No constraint file specified. 
+@A:<a href="@A:MF827:@XP_HELP">MF827</a> : <!@TM:1585202610> | No constraint file specified. 
 Linked File:  <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU_scck.rpt:@XP_FILE">Test_CPU_scck.rpt</a>
 Printing clock  summary report in "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU_scck.rpt" file 
-@N:<a href="@N:MF916:@XP_HELP">MF916</a> : <!@TM:1585178832> | Option synthesis_strategy=base is enabled.  
-@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1585178832> | Running in 64-bit mode. 
-@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1585178832> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
+@N:<a href="@N:MF916:@XP_HELP">MF916</a> : <!@TM:1585202610> | Option synthesis_strategy=base is enabled.  
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1585202610> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1585202610> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
 
 Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 230MB peak: 230MB)
 
@@ -232,7 +224,11 @@ Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00
 
 Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 244MB peak: 244MB)
 
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178832> | Removing sequential instance read (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202610> | Removing sequential instance rf_wdata\[12\][7:0] (in view: work.cpu(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202610> | Removing sequential instance rf_wdata\[13\][7:0] (in view: work.cpu(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202610> | Removing sequential instance rf_wdata\[14\][7:0] (in view: work.cpu(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202610> | Removing sequential instance rf_wdata\[15\][7:0] (in view: work.cpu(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202610> | Removing sequential instance read (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
 
 Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 327MB peak: 327MB)
 
@@ -256,7 +252,7 @@ Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0
           Start       Requested     Requested     Clock        Clock                     Clock
 Level     Clock       Frequency     Period        Type         Group                     Load 
 ----------------------------------------------------------------------------------------------
-0 -       top|clk     124.4 MHz     8.041         inferred     Autoconstr_clkgroup_0     287  
+0 -       top|clk     100.0 MHz     10.000        inferred     Autoconstr_clkgroup_0     127  
 ==============================================================================================
 
 
@@ -267,10 +263,10 @@ Clock Load Summary
             Clock     Source        Clock Pin          Non-clock Pin     Non-clock Pin
 Clock       Load      Pin           Seq Example        Seq Example       Comb Example 
 --------------------------------------------------------------------------------------
-top|clk     287       clk(port)     cpu_din[7:5].C     -                 -            
+top|clk     127       clk(port)     cpu_din[7:5].C     -                 -            
 ======================================================================================
 
-<font color=#A52A2A>@W:<a href="@W:MT529:@XP_HELP">MT529</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@W:MT529:@XP_MSG">regfile.v(7)</a><!@TM:1585178832> | Found inferred clock top|clk which controls 287 sequential elements including cpu_instance.rf\[0\].dff\[0\].out. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </font>
+<font color=#A52A2A>@W:<a href="@W:MT529:@XP_HELP">MT529</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@W:MT529:@XP_MSG">cpu.v(67)</a><!@TM:1585202610> | Found inferred clock top|clk which controls 127 sequential elements including cpu_instance.ir_addr[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. </font>
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -283,22 +279,22 @@ Number of ICG latches not removed:	0
 
 <a name=clockReport7></a>#### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[</a>
 
-1 non-gated/non-generated clock tree(s) driving 287 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 127 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
 =========================== Non-Gated/Non-Generated Clocks ============================
 Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
 ---------------------------------------------------------------------------------------
-<a href="@|L:/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/Test_CPU_prem.srm@|S:clk@|E:led_R@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0 @XP_NAMES_BY_PROP">ClockId_0_0</a>       clk                 port                   287        led_R          
+<a href="@|L:/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/Test_CPU_prem.srm@|S:clk@|E:led_R@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0 @XP_NAMES_BY_PROP">ClockId_0_0</a>       clk                 port                   127        led_R          
 =======================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######
 
-@N:<a href="@N:FX1143:@XP_HELP">FX1143</a> : <!@TM:1585178832> | Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized. 
+@N:<a href="@N:FX1143:@XP_HELP">FX1143</a> : <!@TM:1585202610> | Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized. 
 Finished Pre Mapping Phase.
-@N:<a href="@N:BN225:@XP_HELP">BN225</a> : <!@TM:1585178832> | Writing default property annotation file /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.sap. 
+@N:<a href="@N:BN225:@XP_HELP">BN225</a> : <!@TM:1585202610> | Writing default property annotation file /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.sap. 
 
 Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 327MB peak: 327MB)
 
@@ -313,14 +309,14 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 327MB peak: 327MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Mar 26 07:27:12 2020
+# Thu Mar 26 14:03:29 2020
 
 ###########################################################]
 
 </pre></samp></body></html>
 <html><body><samp><pre>
-<!@TC:1585178827>
-# Thu Mar 26 07:27:12 2020
+<!@TC:1585202603>
+# Thu Mar 26 14:03:30 2020
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -344,9 +340,9 @@ Implementation : rev_1
 
 Mapper Startup Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 219MB peak: 219MB)
 
-@N:<a href="@N:MF916:@XP_HELP">MF916</a> : <!@TM:1585178835> | Option synthesis_strategy=base is enabled.  
-@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1585178835> | Running in 64-bit mode. 
-@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1585178835> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
+@N:<a href="@N:MF916:@XP_HELP">MF916</a> : <!@TM:1585202615> | Option synthesis_strategy=base is enabled.  
+@N:<a href="@N:MF248:@XP_HELP">MF248</a> : <!@TM:1585202615> | Running in 64-bit mode. 
+@N:<a href="@N:MF666:@XP_HELP">MF666</a> : <!@TM:1585202615> | Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.) 
 
 Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 220MB peak: 220MB)
 
@@ -363,243 +359,210 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 
 Starting Optimization and Mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 324MB peak: 324MB)
 
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata[15][7:0] because it is equivalent to instance cpu_instance.rf_wdata[14][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata[14][7:0] because it is equivalent to instance cpu_instance.rf_wdata[13][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata[13][7:0] because it is equivalent to instance cpu_instance.rf_wdata[12][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata[12][7:0] because it is equivalent to instance cpu_instance.rf_wdata[11][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata[11][7:0] because it is equivalent to instance cpu_instance.rf_wdata[10][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata[9][7:0] because it is equivalent to instance cpu_instance.rf_wdata[10][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata[8][7:0] because it is equivalent to instance cpu_instance.rf_wdata[10][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata[7][7:0] because it is equivalent to instance cpu_instance.rf_wdata[10][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata[6][7:0] because it is equivalent to instance cpu_instance.rf_wdata[10][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata[5][7:0] because it is equivalent to instance cpu_instance.rf_wdata[10][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata[4][7:0] because it is equivalent to instance cpu_instance.rf_wdata[10][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:30:11:30:13:@W:BN132:@XP_MSG">cpu.v(30)</a><!@TM:1585178835> | Removing user instance cpu_instance.rf[11] because it is equivalent to instance cpu_instance.rf[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:30:11:30:13:@W:BN132:@XP_MSG">cpu.v(30)</a><!@TM:1585178835> | Removing user instance cpu_instance.rf[9] because it is equivalent to instance cpu_instance.rf[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:30:11:30:13:@W:BN132:@XP_MSG">cpu.v(30)</a><!@TM:1585178835> | Removing user instance cpu_instance.rf[8] because it is equivalent to instance cpu_instance.rf[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:30:11:30:13:@W:BN132:@XP_MSG">cpu.v(30)</a><!@TM:1585178835> | Removing user instance cpu_instance.rf[7] because it is equivalent to instance cpu_instance.rf[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:30:11:30:13:@W:BN132:@XP_MSG">cpu.v(30)</a><!@TM:1585178835> | Removing user instance cpu_instance.rf[6] because it is equivalent to instance cpu_instance.rf[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:30:11:30:13:@W:BN132:@XP_MSG">cpu.v(30)</a><!@TM:1585178835> | Removing user instance cpu_instance.rf[3] because it is equivalent to instance cpu_instance.rf[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:30:11:30:13:@W:BN132:@XP_MSG">cpu.v(30)</a><!@TM:1585178835> | Removing user instance cpu_instance.rf[1] because it is equivalent to instance cpu_instance.rf[10]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:30:11:30:13:@W:BN132:@XP_MSG">cpu.v(30)</a><!@TM:1585178835> | Removing user instance cpu_instance.rf[10] because it is equivalent to instance cpu_instance.rf[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:30:11:30:13:@W:BN132:@XP_MSG">cpu.v(30)</a><!@TM:1585178835> | Removing user instance cpu_instance.rf[2] because it is equivalent to instance cpu_instance.rf[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:30:11:30:13:@W:BN132:@XP_MSG">cpu.v(30)</a><!@TM:1585178835> | Removing user instance cpu_instance.rf[4] because it is equivalent to instance cpu_instance.rf[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:30:11:30:13:@W:BN132:@XP_MSG">cpu.v(30)</a><!@TM:1585178835> | Removing user instance cpu_instance.rf[5] because it is equivalent to instance cpu_instance.rf[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
+<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@W:BN132:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance cpu_instance.rf_wdata[11][7:0] because it is equivalent to instance cpu_instance.rf_wdata[10][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
+<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@W:BN132:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance cpu_instance.rf_wdata[9][7:0] because it is equivalent to instance cpu_instance.rf_wdata[10][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
+<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@W:BN132:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance cpu_instance.rf_wdata[8][7:0] because it is equivalent to instance cpu_instance.rf_wdata[10][7:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
 
 Available hyper_sources - for debug and ip models
 	None Found
 
-@N:<a href="@N:MT206:@XP_HELP">MT206</a> : <!@TM:1585178835> | Auto Constrain mode is enabled 
+@N:<a href="@N:MT206:@XP_HELP">MT206</a> : <!@TM:1585202615> | Auto Constrain mode is enabled 
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 324MB peak: 324MB)
 
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance dout[0] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance dout[1] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance dout[2] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance dout[3] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance dout[4] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance rf_wdata\[10\][0] (in view: work.cpu(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance rf_wdata\[10\][1] (in view: work.cpu(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance rf_wdata\[10\][2] (in view: work.cpu(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance rf_wdata\[10\][3] (in view: work.cpu(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance rf_wdata\[10\][4] (in view: work.cpu(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance rf_wdata\[10\][5] (in view: work.cpu(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance rf_wdata\[10\][6] (in view: work.cpu(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance rf_wdata\[10\][7] (in view: work.cpu(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@N:BN362:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing sequential instance rf\[0\].dff\[7\].out (in view: work.cpu(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@N:BN362:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing sequential instance rf\[0\].dff\[6\].out (in view: work.cpu(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@N:BN362:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing sequential instance rf\[0\].dff\[5\].out (in view: work.cpu(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@N:BN362:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing sequential instance rf\[0\].dff\[4\].out (in view: work.cpu(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@N:BN362:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing sequential instance rf\[0\].dff\[3\].out (in view: work.cpu(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@N:BN362:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing sequential instance rf\[0\].dff\[2\].out (in view: work.cpu(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@N:BN362:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing sequential instance rf\[0\].dff\[1\].out (in view: work.cpu(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@N:BN362:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing sequential instance rf\[0\].dff\[0\].out (in view: work.cpu(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance dout[0] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance dout[1] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance dout[2] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance dout[3] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance dout[4] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[4\][0] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[4\][1] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[4\][2] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[4\][3] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[4\][4] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[5\][0] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[5\][1] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[5\][2] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[5\][3] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[5\][4] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[6\][0] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[6\][1] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[6\][2] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[6\][3] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[6\][4] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[7\][0] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[7\][1] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[7\][2] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[7\][3] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[7\][4] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[10\][2] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[10\][3] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[10\][4] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[10\][5] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[10\][6] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[10\][7] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[10\][0] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance rf_wdata\[10\][1] (in view: work.cpu(verilog)) because it does not drive other instances.
 
 Starting factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 324MB peak: 324MB)
 
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing instance cpu_instance.rf_wdata[2][1] because it is equivalent to instance cpu_instance.rf_wdata[2][0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing instance cpu_instance.rf_wdata[2][2] because it is equivalent to instance cpu_instance.rf_wdata[2][0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing instance cpu_instance.rf_wdata[2][3] because it is equivalent to instance cpu_instance.rf_wdata[2][0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing instance cpu_instance.rf_wdata[1][1] because it is equivalent to instance cpu_instance.rf_wdata[1][0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing instance cpu_instance.rf_wdata[1][2] because it is equivalent to instance cpu_instance.rf_wdata[1][0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing instance cpu_instance.rf_wdata[1][3] because it is equivalent to instance cpu_instance.rf_wdata[1][0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing instance cpu_instance.rf_wdata[3][1] because it is equivalent to instance cpu_instance.rf_wdata[3][0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing instance cpu_instance.rf_wdata[3][2] because it is equivalent to instance cpu_instance.rf_wdata[3][0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing instance cpu_instance.rf_wdata[3][3] because it is equivalent to instance cpu_instance.rf_wdata[3][0]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@W:BN132:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing instance cpu_instance.rf[12].dff[3].out because it is equivalent to instance cpu_instance.rf[12].dff[2].out. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@W:BN132:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing instance cpu_instance.rf[12].dff[2].out because it is equivalent to instance cpu_instance.rf[12].dff[1].out. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@W:BN132:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing instance cpu_instance.rf[12].dff[1].out because it is equivalent to instance cpu_instance.rf[12].dff[0].out. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@W:BN132:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing instance cpu_instance.rf[13].dff[3].out because it is equivalent to instance cpu_instance.rf[13].dff[2].out. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@W:BN132:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing instance cpu_instance.rf[13].dff[2].out because it is equivalent to instance cpu_instance.rf[13].dff[1].out. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@W:BN132:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing instance cpu_instance.rf[13].dff[1].out because it is equivalent to instance cpu_instance.rf[13].dff[0].out. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@W:BN132:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing instance cpu_instance.rf[14].dff[3].out because it is equivalent to instance cpu_instance.rf[14].dff[2].out. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@W:BN132:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing instance cpu_instance.rf[14].dff[2].out because it is equivalent to instance cpu_instance.rf[14].dff[1].out. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@W:BN132:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing instance cpu_instance.rf[14].dff[1].out because it is equivalent to instance cpu_instance.rf[14].dff[0].out. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata\[3\][0] (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata\[3\][4] (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata\[3\][5] (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata\[3\][6] (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata\[3\][7] (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@N:BN362:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf\[12\].dff\[7\].out (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@N:BN362:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf\[12\].dff\[6\].out (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@N:BN362:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf\[12\].dff\[5\].out (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@N:BN362:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf\[12\].dff\[4\].out (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@N:BN362:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf\[12\].dff\[0\].out (in view: work.top(verilog)) because it does not drive other instances.
+<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@W:BN132:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing instance cpu_instance.rf_wdata[6][5] because it is equivalent to instance cpu_instance.rf_wdata[5][5]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
+<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@W:BN132:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing instance cpu_instance.rf_wdata[7][5] because it is equivalent to instance cpu_instance.rf_wdata[5][5]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
+<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@W:BN132:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing instance cpu_instance.rf_wdata[6][6] because it is equivalent to instance cpu_instance.rf_wdata[5][6]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
+<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@W:BN132:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing instance cpu_instance.rf_wdata[7][6] because it is equivalent to instance cpu_instance.rf_wdata[5][6]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
+<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@W:BN132:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing instance cpu_instance.rf_wdata[6][7] because it is equivalent to instance cpu_instance.rf_wdata[5][7]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
+<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@W:BN132:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing instance cpu_instance.rf_wdata[7][7] because it is equivalent to instance cpu_instance.rf_wdata[5][7]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:21:2:21:8:@N:BN362:@XP_MSG">top.v(21)</a><!@TM:1585202615> | Removing sequential instance cpu_din[7] (in view: work.top(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance cpu_instance.rf_wdata\[5\][5] (in view: work.top(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance cpu_instance.rf_wdata\[5\][6] (in view: work.top(verilog)) because it does not drive other instances.
+@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:BN362:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Removing sequential instance cpu_instance.rf_wdata\[5\][7] (in view: work.top(verilog)) because it does not drive other instances.
 
 Finished factoring (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 324MB peak: 324MB)
 
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:21:2:21:8:@N:BN362:@XP_MSG">top.v(21)</a><!@TM:1585178835> | Removing sequential instance cpu_din[5] (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:21:2:21:8:@N:BN362:@XP_MSG">top.v(21)</a><!@TM:1585178835> | Removing sequential instance cpu_din[6] (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v:21:2:21:8:@N:BN362:@XP_MSG">top.v(21)</a><!@TM:1585178835> | Removing sequential instance cpu_din[7] (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@N:BN362:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf\[13\].dff\[4\].out (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata\[2\][4] (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@N:BN362:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf\[13\].dff\[0\].out (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata\[2\][0] (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata\[1\][0] (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata\[1\][4] (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata\[1\][5] (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@N:BN362:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf_wdata\[1\][6] (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@N:BN362:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf\[14\].dff\[6\].out (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@N:BN362:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf\[14\].dff\[5\].out (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@N:BN362:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf\[14\].dff\[4\].out (in view: work.top(verilog)) because it does not drive other instances.
-@N:<a href="@N:BN362:@XP_HELP">BN362</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@N:BN362:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing sequential instance cpu_instance.rf\[14\].dff\[0\].out (in view: work.top(verilog)) because it does not drive other instances.
 
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 324MB peak: 324MB)
-
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing instance cpu_instance.rf_wdata[2][7] because it is equivalent to instance cpu_instance.rf_wdata[2][6]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:51:2:51:8:@W:BN132:@XP_MSG">cpu.v(51)</a><!@TM:1585178835> | Removing instance cpu_instance.rf_wdata[2][6] because it is equivalent to instance cpu_instance.rf_wdata[2][5]. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@W:BN132:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing instance cpu_instance.rf[13].dff[7].out because it is equivalent to instance cpu_instance.rf[13].dff[6].out. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-<font color=#A52A2A>@W:<a href="@W:BN132:@XP_HELP">BN132</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/regfile.v:7:4:7:10:@W:BN132:@XP_MSG">regfile.v(7)</a><!@TM:1585178835> | Removing instance cpu_instance.rf[13].dff[6].out because it is equivalent to instance cpu_instance.rf[13].dff[5].out. To keep the instance, apply constraint syn_preserve=1 on the instance.</font>
-
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 324MB peak: 324MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 326MB peak: 326MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 324MB peak: 324MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 326MB peak: 326MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 324MB peak: 324MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 329MB peak: 329MB)
 
 
-Finished preparing to map (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 324MB peak: 324MB)
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 329MB peak: 329MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 324MB peak: 324MB)
+Finished preparing to map (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 329MB peak: 329MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 355MB peak: 355MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:00s		    -2.64ns		  45 /        43
-   2		0h:00m:00s		    -2.64ns		  48 /        43
+   1		0h:00m:02s		    -4.64ns		 168 /        60
+   2		0h:00m:02s		    -4.64ns		 161 /        60
+   3		0h:00m:02s		    -4.39ns		 160 /        60
+   4		0h:00m:02s		    -4.45ns		 159 /        60
+@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:FX271:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Replicating instance cpu_instance.ir_addr[0] (in view: work.top(verilog)) with 16 loads 1 time to improve timing.
+@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:67:2:67:8:@N:FX271:@XP_MSG">cpu.v(67)</a><!@TM:1585202615> | Replicating instance cpu_instance.ir_addr[2] (in view: work.top(verilog)) with 20 loads 2 times to improve timing.
+@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:78:4:78:8:@N:FX271:@XP_MSG">cpu.v(78)</a><!@TM:1585202615> | Replicating instance cpu_instance.rf_wdata\[10\]_26_5dup[5] (in view: work.top(verilog)) with 3 loads 2 time(s) to improve timing.
+@N:<a href="@N:FX271:@XP_HELP">FX271</a> : <a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v:78:4:78:8:@N:FX271:@XP_MSG">cpu.v(78)</a><!@TM:1585202615> | Replicating instance cpu_instance.rf_wdata\[10\]_26_5[7] (in view: work.top(verilog)) with 3 loads 2 time(s) to improve timing.
+Timing driven replication report
+Added 3 Registers via timing driven replication
+Added 4 LUTs via timing driven replication
 
-   3		0h:00m:00s		    -2.38ns		  50 /        43
-
-
-   4		0h:00m:00s		    -2.38ns		  49 /        43
-
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 324MB peak: 324MB)
-
-@N:<a href="@N:FX164:@XP_HELP">FX164</a> : <!@TM:1585178835> | The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.   
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-<font color=#A52A2A>@W: : <!@TM:1585178835> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
-
-Finished restoring hierarchy (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 324MB peak: 324MB)
+   5		0h:00m:02s		    -4.39ns		 169 /        63
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 324MB peak: 324MB)
+   6		0h:00m:02s		    -4.13ns		 170 /        63
+   7		0h:00m:02s		    -4.33ns		 171 /        63
+   8		0h:00m:02s		    -4.14ns		 172 /        63
+   9		0h:00m:02s		    -4.02ns		 173 /        63
+  10		0h:00m:02s		    -4.02ns		 173 /        63
+  11		0h:00m:02s		    -3.66ns		 174 /        63
+  12		0h:00m:02s		    -3.51ns		 175 /        63
+  13		0h:00m:02s		    -3.66ns		 175 /        63
+  14		0h:00m:02s		    -3.51ns		 175 /        63
+  15		0h:00m:02s		    -3.72ns		 177 /        63
+  16		0h:00m:02s		    -3.72ns		 177 /        63
+
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 355MB peak: 355MB)
+
+@N:<a href="@N:FX164:@XP_HELP">FX164</a> : <!@TM:1585202615> | The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.   
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to output port. Because it's a pure output port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
+<font color=#A52A2A>@W: : <!@TM:1585202615> | Converting bidirection inout port to inpure port. Because it's a pure input port</font> 
+
+Finished restoring hierarchy (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 355MB peak: 355MB)
+
+
+Start Writing Netlists (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 355MB peak: 355MB)
 
 Writing Analyst data base /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/Test_CPU_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 324MB peak: 324MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 355MB peak: 355MB)
 
 Writing Verilog Simulation files
 
-Writing scf file... (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 324MB peak: 324MB)
+Writing scf file... (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 355MB peak: 355MB)
 
-@N:<a href="@N:BW103:@XP_HELP">BW103</a> : <!@TM:1585178835> | The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns. 
-@N:<a href="@N:BW107:@XP_HELP">BW107</a> : <!@TM:1585178835> | Synopsys Constraint File capacitance units using default value of 1pF  
+@N:<a href="@N:BW103:@XP_HELP">BW103</a> : <!@TM:1585202615> | The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns. 
+@N:<a href="@N:BW107:@XP_HELP">BW107</a> : <!@TM:1585202615> | Synopsys Constraint File capacitance units using default value of 1pF  
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 324MB peak: 324MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 355MB peak: 355MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 324MB peak: 324MB)
+Start final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 355MB peak: 355MB)
 
-<font color=#A52A2A>@W:<a href="@W:MT420:@XP_HELP">MT420</a> : <!@TM:1585178835> | Found inferred clock top|clk with period 10.00ns. Please declare a user-defined clock on port clk.</font> 
+<font color=#A52A2A>@W:<a href="@W:MT420:@XP_HELP">MT420</a> : <!@TM:1585202615> | Found inferred clock top|clk with period 14.27ns. Please declare a user-defined clock on port clk.</font> 
 
 
 <a name=timingReport9></a>##### START OF TIMING REPORT #####[</a>
-# Timing report written on Thu Mar 26 07:27:15 2020
+# Timing report written on Thu Mar 26 14:03:35 2020
 #
 
 
 Top view:               top
-Requested Frequency:    100.0 MHz
+Requested Frequency:    70.1 MHz
 Wire load mode:         top
 Paths requested:        5
 Constraint File(s):    
-@N:<a href="@N:MT320:@XP_HELP">MT320</a> : <!@TM:1585178835> | This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report. 
+@N:<a href="@N:MT320:@XP_HELP">MT320</a> : <!@TM:1585202615> | This timing report is an estimate of place and route data. For final timing results, use the FPGA vendor place and route report. 
 
-@N:<a href="@N:MT322:@XP_HELP">MT322</a> : <!@TM:1585178835> | Clock constraints include only register-to-register paths associated with each individual clock. 
+@N:<a href="@N:MT322:@XP_HELP">MT322</a> : <!@TM:1585202615> | Clock constraints include only register-to-register paths associated with each individual clock. 
 
 
 
@@ -607,13 +570,12 @@ Constraint File(s):
 *******************
 
 
-Worst slack in design: -1.593
+Worst slack in design: -2.518
 
                    Requested     Estimated     Requested     Estimated                Clock        Clock                
 Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group                
 ------------------------------------------------------------------------------------------------------------------------
-top|clk            100.0 MHz     86.3 MHz      10.000        11.593        -1.593     inferred     Autoconstr_clkgroup_0
-System             100.0 MHz     866.6 MHz     10.000        1.154         8.846      system       system_clkgroup      
+top|clk            70.1 MHz      59.6 MHz      14.266        16.783        -2.518     inferred     Autoconstr_clkgroup_0
 ========================================================================================================================
 
 
@@ -627,9 +589,7 @@ Clocks             |    rise  to  rise    |    fall  to  fall   |    rise  to  f
 ----------------------------------------------------------------------------------------------------------
 Starting  Ending   |  constraint  slack   |  constraint  slack  |  constraint  slack  |  constraint  slack
 ----------------------------------------------------------------------------------------------------------
-System    top|clk  |  10.000      8.846   |  No paths    -      |  No paths    -      |  No paths    -    
-top|clk   System   |  10.000      8.612   |  No paths    -      |  No paths    -      |  No paths    -    
-top|clk   top|clk  |  10.000      -1.593  |  No paths    -      |  No paths    -      |  No paths    -    
+top|clk   top|clk  |  14.266      -2.518  |  No paths    -      |  No paths    -      |  No paths    -    
 ==========================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -652,359 +612,301 @@ No IO constraint found
 <a name=startingSlack14></a>Starting Points with Worst Slack</a>
 ********************************
 
-                                       Starting                                         Arrival           
-Instance                               Reference     Type     Pin     Net               Time        Slack 
-                                       Clock                                                              
-----------------------------------------------------------------------------------------------------------
-cpu_instance.ir_addr[4]                top|clk       DFF      Q       ir_addr[4]        0.367       -1.593
-cpu_instance.ir_addr[2]                top|clk       DFF      Q       ir_addr[2]        0.367       -1.526
-cpu_instance.ir_addr[5]                top|clk       DFF      Q       ir_addr[5]        0.367       -1.316
-cpu_instance.ir_addr[6]                top|clk       DFF      Q       ir_addr[6]        0.367       -1.120
-cpu_instance.ir_addr[1]                top|clk       DFF      Q       ir_addr[1]        0.367       0.460 
-cpu_instance.ir_addr[3]                top|clk       DFF      Q       ir_addr[3]        0.367       0.737 
-cpu_instance.ir_addr[7]                top|clk       DFF      Q       ir_addr[7]        0.367       0.933 
-cpu_instance.ir_addr[0]                top|clk       DFF      Q       ir_addr[0]        0.367       2.373 
-cpu_instance.rf\[15\].dff\[0\].out     top|clk       DFFR     Q       fabvar_1[120]     0.367       2.604 
-cpu_instance.rf\[15\].dff\[1\].out     top|clk       DFFR     Q       fabvar_1[121]     0.367       2.661 
-==========================================================================================================
+                                  Starting                                            Arrival           
+Instance                          Reference     Type     Pin     Net                  Time        Slack 
+                                  Clock                                                                 
+--------------------------------------------------------------------------------------------------------
+cpu_instance.ir_addr[4]           top|clk       DFF      Q       ir_addr[4]           0.367       -2.518
+cpu_instance.ir_addr[3]           top|clk       DFF      Q       ir_addr[3]           0.367       -2.450
+cpu_instance.ir_addr[7]           top|clk       DFF      Q       ir_addr[7]           0.367       -2.450
+cpu_instance.ir_addr[6]           top|clk       DFF      Q       ir_addr[6]           0.367       -2.383
+cpu_instance.ir_addr[5]           top|clk       DFF      Q       ir_addr[5]           0.367       -2.240
+cpu_instance.ir_addr_fast[2]      top|clk       DFF      Q       ir_addr_fast[2]      0.367       -2.179
+cpu_instance.ir_addr_fast[0]      top|clk       DFF      Q       ir_addr_fast[0]      0.367       -2.112
+cpu_instance.ir_addr_2_rep1       top|clk       DFF      Q       ir_addr_2_rep1       0.367       -0.945
+cpu_instance.ir_addr[1]           top|clk       DFF      Q       ir_addr[1]           0.367       -0.939
+cpu_instance.rf_wdata\[0\][2]     top|clk       DFF      Q       rf_wdata\[0\][2]     0.367       -0.141
+========================================================================================================
 
 
 <a name=endingSlack15></a>Ending Points with Worst Slack</a>
 ******************************
 
-                            Starting                                            Required           
-Instance                    Reference     Type     Pin     Net                  Time         Slack 
-                            Clock                                                                  
----------------------------------------------------------------------------------------------------
-cpu_instance.address[3]     top|clk       DFF      D       un2_address_m[3]     9.867        -1.593
-cpu_instance.address[7]     top|clk       DFF      D       un2_address_m[7]     9.867        -1.544
-cpu_instance.address[2]     top|clk       DFF      D       un2_address_m[2]     9.867        -1.536
-cpu_instance.address[1]     top|clk       DFF      D       un2_address_m[1]     9.867        -1.449
-cpu_instance.address[0]     top|clk       DFF      D       un2_address_m[0]     9.867        -0.922
-cpu_instance.address[6]     top|clk       DFFR     D       un2_address0[6]      9.867        -0.665
-cpu_instance.address[5]     top|clk       DFFR     D       un2_address0[5]      9.867        -0.608
-cpu_instance.address[4]     top|clk       DFFR     D       un2_address0[4]      9.867        -0.551
-cpu_instance.dout[5]        top|clk       DFFR     D       N_51_i_0             9.867        1.093 
-cpu_instance.dout[6]        top|clk       DFFR     D       N_49_i_0             9.867        1.093 
-===================================================================================================
+                                  Starting                                                     Required           
+Instance                          Reference     Type     Pin     Net                           Time         Slack 
+                                  Clock                                                                           
+------------------------------------------------------------------------------------------------------------------
+cpu_instance.rf_wdata\[2\][7]     top|clk       DFFE     D       rf_wdata\[1\]_26_7_rep1       14.133       -2.518
+cpu_instance.rf_wdata\[3\][7]     top|clk       DFFE     D       rf_wdata\[1\]_26_7_rep2       14.133       -2.518
+cpu_instance.rf_wdata\[4\][7]     top|clk       DFFE     D       rf_wdata\[1\]_26[7]           14.133       -2.518
+cpu_instance.rf_wdata\[4\][5]     top|clk       DFFE     D       rf_wdata\[1\]_26[5]           14.133       -2.001
+cpu_instance.rf_wdata\[1\][5]     top|clk       DFFE     D       N_102_rep1                    14.133       -1.337
+cpu_instance.rf_wdata\[2\][5]     top|clk       DFFE     D       N_102_rep2                    14.133       -1.337
+cpu_instance.rf_wdata\[3\][5]     top|clk       DFFE     D       rf_wdata\[10\]_26_5dup[5]     14.133       -1.337
+cpu_instance.rf_wdata\[1\][3]     top|clk       DFFE     D       rf_wdata\[1\]_26[3]           14.133       -1.213
+cpu_instance.rf_wdata\[2\][3]     top|clk       DFFE     D       rf_wdata\[1\]_26[3]           14.133       -1.213
+cpu_instance.rf_wdata\[3\][3]     top|clk       DFFE     D       rf_wdata\[1\]_26[3]           14.133       -1.213
+==================================================================================================================
 
 
 
 <a name=worstPaths16></a>Worst Path Information</a>
-<a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.srr:srsf/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.srs:fp:56311:58711:@XP_NAMES_GATE">View Worst Path in Analyst</a>
+<a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.srr:srsf/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.srs:fp:45620:48563:@XP_NAMES_GATE">View Worst Path in Analyst</a>
 ***********************
 
 
 Path information for path number 1: 
-      Requested Period:                      10.000
+      Requested Period:                      14.266
     - Setup time:                            0.133
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.867
+    = Required time:                         14.133
 
-    - Propagation time:                      11.460
+    - Propagation time:                      16.650
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -1.593
+    = Slack (critical) :                     -2.518
 
-    Number of logic level(s):                7
+    Number of logic level(s):                8
     Starting point:                          cpu_instance.ir_addr[4] / Q
-    Ending point:                            cpu_instance.address[3] / D
+    Ending point:                            cpu_instance.rf_wdata\[4\][7] / D
     The start point is clocked by            top|clk [rising] on pin CLK
     The end   point is clocked by            top|clk [rising] on pin CLK
 
-Instance / Net                                    Pin      Pin               Arrival     No. of    
-Name                                     Type     Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------
-cpu_instance.ir_addr[4]                  DFF      Q        Out     0.367     0.367       -         
-ir_addr[4]                               Net      -        -       1.021     -           2         
-G_14_1                                   LUT4     I1       In      -         1.388       -         
-G_14_1                                   LUT4     F        Out     1.099     2.487       -         
-G_14_1                                   Net      -        -       1.021     -           2         
-G_14                                     LUT4     I0       In      -         3.508       -         
-G_14                                     LUT4     F        Out     1.032     4.540       -         
-N_79                                     Net      -        -       1.082     -           14        
-cpu_instance.un2_address_0_cry_1_ns      LUT2     I0       In      -         5.622       -         
-cpu_instance.un2_address_0_cry_1_ns      LUT2     F        Out     1.032     6.654       -         
-un2_address_0_cry_1_ns                   Net      -        -       1.021     -           1         
-cpu_instance.un2_address_0_cry_1_0_0     ALU      I1       In      -         7.675       -         
-cpu_instance.un2_address_0_cry_1_0_0     ALU      COUT     Out     1.045     8.720       -         
-un2_address_0_cry_1                      Net      -        -       0.000     -           1         
-cpu_instance.un2_address_0_cry_2_0_0     ALU      CIN      In      -         8.720       -         
-cpu_instance.un2_address_0_cry_2_0_0     ALU      COUT     Out     0.057     8.777       -         
-un2_address_0_cry_2                      Net      -        -       0.000     -           1         
-cpu_instance.un2_address_0_cry_3_0_0     ALU      CIN      In      -         8.777       -         
-cpu_instance.un2_address_0_cry_3_0_0     ALU      SUM      Out     0.563     9.340       -         
-un2_address0[3]                          Net      -        -       1.021     -           1         
-cpu_instance.un2_address_m[3]            LUT3     I1       In      -         10.361      -         
-cpu_instance.un2_address_m[3]            LUT3     F        Out     1.099     11.460      -         
-un2_address_m[3]                         Net      -        -       0.000     -           1         
-cpu_instance.address[3]                  DFF      D        In      -         11.460      -         
-===================================================================================================
-Total path delay (propagation time + setup) of 11.593 is 6.427(55.4%) logic and 5.166(44.6%) route.
+Instance / Net                                             Pin      Pin               Arrival     No. of    
+Name                                         Type          Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+cpu_instance.ir_addr[4]                      DFF           Q        Out     0.367     0.367       -         
+ir_addr[4]                                   Net           -        -       1.021     -           7         
+cpu_instance.iR.N_20_i_i_o3_2                LUT3          I1       In      -         1.388       -         
+cpu_instance.iR.N_20_i_i_o3_2                LUT3          F        Out     1.099     2.487       -         
+N_20_i_i_o3_2                                Net           -        -       1.082     -           16        
+cpu_instance.iR.un1_m1_0_a2                  LUT4          I1       In      -         3.569       -         
+cpu_instance.iR.un1_m1_0_a2                  LUT4          F        Out     1.099     4.668       -         
+read8                                        Net           -        -       1.021     -           2         
+cpu_instance.un4_address_0_3_xx_mm[1]        LUT4          I1       In      -         5.689       -         
+cpu_instance.un4_address_0_3_xx_mm[1]        LUT4          F        Out     1.099     6.788       -         
+un4_address0[1]                              Net           -        -       0.766     -           1         
+cpu_instance.un4_address_m[1]                LUT3          I2       In      -         7.554       -         
+cpu_instance.un4_address_m[1]                LUT3          F        Out     0.822     8.376       -         
+un4_address_m[1]                             Net           -        -       1.021     -           7         
+cpu_instance.m3_0_03_2                       LUT3          I0       In      -         9.397       -         
+cpu_instance.m3_0_03_2                       LUT3          F        Out     1.032     10.429      -         
+m3_0_03_3                                    Net           -        -       1.021     -           2         
+cpu_instance.rf_wdata\[10\]_26_5_2_N_2L1     LUT4          I1       In      -         11.450      -         
+cpu_instance.rf_wdata\[10\]_26_5_2_N_2L1     LUT4          F        Out     1.099     12.549      -         
+rf_wdata\[10\]_26_5_2_1[7]                   Net           -        -       0.766     -           1         
+cpu_instance.rf_wdata\[10\]_26_5_2[7]        LUT4          I2       In      -         13.314      -         
+cpu_instance.rf_wdata\[10\]_26_5_2[7]        LUT4          F        Out     0.822     14.136      -         
+rf_wdata\[10\]_26_5_2[7]                     Net           -        -       1.021     -           3         
+cpu_instance.rf_wdata\[10\]_26_5[7]          MUX2_LUT5     S0       In      -         15.157      -         
+cpu_instance.rf_wdata\[10\]_26_5[7]          MUX2_LUT5     O        Out     0.472     15.629      -         
+rf_wdata\[1\]_26[7]                          Net           -        -       1.021     -           1         
+cpu_instance.rf_wdata\[4\][7]                DFFE          D        In      -         16.650      -         
+============================================================================================================
+Total path delay (propagation time + setup) of 16.783 is 8.044(47.9%) logic and 8.739(52.1%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 2: 
-      Requested Period:                      10.000
+      Requested Period:                      14.266
     - Setup time:                            0.133
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.867
+    = Required time:                         14.133
 
-    - Propagation time:                      11.430
+    - Propagation time:                      16.650
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.563
+    = Slack (critical) :                     -2.518
 
     Number of logic level(s):                8
     Starting point:                          cpu_instance.ir_addr[4] / Q
-    Ending point:                            cpu_instance.address[3] / D
+    Ending point:                            cpu_instance.rf_wdata\[3\][7] / D
     The start point is clocked by            top|clk [rising] on pin CLK
     The end   point is clocked by            top|clk [rising] on pin CLK
 
-Instance / Net                                     Pin      Pin               Arrival     No. of    
-Name                                      Type     Name     Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------------------
-cpu_instance.ir_addr[4]                   DFF      Q        Out     0.367     0.367       -         
-ir_addr[4]                                Net      -        -       1.021     -           2         
-G_14_1                                    LUT4     I1       In      -         1.388       -         
-G_14_1                                    LUT4     F        Out     1.099     2.487       -         
-G_14_1                                    Net      -        -       1.021     -           2         
-G_14                                      LUT4     I0       In      -         3.508       -         
-G_14                                      LUT4     F        Out     1.032     4.540       -         
-N_79                                      Net      -        -       1.082     -           14        
-cpu_instance.un2_address_0_axb_0_lofx     LUT2     I0       In      -         5.622       -         
-cpu_instance.un2_address_0_axb_0_lofx     LUT2     F        Out     1.032     6.654       -         
-un2_address_0_axb_0_lofx                  Net      -        -       1.021     -           1         
-cpu_instance.un2_address_0_cry_0_0_0      ALU      I0       In      -         7.675       -         
-cpu_instance.un2_address_0_cry_0_0_0      ALU      COUT     Out     0.958     8.633       -         
-un2_address_0_cry_0                       Net      -        -       0.000     -           1         
-cpu_instance.un2_address_0_cry_1_0_0      ALU      CIN      In      -         8.633       -         
-cpu_instance.un2_address_0_cry_1_0_0      ALU      COUT     Out     0.057     8.690       -         
-un2_address_0_cry_1                       Net      -        -       0.000     -           1         
-cpu_instance.un2_address_0_cry_2_0_0      ALU      CIN      In      -         8.690       -         
-cpu_instance.un2_address_0_cry_2_0_0      ALU      COUT     Out     0.057     8.747       -         
-un2_address_0_cry_2                       Net      -        -       0.000     -           1         
-cpu_instance.un2_address_0_cry_3_0_0      ALU      CIN      In      -         8.747       -         
-cpu_instance.un2_address_0_cry_3_0_0      ALU      SUM      Out     0.563     9.310       -         
-un2_address0[3]                           Net      -        -       1.021     -           1         
-cpu_instance.un2_address_m[3]             LUT3     I1       In      -         10.331      -         
-cpu_instance.un2_address_m[3]             LUT3     F        Out     1.099     11.430      -         
-un2_address_m[3]                          Net      -        -       0.000     -           1         
-cpu_instance.address[3]                   DFF      D        In      -         11.430      -         
-====================================================================================================
-Total path delay (propagation time + setup) of 11.563 is 6.397(55.3%) logic and 5.166(44.7%) route.
+Instance / Net                                             Pin      Pin               Arrival     No. of    
+Name                                         Type          Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+cpu_instance.ir_addr[4]                      DFF           Q        Out     0.367     0.367       -         
+ir_addr[4]                                   Net           -        -       1.021     -           7         
+cpu_instance.iR.N_20_i_i_o3_2                LUT3          I1       In      -         1.388       -         
+cpu_instance.iR.N_20_i_i_o3_2                LUT3          F        Out     1.099     2.487       -         
+N_20_i_i_o3_2                                Net           -        -       1.082     -           16        
+cpu_instance.iR.un1_m1_0_a2                  LUT4          I1       In      -         3.569       -         
+cpu_instance.iR.un1_m1_0_a2                  LUT4          F        Out     1.099     4.668       -         
+read8                                        Net           -        -       1.021     -           2         
+cpu_instance.un4_address_0_3_xx_mm[1]        LUT4          I1       In      -         5.689       -         
+cpu_instance.un4_address_0_3_xx_mm[1]        LUT4          F        Out     1.099     6.788       -         
+un4_address0[1]                              Net           -        -       0.766     -           1         
+cpu_instance.un4_address_m[1]                LUT3          I2       In      -         7.554       -         
+cpu_instance.un4_address_m[1]                LUT3          F        Out     0.822     8.376       -         
+un4_address_m[1]                             Net           -        -       1.021     -           7         
+cpu_instance.m3_0_03_2                       LUT3          I0       In      -         9.397       -         
+cpu_instance.m3_0_03_2                       LUT3          F        Out     1.032     10.429      -         
+m3_0_03_3                                    Net           -        -       1.021     -           2         
+cpu_instance.rf_wdata\[10\]_26_5_2_N_2L1     LUT4          I1       In      -         11.450      -         
+cpu_instance.rf_wdata\[10\]_26_5_2_N_2L1     LUT4          F        Out     1.099     12.549      -         
+rf_wdata\[10\]_26_5_2_1[7]                   Net           -        -       0.766     -           1         
+cpu_instance.rf_wdata\[10\]_26_5_2[7]        LUT4          I2       In      -         13.314      -         
+cpu_instance.rf_wdata\[10\]_26_5_2[7]        LUT4          F        Out     0.822     14.136      -         
+rf_wdata\[10\]_26_5_2[7]                     Net           -        -       1.021     -           3         
+cpu_instance.rf_wdata\[10\]_26_5_7_rep2      MUX2_LUT5     S0       In      -         15.157      -         
+cpu_instance.rf_wdata\[10\]_26_5_7_rep2      MUX2_LUT5     O        Out     0.472     15.629      -         
+rf_wdata\[1\]_26_7_rep2                      Net           -        -       1.021     -           1         
+cpu_instance.rf_wdata\[3\][7]                DFFE          D        In      -         16.650      -         
+============================================================================================================
+Total path delay (propagation time + setup) of 16.783 is 8.044(47.9%) logic and 8.739(52.1%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 3: 
-      Requested Period:                      10.000
+      Requested Period:                      14.266
     - Setup time:                            0.133
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.867
+    = Required time:                         14.133
 
-    - Propagation time:                      11.411
+    - Propagation time:                      16.650
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.544
+    = Slack (critical) :                     -2.518
 
-    Number of logic level(s):                11
+    Number of logic level(s):                8
     Starting point:                          cpu_instance.ir_addr[4] / Q
-    Ending point:                            cpu_instance.address[7] / D
+    Ending point:                            cpu_instance.rf_wdata\[2\][7] / D
     The start point is clocked by            top|clk [rising] on pin CLK
     The end   point is clocked by            top|clk [rising] on pin CLK
 
-Instance / Net                                    Pin      Pin               Arrival     No. of    
-Name                                     Type     Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------
-cpu_instance.ir_addr[4]                  DFF      Q        Out     0.367     0.367       -         
-ir_addr[4]                               Net      -        -       1.021     -           2         
-G_14_1                                   LUT4     I1       In      -         1.388       -         
-G_14_1                                   LUT4     F        Out     1.099     2.487       -         
-G_14_1                                   Net      -        -       1.021     -           2         
-G_14                                     LUT4     I0       In      -         3.508       -         
-G_14                                     LUT4     F        Out     1.032     4.540       -         
-N_79                                     Net      -        -       1.082     -           14        
-cpu_instance.un2_address_0_cry_1_ns      LUT2     I0       In      -         5.622       -         
-cpu_instance.un2_address_0_cry_1_ns      LUT2     F        Out     1.032     6.654       -         
-un2_address_0_cry_1_ns                   Net      -        -       1.021     -           1         
-cpu_instance.un2_address_0_cry_1_0_0     ALU      I1       In      -         7.675       -         
-cpu_instance.un2_address_0_cry_1_0_0     ALU      COUT     Out     1.045     8.720       -         
-un2_address_0_cry_1                      Net      -        -       0.000     -           1         
-cpu_instance.un2_address_0_cry_2_0_0     ALU      CIN      In      -         8.720       -         
-cpu_instance.un2_address_0_cry_2_0_0     ALU      COUT     Out     0.057     8.777       -         
-un2_address_0_cry_2                      Net      -        -       0.000     -           1         
-cpu_instance.un2_address_0_cry_3_0_0     ALU      CIN      In      -         8.777       -         
-cpu_instance.un2_address_0_cry_3_0_0     ALU      COUT     Out     0.057     8.834       -         
-un2_address_0_cry_3                      Net      -        -       0.000     -           1         
-cpu_instance.un2_address_0_cry_4_0       ALU      CIN      In      -         8.834       -         
-cpu_instance.un2_address_0_cry_4_0       ALU      COUT     Out     0.057     8.891       -         
-un2_address_0_cry_4                      Net      -        -       0.000     -           1         
-cpu_instance.un2_address_0_cry_5_0       ALU      CIN      In      -         8.891       -         
-cpu_instance.un2_address_0_cry_5_0       ALU      COUT     Out     0.057     8.948       -         
-un2_address_0_cry_5                      Net      -        -       0.000     -           1         
-cpu_instance.un2_address_0_cry_6_0       ALU      CIN      In      -         8.948       -         
-cpu_instance.un2_address_0_cry_6_0       ALU      COUT     Out     0.057     9.005       -         
-un2_address_0_cry_6                      Net      -        -       0.000     -           1         
-cpu_instance.un2_address_0_s_7_0         ALU      CIN      In      -         9.005       -         
-cpu_instance.un2_address_0_s_7_0         ALU      SUM      Out     0.563     9.568       -         
-un2_address0[7]                          Net      -        -       1.021     -           1         
-cpu_instance.un2_address_m[7]            LUT4     I2       In      -         10.589      -         
-cpu_instance.un2_address_m[7]            LUT4     F        Out     0.822     11.411      -         
-un2_address_m[7]                         Net      -        -       0.000     -           1         
-cpu_instance.address[7]                  DFF      D        In      -         11.411      -         
-===================================================================================================
-Total path delay (propagation time + setup) of 11.544 is 6.378(55.2%) logic and 5.166(44.8%) route.
+Instance / Net                                             Pin      Pin               Arrival     No. of    
+Name                                         Type          Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+cpu_instance.ir_addr[4]                      DFF           Q        Out     0.367     0.367       -         
+ir_addr[4]                                   Net           -        -       1.021     -           7         
+cpu_instance.iR.N_20_i_i_o3_2                LUT3          I1       In      -         1.388       -         
+cpu_instance.iR.N_20_i_i_o3_2                LUT3          F        Out     1.099     2.487       -         
+N_20_i_i_o3_2                                Net           -        -       1.082     -           16        
+cpu_instance.iR.un1_m1_0_a2                  LUT4          I1       In      -         3.569       -         
+cpu_instance.iR.un1_m1_0_a2                  LUT4          F        Out     1.099     4.668       -         
+read8                                        Net           -        -       1.021     -           2         
+cpu_instance.un4_address_0_3_xx_mm[1]        LUT4          I1       In      -         5.689       -         
+cpu_instance.un4_address_0_3_xx_mm[1]        LUT4          F        Out     1.099     6.788       -         
+un4_address0[1]                              Net           -        -       0.766     -           1         
+cpu_instance.un4_address_m[1]                LUT3          I2       In      -         7.554       -         
+cpu_instance.un4_address_m[1]                LUT3          F        Out     0.822     8.376       -         
+un4_address_m[1]                             Net           -        -       1.021     -           7         
+cpu_instance.m3_0_03_2                       LUT3          I0       In      -         9.397       -         
+cpu_instance.m3_0_03_2                       LUT3          F        Out     1.032     10.429      -         
+m3_0_03_3                                    Net           -        -       1.021     -           2         
+cpu_instance.rf_wdata\[10\]_26_5_2_N_2L1     LUT4          I1       In      -         11.450      -         
+cpu_instance.rf_wdata\[10\]_26_5_2_N_2L1     LUT4          F        Out     1.099     12.549      -         
+rf_wdata\[10\]_26_5_2_1[7]                   Net           -        -       0.766     -           1         
+cpu_instance.rf_wdata\[10\]_26_5_2[7]        LUT4          I2       In      -         13.314      -         
+cpu_instance.rf_wdata\[10\]_26_5_2[7]        LUT4          F        Out     0.822     14.136      -         
+rf_wdata\[10\]_26_5_2[7]                     Net           -        -       1.021     -           3         
+cpu_instance.rf_wdata\[10\]_26_5_7_rep1      MUX2_LUT5     S0       In      -         15.157      -         
+cpu_instance.rf_wdata\[10\]_26_5_7_rep1      MUX2_LUT5     O        Out     0.472     15.629      -         
+rf_wdata\[1\]_26_7_rep1                      Net           -        -       1.021     -           1         
+cpu_instance.rf_wdata\[2\][7]                DFFE          D        In      -         16.650      -         
+============================================================================================================
+Total path delay (propagation time + setup) of 16.783 is 8.044(47.9%) logic and 8.739(52.1%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 4: 
-      Requested Period:                      10.000
+      Requested Period:                      14.266
     - Setup time:                            0.133
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.867
+    = Required time:                         14.133
 
-    - Propagation time:                      11.403
+    - Propagation time:                      16.583
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.536
+    = Slack (non-critical) :                 -2.450
 
-    Number of logic level(s):                6
-    Starting point:                          cpu_instance.ir_addr[4] / Q
-    Ending point:                            cpu_instance.address[3] / D
+    Number of logic level(s):                8
+    Starting point:                          cpu_instance.ir_addr[3] / Q
+    Ending point:                            cpu_instance.rf_wdata\[4\][7] / D
     The start point is clocked by            top|clk [rising] on pin CLK
     The end   point is clocked by            top|clk [rising] on pin CLK
 
-Instance / Net                                    Pin      Pin               Arrival     No. of    
-Name                                     Type     Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------
-cpu_instance.ir_addr[4]                  DFF      Q        Out     0.367     0.367       -         
-ir_addr[4]                               Net      -        -       1.021     -           2         
-G_14_1                                   LUT4     I1       In      -         1.388       -         
-G_14_1                                   LUT4     F        Out     1.099     2.487       -         
-G_14_1                                   Net      -        -       1.021     -           2         
-G_14                                     LUT4     I0       In      -         3.508       -         
-G_14                                     LUT4     F        Out     1.032     4.540       -         
-N_79                                     Net      -        -       1.082     -           14        
-cpu_instance.un2_address_0_cry_2_ns      LUT2     I0       In      -         5.622       -         
-cpu_instance.un2_address_0_cry_2_ns      LUT2     F        Out     1.032     6.654       -         
-un2_address_0_cry_2_ns                   Net      -        -       1.021     -           1         
-cpu_instance.un2_address_0_cry_2_0_0     ALU      I1       In      -         7.675       -         
-cpu_instance.un2_address_0_cry_2_0_0     ALU      COUT     Out     1.045     8.720       -         
-un2_address_0_cry_2                      Net      -        -       0.000     -           1         
-cpu_instance.un2_address_0_cry_3_0_0     ALU      CIN      In      -         8.720       -         
-cpu_instance.un2_address_0_cry_3_0_0     ALU      SUM      Out     0.563     9.283       -         
-un2_address0[3]                          Net      -        -       1.021     -           1         
-cpu_instance.un2_address_m[3]            LUT3     I1       In      -         10.304      -         
-cpu_instance.un2_address_m[3]            LUT3     F        Out     1.099     11.403      -         
-un2_address_m[3]                         Net      -        -       0.000     -           1         
-cpu_instance.address[3]                  DFF      D        In      -         11.403      -         
-===================================================================================================
-Total path delay (propagation time + setup) of 11.536 is 6.370(55.2%) logic and 5.166(44.8%) route.
+Instance / Net                                             Pin      Pin               Arrival     No. of    
+Name                                         Type          Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+cpu_instance.ir_addr[3]                      DFF           Q        Out     0.367     0.367       -         
+ir_addr[3]                                   Net           -        -       1.021     -           5         
+cpu_instance.iR.N_20_i_i_o3_2                LUT3          I0       In      -         1.388       -         
+cpu_instance.iR.N_20_i_i_o3_2                LUT3          F        Out     1.032     2.420       -         
+N_20_i_i_o3_2                                Net           -        -       1.082     -           16        
+cpu_instance.iR.un1_m1_0_a2                  LUT4          I1       In      -         3.502       -         
+cpu_instance.iR.un1_m1_0_a2                  LUT4          F        Out     1.099     4.601       -         
+read8                                        Net           -        -       1.021     -           2         
+cpu_instance.un4_address_0_3_xx_mm[1]        LUT4          I1       In      -         5.622       -         
+cpu_instance.un4_address_0_3_xx_mm[1]        LUT4          F        Out     1.099     6.721       -         
+un4_address0[1]                              Net           -        -       0.766     -           1         
+cpu_instance.un4_address_m[1]                LUT3          I2       In      -         7.487       -         
+cpu_instance.un4_address_m[1]                LUT3          F        Out     0.822     8.309       -         
+un4_address_m[1]                             Net           -        -       1.021     -           7         
+cpu_instance.m3_0_03_2                       LUT3          I0       In      -         9.330       -         
+cpu_instance.m3_0_03_2                       LUT3          F        Out     1.032     10.361      -         
+m3_0_03_3                                    Net           -        -       1.021     -           2         
+cpu_instance.rf_wdata\[10\]_26_5_2_N_2L1     LUT4          I1       In      -         11.383      -         
+cpu_instance.rf_wdata\[10\]_26_5_2_N_2L1     LUT4          F        Out     1.099     12.482      -         
+rf_wdata\[10\]_26_5_2_1[7]                   Net           -        -       0.766     -           1         
+cpu_instance.rf_wdata\[10\]_26_5_2[7]        LUT4          I2       In      -         13.247      -         
+cpu_instance.rf_wdata\[10\]_26_5_2[7]        LUT4          F        Out     0.822     14.069      -         
+rf_wdata\[10\]_26_5_2[7]                     Net           -        -       1.021     -           3         
+cpu_instance.rf_wdata\[10\]_26_5[7]          MUX2_LUT5     S0       In      -         15.090      -         
+cpu_instance.rf_wdata\[10\]_26_5[7]          MUX2_LUT5     O        Out     0.472     15.562      -         
+rf_wdata\[1\]_26[7]                          Net           -        -       1.021     -           1         
+cpu_instance.rf_wdata\[4\][7]                DFFE          D        In      -         16.583      -         
+============================================================================================================
+Total path delay (propagation time + setup) of 16.716 is 7.977(47.7%) logic and 8.739(52.3%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 5: 
-      Requested Period:                      10.000
+      Requested Period:                      14.266
     - Setup time:                            0.133
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.867
+    = Required time:                         14.133
 
-    - Propagation time:                      11.403
+    - Propagation time:                      16.583
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -1.536
+    = Slack (non-critical) :                 -2.450
 
-    Number of logic level(s):                6
-    Starting point:                          cpu_instance.ir_addr[4] / Q
-    Ending point:                            cpu_instance.address[2] / D
+    Number of logic level(s):                8
+    Starting point:                          cpu_instance.ir_addr[7] / Q
+    Ending point:                            cpu_instance.rf_wdata\[4\][7] / D
     The start point is clocked by            top|clk [rising] on pin CLK
     The end   point is clocked by            top|clk [rising] on pin CLK
 
-Instance / Net                                    Pin      Pin               Arrival     No. of    
-Name                                     Type     Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------
-cpu_instance.ir_addr[4]                  DFF      Q        Out     0.367     0.367       -         
-ir_addr[4]                               Net      -        -       1.021     -           2         
-G_14_1                                   LUT4     I1       In      -         1.388       -         
-G_14_1                                   LUT4     F        Out     1.099     2.487       -         
-G_14_1                                   Net      -        -       1.021     -           2         
-G_14                                     LUT4     I0       In      -         3.508       -         
-G_14                                     LUT4     F        Out     1.032     4.540       -         
-N_79                                     Net      -        -       1.082     -           14        
-cpu_instance.un2_address_0_cry_1_ns      LUT2     I0       In      -         5.622       -         
-cpu_instance.un2_address_0_cry_1_ns      LUT2     F        Out     1.032     6.654       -         
-un2_address_0_cry_1_ns                   Net      -        -       1.021     -           1         
-cpu_instance.un2_address_0_cry_1_0_0     ALU      I1       In      -         7.675       -         
-cpu_instance.un2_address_0_cry_1_0_0     ALU      COUT     Out     1.045     8.720       -         
-un2_address_0_cry_1                      Net      -        -       0.000     -           1         
-cpu_instance.un2_address_0_cry_2_0_0     ALU      CIN      In      -         8.720       -         
-cpu_instance.un2_address_0_cry_2_0_0     ALU      SUM      Out     0.563     9.283       -         
-un2_address0[2]                          Net      -        -       1.021     -           1         
-cpu_instance.un2_address_m[2]            LUT3     I1       In      -         10.304      -         
-cpu_instance.un2_address_m[2]            LUT3     F        Out     1.099     11.403      -         
-un2_address_m[2]                         Net      -        -       0.000     -           1         
-cpu_instance.address[2]                  DFF      D        In      -         11.403      -         
-===================================================================================================
-Total path delay (propagation time + setup) of 11.536 is 6.370(55.2%) logic and 5.166(44.8%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-
-
-====================================
-<a name=clockReport17></a>Detailed Report for Clock: System</a>
-====================================
-
-
-
-<a name=startingSlack18></a>Starting Points with Worst Slack</a>
-********************************
-
-                              Starting                                        Arrival          
-Instance                      Reference     Type     Pin     Net              Time        Slack
-                              Clock                                                            
------------------------------------------------------------------------------------------------
-cpu_instance.ir_addr_i[1]     System        INV      O       ir_addr_i[1]     0.000       8.846
-===============================================================================================
-
-
-<a name=endingSlack19></a>Ending Points with Worst Slack</a>
-******************************
-
-                       Starting                                          Required          
-Instance               Reference     Type     Pin       Net              Time         Slack
-                       Clock                                                               
--------------------------------------------------------------------------------------------
-cpu_instance.write     System        DFFR     RESET     ir_addr_i[1]     9.867        8.846
-===========================================================================================
-
-
-
-<a name=worstPaths20></a>Worst Path Information</a>
-<a href="/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.srr:srsf/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.srs:fp:77572:77842:@XP_NAMES_GATE">View Worst Path in Analyst</a>
-***********************
-
-
-Path information for path number 1: 
-      Requested Period:                      10.000
-    - Setup time:                            0.133
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         9.867
-
-    - Propagation time:                      1.021
-    - Clock delay at starting point:         0.000 (ideal)
-    - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 8.846
-
-    Number of logic level(s):                0
-    Starting point:                          cpu_instance.ir_addr_i[1] / O
-    Ending point:                            cpu_instance.write / RESET
-    The start point is clocked by            System [rising]
-    The end   point is clocked by            top|clk [rising] on pin CLK
-
-Instance / Net                         Pin       Pin               Arrival     No. of    
-Name                          Type     Name      Dir     Delay     Time        Fan Out(s)
------------------------------------------------------------------------------------------
-cpu_instance.ir_addr_i[1]     INV      O         Out     0.000     0.000       -         
-ir_addr_i[1]                  Net      -         -       1.021     -           1         
-cpu_instance.write            DFFR     RESET     In      -         1.021       -         
-=========================================================================================
-Total path delay (propagation time + setup) of 1.154 is 0.133(11.5%) logic and 1.021(88.5%) route.
+Instance / Net                                             Pin      Pin               Arrival     No. of    
+Name                                         Type          Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------------
+cpu_instance.ir_addr[7]                      DFF           Q        Out     0.367     0.367       -         
+ir_addr[7]                                   Net           -        -       1.021     -           10        
+cpu_instance.iR.N_20_i_i_o3_1                LUT2          I1       In      -         1.388       -         
+cpu_instance.iR.N_20_i_i_o3_1                LUT2          F        Out     1.099     2.487       -         
+N_20_i_i_o3_1                                Net           -        -       1.082     -           14        
+cpu_instance.iR.un1_m1_0_a2                  LUT4          I0       In      -         3.569       -         
+cpu_instance.iR.un1_m1_0_a2                  LUT4          F        Out     1.032     4.601       -         
+read8                                        Net           -        -       1.021     -           2         
+cpu_instance.un4_address_0_3_xx_mm[1]        LUT4          I1       In      -         5.622       -         
+cpu_instance.un4_address_0_3_xx_mm[1]        LUT4          F        Out     1.099     6.721       -         
+un4_address0[1]                              Net           -        -       0.766     -           1         
+cpu_instance.un4_address_m[1]                LUT3          I2       In      -         7.487       -         
+cpu_instance.un4_address_m[1]                LUT3          F        Out     0.822     8.309       -         
+un4_address_m[1]                             Net           -        -       1.021     -           7         
+cpu_instance.m3_0_03_2                       LUT3          I0       In      -         9.330       -         
+cpu_instance.m3_0_03_2                       LUT3          F        Out     1.032     10.361      -         
+m3_0_03_3                                    Net           -        -       1.021     -           2         
+cpu_instance.rf_wdata\[10\]_26_5_2_N_2L1     LUT4          I1       In      -         11.383      -         
+cpu_instance.rf_wdata\[10\]_26_5_2_N_2L1     LUT4          F        Out     1.099     12.482      -         
+rf_wdata\[10\]_26_5_2_1[7]                   Net           -        -       0.766     -           1         
+cpu_instance.rf_wdata\[10\]_26_5_2[7]        LUT4          I2       In      -         13.247      -         
+cpu_instance.rf_wdata\[10\]_26_5_2[7]        LUT4          F        Out     0.822     14.069      -         
+rf_wdata\[10\]_26_5_2[7]                     Net           -        -       1.021     -           3         
+cpu_instance.rf_wdata\[10\]_26_5[7]          MUX2_LUT5     S0       In      -         15.090      -         
+cpu_instance.rf_wdata\[10\]_26_5[7]          MUX2_LUT5     O        Out     0.472     15.562      -         
+rf_wdata\[1\]_26[7]                          Net           -        -       1.021     -           1         
+cpu_instance.rf_wdata\[4\][7]                DFFE          D        In      -         16.583      -         
+============================================================================================================
+Total path delay (propagation time + setup) of 16.716 is 7.977(47.7%) logic and 8.739(52.3%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1013,46 +915,46 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 324MB peak: 324MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 355MB peak: 355MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 324MB peak: 324MB)
+Finished timing report (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 355MB peak: 355MB)
 
 ---------------------------------------
-<a name=resourceUsage21></a>Resource Usage Report for top </a>
+<a name=resourceUsage17></a>Resource Usage Report for top </a>
 
 Mapping to part: gw1n_1qfn48-6
 Cell usage:
-ALU             8 uses
-DFF             13 uses
-DFFE            5 uses
-DFFR            25 uses
+ALU             31 uses
+DFF             32 uses
+DFFE            30 uses
+DFFR            1 use
 GSR             1 use
-INV             1 use
-MUX2_LUT5       1 use
-LUT2            19 uses
-LUT3            14 uses
-LUT4            13 uses
+MUX2_LUT5       13 uses
+MUX2_LUT6       2 uses
+LUT2            10 uses
+LUT3            41 uses
+LUT4            112 uses
 
 I/O ports: 6
-I/O primitives: 5
-IBUF           2 uses
+I/O primitives: 4
+IBUF           1 use
 OBUF           3 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   43 of 864 (4%)
+Register bits not including I/Os:   63 of 864 (7%)
 Total load per clock:
-   top|clk: 43
+   top|clk: 63
 
 @S |Mapping Summary:
-Total  LUTs: 46 (3%)
+Total  LUTs: 163 (14%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 324MB peak: 324MB)
+At Mapper Exit (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 355MB peak: 355MB)
 
-Process took 0h:00m:03s realtime, 0h:00m:03s cputime
-# Thu Mar 26 07:27:15 2020
+Process took 0h:00m:05s realtime, 0h:00m:05s cputime
+# Thu Mar 26 14:03:35 2020
 
 ###########################################################]
 
