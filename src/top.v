@@ -10,7 +10,7 @@ module top (
   reg  [7:0] cpu_din;
   cpu cpu_instance (
     .clk(clk),                // clock
-    .rst(buttonA),                // reset
+    .rst(buttonA),            // reset
     .write(cpu_write),        // CPU write request
     .read(cpu_read),          // CPU read request
     .address(cpu_addr),       // read/write address

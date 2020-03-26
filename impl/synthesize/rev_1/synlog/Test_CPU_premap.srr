@@ -1,4 +1,4 @@
-# Thu Mar 26 14:26:56 2020
+# Thu Mar 26 17:00:32 2020
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -29,10 +29,10 @@ Printing clock  summary report in "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 230MB peak: 230MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 231MB peak: 231MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 230MB peak: 230MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 231MB peak: 231MB)
 
 
 Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 231MB peak: 231MB)
@@ -44,45 +44,52 @@ Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h
 @W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
 @N: FX493 |Applying initial value "1" on instance led_G.
 @N: FX493 |Applying initial value "1" on instance led_R.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":67:2:67:7|Removing sequential instance read (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|Removing sequential instance cpu_instance.rf_wdata_3[31:0] because it is equivalent to instance cpu_instance.rf_wdata[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: MO156 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|RAM rf_wdata_2_0[31:0] removed due to constant propagation. 
+@N: BN115 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":54:10:54:11|Removing instance iR (in view: work.cpu(verilog)) of type view:work.instRom(verilog) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Removing sequential instance led_B (in view: work.top(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Removing sequential instance led_G (in view: work.top(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Removing sequential instance led_R (in view: work.top(verilog)) of type view:PrimLib.dffse(prim) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|Removing sequential instance ir_addr[31:0] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|Removing sequential instance address[31:0] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN115 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":11:6:11:17|Removing instance cpu_instance (in view: work.top(verilog)) of type view:work.cpu(verilog) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|Removing sequential instance rf_wdata_1[31:0] (in view: work.cpu(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|Removing sequential instance dout[31:0] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":70:2:70:7|Removing sequential instance rf_wdata[31:0] (in view: work.cpu(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
 
-Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 327MB peak: 327MB)
+Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 327MB peak: 327MB)
 
 
-Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 327MB peak: 327MB)
+Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 327MB peak: 327MB)
 
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 327MB peak: 327MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 327MB peak: 327MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 327MB peak: 327MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 327MB peak: 327MB)
 
 
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 327MB peak: 327MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 327MB peak: 327MB)
 
 
 
 Clock Summary
 ******************
 
-          Start       Requested     Requested     Clock        Clock                     Clock
-Level     Clock       Frequency     Period        Type         Group                     Load 
-----------------------------------------------------------------------------------------------
-0 -       top|clk     84.3 MHz      11.859        inferred     Autoconstr_clkgroup_0     159  
-==============================================================================================
+          Start     Requested     Requested     Clock     Clock     Clock
+Level     Clock     Frequency     Period        Type      Group     Load 
+-------------------------------------------------------------------------
+=========================================================================
 
 
 
 Clock Load Summary
 ***********************
 
-            Clock     Source        Clock Pin          Non-clock Pin     Non-clock Pin
-Clock       Load      Pin           Seq Example        Seq Example       Comb Example 
---------------------------------------------------------------------------------------
-top|clk     159       clk(port)     cpu_din[2:0].C     -                 -            
-======================================================================================
-
-@W: MT529 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":67:2:67:7|Found inferred clock top|clk which controls 159 sequential elements including cpu_instance.ir_addr[7:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
+          Clock     Source     Clock Pin       Non-clock Pin     Non-clock Pin
+Clock     Load      Pin        Seq Example     Seq Example       Comb Example 
+------------------------------------------------------------------------------
+==============================================================================
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -95,15 +102,10 @@ Number of ICG latches not removed:	0
 
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
-1 non-gated/non-generated clock tree(s) driving 159 clock pin(s) of sequential element(s)
+0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
-=========================== Non-Gated/Non-Generated Clocks ============================
-Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
----------------------------------------------------------------------------------------
-@KP:ckid0_0       clk                 port                   159        led_R          
-=======================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######
@@ -125,6 +127,6 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 327MB peak: 327MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Thu Mar 26 14:26:58 2020
+# Thu Mar 26 17:00:34 2020
 
 ###########################################################]

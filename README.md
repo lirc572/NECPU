@@ -10,4 +10,8 @@ When I created this repo, I just opened a bottle of Nutri-Express, thus came up 
 
 ## Description
 
-The NECPU is a 32-bit CPU. Each instruction takes 32 bits. Some instructions are derived from MIPS32. It has 32 general purpose registers.
+The NECPU is a 32-bit CPU.
+Each instruction takes 32 bits.
+Some instructions are derived from MIPS32.
+It has 32 general purpose registers.
+It is word addressable (not byte addressable).

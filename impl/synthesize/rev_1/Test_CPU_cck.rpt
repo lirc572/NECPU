@@ -16,7 +16,7 @@ max stack size: 8388608 (bytes)
 
 Implementation : rev_1
 
-# Written on Thu Mar 26 14:26:58 2020
+# Written on Thu Mar 26 17:00:34 2020
 
 ##### DESIGN INFO #######################################################
 
@@ -38,10 +38,9 @@ Found 0 issues in 0 out of 0 constraints
 Clock Relationships
 *******************
 
-Starting     Ending      |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
-------------------------------------------------------------------------------------------------------------------------------------
-top|clk      top|clk     |     11.859           |     No paths         |     No paths         |     No paths                         
-====================================================================================================================================
+Starting     Ending     |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
+-----------------------------------------------------------------------------------------------------------------------------------
+===================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
 
@@ -51,6 +50,7 @@ Unconstrained Start/End Points
 
 p:buttonA
 p:buttonB
+p:clk
 p:led_B
 p:led_G
 p:led_R

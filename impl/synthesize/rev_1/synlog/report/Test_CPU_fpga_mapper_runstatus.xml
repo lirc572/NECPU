@@ -13,13 +13,13 @@ The file contains the job information from mapper to be displayed as part of the
 </job_status>
 <job_info>
 <info name="Notes">
-<data>45</data>
+<data>9</data>
 <report_link name="more">
 <data>/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synlog/report/Test_CPU_fpga_mapper_notes.txt</data>
 </report_link>
 </info>
 <info name="Warnings">
-<data>85</data>
+<data>0</data>
 <report_link name="more">
 <data>/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synlog/report/Test_CPU_fpga_mapper_warnings.txt</data>
 </report_link>
@@ -31,16 +31,16 @@ The file contains the job information from mapper to be displayed as part of the
 </report_link>
 </info>
 <info name="CPU Time">
-<data>0h:00m:06s</data>
+<data>0h:00m:02s</data>
 </info>
 <info name="Real Time">
-<data>0h:00m:06s</data>
+<data>0h:00m:02s</data>
 </info>
 <info name="Peak Memory">
-<data>350MB</data>
+<data>323MB</data>
 </info>
 <info name="Date &amp; Time">
-<data type="timestamp">1585204024</data>
+<data type="timestamp">1585213237</data>
 </info>
 </job_info>
 </job_run_status>

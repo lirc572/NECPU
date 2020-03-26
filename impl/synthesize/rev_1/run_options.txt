@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version P-2019.03G
 #--  Project file /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/run_options.txt
-#--  Written on Thu Mar 26 14:26:51 2020
+#--  Written on Thu Mar 26 17:00:28 2020
 
 
 #project files

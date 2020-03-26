@@ -1,6 +1,9 @@
+`define InstBusWidth  32    // Width of data bus of instruction memory
+`define InstAddrBus   32    // Width of address bus of instruction memory
+
 module instRom (
-    input  [7:0]  address,
-    output reg [15:0] inst
+    input  [`InstAddrBus-1:0]  address,
+    output reg [`InstBusWidth-1:0] inst
   );
   
   parameter InstNOP   = 4'd0;  // 0 filled
