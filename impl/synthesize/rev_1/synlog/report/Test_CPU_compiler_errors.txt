@@ -1,2 +1,4 @@
-@E: CG906 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":38:18:38:24|Reference to unknown variable InstSET.
+@E: CG288 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":42:2:42:4|Expecting delimiter: , or ;
+@E: CG288 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":34:2:34:7|Expecting delimiter: , or ;
+@E: CS187 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":52:0:52:8|Expecting endmodule
 

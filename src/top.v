@@ -21,11 +21,11 @@ module top (
   always @ (posedge clk) begin
     cpu_din = 8'hxx;
     if (cpu_write) begin
-      if (cpu_addr == 'd128) begin
+      if (cpu_addr == 'd2147483648) begin
         {led_R, led_G, led_B} = ~cpu_dout[2:0];
       end
     end else if (cpu_read) begin
-      if (cpu_addr == 'd128) begin
+      if (cpu_addr == 'd2147483648) begin
         cpu_din = {5'd0, ~led_R, ~led_G, ~led_B};
       end
     end

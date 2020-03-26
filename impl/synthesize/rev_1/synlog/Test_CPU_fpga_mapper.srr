@@ -1,4 +1,4 @@
-# Thu Mar 26 18:56:43 2020
+# Thu Mar 26 21:13:43 2020
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -99,12 +99,12 @@ Writing scf file... (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; 
 Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 323MB peak: 323MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 323MB peak: 323MB)
+Start final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 323MB peak: 323MB)
 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Thu Mar 26 18:56:45 2020
+# Timing report written on Thu Mar 26 21:13:47 2020
 #
 
 
@@ -153,10 +153,10 @@ No IO constraint found
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 323MB peak: 323MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 323MB peak: 323MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 323MB peak: 323MB)
+Finished timing report (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 323MB peak: 323MB)
 
 ---------------------------------------
 Resource Usage Report for top 
@@ -178,9 +178,9 @@ Total  LUTs: 0 (0%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 323MB peak: 323MB)
+At Mapper Exit (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 323MB peak: 323MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:02s cputime
-# Thu Mar 26 18:56:45 2020
+Process took 0h:00m:03s realtime, 0h:00m:03s cputime
+# Thu Mar 26 21:13:47 2020
 
 ###########################################################]

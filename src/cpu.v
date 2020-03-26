@@ -20,10 +20,10 @@ module cpu (
   parameter InstSW      = 6'd2;  // Store-Word            src, rs, rt        : M[R[rs] + offset] = R[src]
   parameter InstLLI     = 6'd3;  // Load-Lower-Immediate  rd, immediate      : R[rd] = immediate
   parameter InstLUI     = 6'd4;  // Load-Upper-Immediate  rd, immediate      : R[rd] = immediate
-  parameter InstSLT     = 6'd5;  // Set-Less-Than       rd, rs, rt         : R[rd] = R[rs] < R[rt]
-  parameter InstSEQ     = 6'd6;  // Set-Equal           rd, rs, rt         : R[rd] = R[rs] == R[rt]
-  parameter InstBEQ     = 6'd7;  // Branch-if-Equal       rs, immediate      : PC = PC + (R[rs] == immediate ? 2 : 1)
-  parameter InstBNE     = 6'd8;  // Branch-if-Not-Equal   rs, immediate      : PC = PC + (R[rs] != immediate ? 2 : 1)
+  parameter InstSLT     = 6'd5;  // Set-Less-Than         rd, rs, rt         : R[rd] = R[rs] < R[rt]
+  parameter InstSEQ     = 6'd6;  // Set-Equal             rd, rs, rt         : R[rd] = R[rs] == R[rt]
+  parameter InstBEQ     = 6'd7;  // Branch-if-Equal       rd, immediate      : PC = PC + (R[rd] == immediate ? 2 : 1)
+  parameter InstBNE     = 6'd8;  // Branch-if-Not-Equal   rd, immediate      : PC = PC + (R[rd] != immediate ? 2 : 1)
   parameter InstADD     = 6'd9;  // Add                   rd, rs, rt         : R[rd] = R[rs] + R[rt]
   parameter InstADDi    = 6'd10; // Add-Immediate         rd, rs, immediate  : R[rd] = R[rs] + immediate
   parameter InstSUB     = 6'd11; // Subtract              rd, rs, rt         : R[rd] = R[rs] - R[rt]
@@ -37,6 +37,7 @@ module cpu (
   parameter InstINV     = 6'd19; // INVERT                rd, rs             : R[rd] = ~R[rs]
   parameter InstXOR     = 6'd20; // XOR                   rd, rs, rt         : R[rd] = R[rs] ^ R[rt]
   parameter InstXORi    = 6'd21; // XOR-Immediate         rd, rs, immediate  : R[rd] = R[rs] ^ immediate
+  parameter InstJMP     = 6'd22; // Jump                  rd                 : PC = R[rd]
   
   reg  [`RegBusWidth-1:0] rf_wdata [`RegWidth-1:0];
   wire [`RegBusWidth-1:0] rf_rdata [`RegWidth-1:0];
@@ -87,12 +88,12 @@ module cpu (
       InstLW   : begin
         read = 1;                                     // request a read
         rf_wdata[rd] = din;                           // save the data
-        address = rf_rdata[rs] + rf_rdata[rt];        // set the address
+        address = rf_rdata[rs] + rt;                  // set the address
       end
       InstSW  : begin
         write = 1;                                    // request a write
+        address = rf_rdata[rs] + rt;                  // set the address
         dout = rf_rdata[rd];                          // output the data
-        address = rf_rdata[rs] + rf_rdata[rt];        // set the address
       end
       InstLLI:
         rf_wdata[rd][15:0]  = immediate;              // set the lower half of reg to immediate
@@ -133,7 +134,9 @@ module cpu (
       InstXOR:
         rf_wdata[rd] = rf_rdata[rs] ^ rf_rdata[rt];   // bit-wise XOR
       InstXORi:
-        rf_wdata[rd] = rf_rdata[rs] ^ immediate;   // bit-wise XOR
+        rf_wdata[rd] = rf_rdata[rs] ^ immediate;      // bit-wise XOR
+      InstJMP:
+        PC = rf_wdata[rd];                             // Jump
     endcase
   end
 endmodule
