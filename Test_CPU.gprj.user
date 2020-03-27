@@ -2,8 +2,8 @@
 <!DOCTYPE ProjectUserData>
 <UserConfig>
     <FlowState>
-        <Process ID="Synthesis" State="2"/>
-        <Process ID="Pnr" State="3"/>
+        <Process ID="Synthesis" State="4"/>
+        <Process ID="Pnr" State="4"/>
     </FlowState>
     <ResultFileList>
         <ResultFile ResultFileType="PnR_BIT" ResultFilePath="impl/pnr/Test_CPU.fs"/>

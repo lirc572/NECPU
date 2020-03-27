@@ -100,10 +100,10 @@ module cpu (
         rf_data[rd] = rf_data[rs] == rf_data[rt];     // equals comparison
       InstBEQ:
         if (rf_data[rd] == immediate)                 // if R[rd] == immediate
-          PC = PC + 2;                                // skip next instruction
+          PC = PC + 1;                                // skip next instruction
       InstBNE:
         if (rf_data[rd] != immediate)                 // if R[rd] != immediate
-          PC = PC + 2;                                // skip next instruction
+          PC = PC + 1;                                // skip next instruction
       InstADD:
         rf_data[rd] = rf_data[rs] + rf_data[rt];   // addition
       InstADDi:
