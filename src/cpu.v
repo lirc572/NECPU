@@ -76,7 +76,6 @@ module cpu (
     dout    = 8'hxx;           // don't care
     
     ir_addr  = PC;             // reg 0 is program counter
-    PC = PC + 1;               // increment PC by default
     
     // Perform the operation
     case (op)
@@ -133,5 +132,6 @@ module cpu (
       InstJMP:
         PC = rf_data[rd];                             // Jump
     endcase
+    PC = PC + 1;               // increment PC by default
   end
 endmodule
