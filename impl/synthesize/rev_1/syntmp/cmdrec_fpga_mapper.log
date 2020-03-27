@@ -1,14 +1,14 @@
 /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/SynplifyPro/bin/m_generic  -prodtype  synplify_pro   -encrypt  -pro  -rundir  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1   -part GW1N_1  -package QFN48  -grade -6    -maxfan 10000 -RWCheckOnRam 1 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -csa_carry_chain_maxlen 0 -infer_seqShift -enable_gcc_in_premap -preserve_slash_names -summaryfile /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synlog/report/Test_CPU_fpga_mapper.xml -merge_inferred_clocks 0  -top_level_module  top  -implementation  rev_1  -flow mapping  -multisrs  -ovm  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.vm   -autoconstraint  -freq 100.000   /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/Test_CPU_prem.srd  -sap  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.sap  -otap  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.tap  -omap  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.map  -devicelib  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/SynplifyPro/lib/generic/gw1n.v  -ologparam  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/syntmp/Test_CPU.plg  -osyn  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.srm  -prjdir  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/  -prjname  Test_CPU  -log  /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synlog/Test_CPU_fpga_mapper.srr  -sn  2019.03  -jobname  "fpga_mapper" 
 relcom:../../../../../../SynplifyPro/bin/m_generic -prodtype synplify_pro -encrypt -pro -rundir ../../rev_1 -part GW1N_1 -package QFN48 -grade -6 -maxfan 10000 -RWCheckOnRam 1 -pipe -fixgatedclocks 1 -fixgeneratedclocks 1 -csa_carry_chain_maxlen 0 -infer_seqShift -enable_gcc_in_premap -preserve_slash_names -summaryfile ../synlog/report/Test_CPU_fpga_mapper.xml -merge_inferred_clocks 0 -top_level_module top -implementation rev_1 -flow mapping -multisrs -ovm ../Test_CPU.vm -autoconstraint -freq 100.000 ../synwork/Test_CPU_prem.srd -sap ../Test_CPU.sap -otap ../Test_CPU.tap -omap ../Test_CPU.map -devicelib ../../../../../../SynplifyPro/lib/generic/gw1n.v -ologparam Test_CPU.plg -osyn ../Test_CPU.srm -prjdir ../../ -prjname Test_CPU -log ../synlog/Test_CPU_fpga_mapper.srr -sn 2019.03 -jobname "fpga_mapper"
-rc:0 success:1 runtime:4
-file:../Test_CPU.vm|io:o|time:1585228426|size:1624|exec:0|csum:
-file:../synwork/Test_CPU_prem.srd|io:i|time:1585228422|size:1434|exec:0|csum:37242DAC4F42302B2EF28E12D796C50D
-file:../Test_CPU.sap|io:o|time:1585228423|size:113|exec:0|csum:
+rc:0 success:1 runtime:3
+file:../Test_CPU.vm|io:o|time:1585278994|size:1624|exec:0|csum:
+file:../synwork/Test_CPU_prem.srd|io:i|time:1585278990|size:1435|exec:0|csum:CEB4E973E15F06236371870A7F931154
+file:../Test_CPU.sap|io:o|time:1585278991|size:113|exec:0|csum:
 file:../Test_CPU.tap|io:o|time:0|size:-1|exec:0|csum:
-file:../Test_CPU.map|io:o|time:1585228427|size:27|exec:0|csum:
+file:../Test_CPU.map|io:o|time:1585278994|size:27|exec:0|csum:
 file:../../../../../../SynplifyPro/lib/generic/gw1n.v|io:i|time:1569718772|size:118127|exec:0|csum:00EFB57D0C2F299C9ACC9ECAF122653A
-file:Test_CPU.plg|io:o|time:1585228427|size:211|exec:0|csum:
-file:../Test_CPU.srm|io:o|time:1585228427|size:2805|exec:0|csum:
-file:../synlog/Test_CPU_fpga_mapper.srr|io:o|time:1585228427|size:6964|exec:0|csum:
+file:Test_CPU.plg|io:o|time:1585278994|size:211|exec:0|csum:
+file:../Test_CPU.srm|io:o|time:1585278994|size:2802|exec:0|csum:
+file:../synlog/Test_CPU_fpga_mapper.srr|io:o|time:1585278994|size:6964|exec:0|csum:
 file:../../../../../../SynplifyPro/linux_a_64/m_generic|io:i|time:1569718777|size:40818992|exec:1|csum:98EA4A83866408E2DF4D7F373A7EE46A
 file:../../../../../../SynplifyPro/bin/m_generic|io:i|time:1569718771|size:347|exec:1|csum:04851DFC0CBB288ED81DA3E420127D0D

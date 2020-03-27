@@ -39,19 +39,14 @@ module cpu (
   parameter InstXORi    = 6'd21; // XOR-Immediate         rd, rs, immediate  : R[rd] = R[rs] ^ immediate
   parameter InstJMP     = 6'd22; // Jump                  rd                 : PC = R[rd]
   
-  reg  [`RegBusWidth-1:0] rf_wdata [`RegWidth-1:0];
-  wire [`RegBusWidth-1:0] rf_rdata [`RegWidth-1:0];
-  genvar i;
-  for (i=0; i<`RegWidth; i=i+1) begin
-    assign rf_rdata = rf_wdata;
-  end
+  reg  [`RegBusWidth-1:0] rf_data [`RegWidth-1:0];
   
   reg [`InstAddrBus-1:0] PC;
   
   integer ha;
   initial begin
     for (ha=0; ha<`RegWidth; ha=ha+1)
-      rf_wdata[ha] = 0;
+      rf_data[ha] = 'd0;
     PC = 0;
   end
   
@@ -87,56 +82,56 @@ module cpu (
     case (op)
       InstLW   : begin
         read = 1;                                     // request a read
-        rf_wdata[rd] = din;                           // save the data
-        address = rf_rdata[rs] + rt;                  // set the address
+        address = rf_data[rs] + rt;                   // set the address
+        rf_data[rd] = din;                            // save the data
       end
       InstSW  : begin
         write = 1;                                    // request a write
-        address = rf_rdata[rs] + rt;                  // set the address
-        dout = rf_rdata[rd];                          // output the data
+        dout = rf_data[rd];                           // output the data
+        address = rf_data[rs] + rt;                   // set the address
       end
       InstLLI:
-        rf_wdata[rd][15:0]  = immediate;              // set the lower half of reg to immediate
+        rf_data[rd][15:0]  = immediate;               // set the lower half of reg to immediate
       InstLUI:
-        rf_wdata[rd][31:16] = immediate;              // set the upper half of reg to immediate
+        rf_data[rd][31:16] = immediate;               // set the upper half of reg to immediate
       InstSLT:
-        rf_wdata[rd] = rf_rdata[rs] < rf_rdata[rt];   // less-than comparison
+        rf_data[rd] = rf_data[rs] < rf_data[rt];      // less-than comparison
       InstSEQ:
-        rf_wdata[rd] = rf_rdata[rs] == rf_rdata[rt];  // equals comparison
+        rf_data[rd] = rf_data[rs] == rf_data[rt];     // equals comparison
       InstBEQ:
-        if (rf_rdata[rd] == immediate)                // if R[rd] == immediate
+        if (rf_data[rd] == immediate)                 // if R[rd] == immediate
           PC = PC + 2;                                // skip next instruction
       InstBNE:
-        if (rf_rdata[rd] != immediate)                // if R[rd] != immediate
+        if (rf_data[rd] != immediate)                 // if R[rd] != immediate
           PC = PC + 2;                                // skip next instruction
       InstADD:
-        rf_wdata[rd] = rf_rdata[rs] + rf_rdata[rt];   // addition
+        rf_data[rd] = rf_data[rs] + rf_data[rt];   // addition
       InstADDi:
-        rf_wdata[rd] = rf_rdata[rs] + immediate;      // add immediate
+        rf_data[rd] = rf_data[rs] + immediate;      // add immediate
       InstSUB:
-        rf_wdata[rd] = rf_rdata[rs] - rf_rdata[rt];   // subtraction
+        rf_data[rd] = rf_data[rs] - rf_data[rt];   // subtraction
       InstSUBi:
-        rf_wdata[rd] = rf_rdata[rs] - immediate;      // subtract immediate
+        rf_data[rd] = rf_data[rs] - immediate;      // subtract immediate
       InstSLL:
-        rf_wdata[rd] = rf_rdata[rs] << rf_rdata[rt];  // shift left 
+        rf_data[rd] = rf_data[rs] << rf_data[rt];  // shift left 
       InstSRL:
-        rf_wdata[rd] = rf_rdata[rs] >> rf_rdata[rt];  // shift right
+        rf_data[rd] = rf_data[rs] >> rf_data[rt];  // shift right
       InstAND:
-        rf_wdata[rd] = rf_rdata[rs] & rf_rdata[rt];   // bit-wise AND
+        rf_data[rd] = rf_data[rs] & rf_data[rt];   // bit-wise AND
       InstANDi:
-        rf_wdata[rd] = rf_rdata[rs] & immediate;      // bit-wise AND immediate
+        rf_data[rd] = rf_data[rs] & immediate;      // bit-wise AND immediate
       InstOR:
-        rf_wdata[rd] = rf_rdata[rs] | rf_rdata[rt];   // bit-wise OR
+        rf_data[rd] = rf_data[rs] | rf_data[rt];   // bit-wise OR
       InstORi:
-        rf_wdata[rd] = rf_rdata[rs] | immediate;      // bit-wise OR
+        rf_data[rd] = rf_data[rs] | immediate;      // bit-wise OR
       InstINV:
-        rf_wdata[rd] = ~rf_rdata[rs];                 // bit-wise invert
+        rf_data[rd] = ~rf_data[rs];                 // bit-wise invert
       InstXOR:
-        rf_wdata[rd] = rf_rdata[rs] ^ rf_rdata[rt];   // bit-wise XOR
+        rf_data[rd] = rf_data[rs] ^ rf_data[rt];   // bit-wise XOR
       InstXORi:
-        rf_wdata[rd] = rf_rdata[rs] ^ immediate;      // bit-wise XOR
+        rf_data[rd] = rf_data[rs] ^ immediate;      // bit-wise XOR
       InstJMP:
-        PC = rf_wdata[rd];                             // Jump
+        PC = rf_data[rd];                             // Jump
     endcase
   end
 endmodule

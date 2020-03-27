@@ -1,4 +1,4 @@
-# Thu Mar 26 21:13:41 2020
+# Fri Mar 27 11:16:29 2020
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -104,13 +104,13 @@ Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:0
 Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 326MB peak: 326MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 326MB peak: 326MB)
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 326MB peak: 326MB)
 
 Pre-mapping successful!
 
 At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 326MB peak: 326MB)
 
 Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Thu Mar 26 21:13:43 2020
+# Fri Mar 27 11:16:31 2020
 
 ###########################################################]
