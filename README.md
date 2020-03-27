@@ -8,6 +8,10 @@ This design is made for the [Sipeed Tang Nano FPGA board](https://www.seeedstudi
 
 When I created this repo, I just opened a bottle of Nutri-Express, thus came up with this name.
 
+## Simulation
+
+https://www.edaplayground.com/x/4RjK
+
 ## Description
 
 The **NECPU** is a 32-bit general purpose register architecture processor with the specifications below. Registers `$rs`, `$rt`, and `$rd` are placeholders for actual general purpose registers `$0`, `$1`, `$2`, ..., `$31`, each holding a 32-bit value. `immediate` refers to an immediate value (constant) and `label` refers to label in the instruction corresponding to a specific line in the code. All *immediates* are given as 16-bit unsigned values. Whenever an *immediate* is used as an operand with a register as the other operand, the *immediate* is zero-extended to 32-bit before computation. All *labels* will be converted into actual addresses using direct addressing mode.
