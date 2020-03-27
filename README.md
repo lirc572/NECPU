@@ -16,7 +16,7 @@ The **NECPU** is a 32-bit general purpose register architecture processor with t
 
 Every instruction of **NECPU** takes exactly one clock cycle to complete. Hence, the time taken of a code snippet can easily be calculated.
 
-### Instruction Set
+## Instruction Set
 
 We will use the following convension to simplify our description:
 
@@ -50,7 +50,7 @@ XOR  `$rd`, `$rs`, `$rt`       | Xor                  | `R[$rd]` = `R[$rs]` ^ `R
 XORi `$rd`, `$rs`, `immediate` | Xor Immediate        | `R[$rd]` = `R[$rs]` ^ `immediate`
 JMP  `$rd`                     | Unconditional Jump   | `PC` = `R[$rd]`
 
-### Instruction Encoding
+## Instruction Encoding
 
 ![Instruction Encoding](./necpu_encoding.png "Instruction Encoding")
 
@@ -84,7 +84,7 @@ Note that the `BEQ` and `BNE` instructions of **NECPU** differ from those of **M
 - **NECPU**'s `BEQ` and `BNE` instructions compare a register's value with an `immediate`, while **MIPS** compares the values of two registers.
 - **NECPU**'s `BEQ` and `BNE` instructions can only skip the next **one** instruction if the condition is satisfied.
 
-### TODO
+## TODO
 
 - Write testbenches for all instructions
 - Extract Instruction memory out of the CPU module
