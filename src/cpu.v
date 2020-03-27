@@ -43,13 +43,6 @@ module cpu (
   
   reg [`InstAddrBus-1:0] PC;
   
-  integer ha;
-  initial begin
-    for (ha=0; ha<`RegWidth; ha=ha+1)
-      rf_data[ha] = 'd0;
-    PC = 0;
-  end
-  
   reg  [`InstAddrBus-1:0]  ir_addr;
   wire [`InstBusWidth-1:0] ir_inst;
   instRom iR ( .address(ir_addr), .inst(ir_inst) );  // program ROM

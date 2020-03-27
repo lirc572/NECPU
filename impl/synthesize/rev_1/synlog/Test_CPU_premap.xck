@@ -1,1 +1,1 @@
-ckid0_0:@|S:clk@|E:led_R@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0
+ckid0_0:@|S:clk@|E:cpu_instance.PC[31:0]@|F:@syn_dgcc_clockid0_0==1@|M:ClockId_0_0
