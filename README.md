@@ -83,3 +83,11 @@ Note that the `BEQ` and `BNE` instructions of **NECPU** differ from those of **M
 
 - **NECPU**'s `BEQ` and `BNE` instructions compare a register's value with an `immediate`, while **MIPS** compares the values of two registers.
 - **NECPU**'s `BEQ` and `BNE` instructions can only skip the next **one** instruction if the condition is satisfied.
+
+### TODO
+
+- Write testbenches for all instructions
+- Extract Instruction memory out of the CPU module
+- Port to Vivado/Xilinx Artix-7
+- More detailed documentation
+
