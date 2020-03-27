@@ -16,7 +16,7 @@ max stack size: 8388608 (bytes)
 
 Implementation : rev_1
 
-# Written on Fri Mar 27 11:16:29 2020
+# Written on Fri Mar 27 11:38:00 2020
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      (none)
@@ -33,16 +33,18 @@ No issues found in constraint syntax.
 Clock Summary
 *************
 
-          Start     Requested     Requested     Clock     Clock     Clock
-Level     Clock     Frequency     Period        Type      Group     Load 
--------------------------------------------------------------------------
-=========================================================================
+          Start       Requested     Requested     Clock        Clock                     Clock
+Level     Clock       Frequency     Period        Type         Group                     Load 
+----------------------------------------------------------------------------------------------
+0 -       top|clk     81.5 MHz      12.275        inferred     Autoconstr_clkgroup_0     519  
+==============================================================================================
 
 
 Clock Load Summary
 ******************
 
-          Clock     Source     Clock Pin       Non-clock Pin     Non-clock Pin
-Clock     Load      Pin        Seq Example     Seq Example       Comb Example 
-------------------------------------------------------------------------------
-==============================================================================
+            Clock     Source        Clock Pin          Non-clock Pin     Non-clock Pin
+Clock       Load      Pin           Seq Example        Seq Example       Comb Example 
+--------------------------------------------------------------------------------------
+top|clk     519       clk(port)     cpu_din[2:0].C     -                 -            
+======================================================================================

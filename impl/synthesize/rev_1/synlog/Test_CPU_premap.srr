@@ -1,4 +1,4 @@
-# Fri Mar 27 11:16:29 2020
+# Fri Mar 27 11:38:00 2020
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -29,51 +29,60 @@ Printing clock  summary report in "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 
-Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 230MB peak: 230MB)
+Design Input Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 234MB peak: 234MB)
 
 
-Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 230MB peak: 230MB)
+Mapper Initialization Complete (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 234MB peak: 234MB)
 
 
-Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 230MB peak: 230MB)
+Start loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 235MB peak: 235MB)
 
 
-Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 243MB peak: 243MB)
+Finished loading timing files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 249MB peak: 249MB)
+
+@N: FX493 |Applying initial value "1" on instance led_B.
+@W: FX474 |User-specified initial value defined for some sequential elements which can prevent optimum synthesis results from being achieved. 
+@N: FX493 |Applying initial value "1" on instance led_G.
+@N: FX493 |Applying initial value "1" on instance led_R.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance read (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
+
+Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 332MB peak: 332MB)
 
 
-Starting clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 326MB peak: 326MB)
+Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 332MB peak: 332MB)
 
 
-Finished clock optimization phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 326MB peak: 326MB)
+Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 332MB peak: 332MB)
 
 
-Starting clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 326MB peak: 326MB)
+Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 332MB peak: 332MB)
 
 
-Finished clock optimization report phase (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 326MB peak: 326MB)
-
-
-Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:00s; Memory used current: 326MB peak: 326MB)
+Finished netlist restructuring (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 332MB peak: 332MB)
 
 
 
 Clock Summary
 ******************
 
-          Start     Requested     Requested     Clock     Clock     Clock
-Level     Clock     Frequency     Period        Type      Group     Load 
--------------------------------------------------------------------------
-=========================================================================
+          Start       Requested     Requested     Clock        Clock                     Clock
+Level     Clock       Frequency     Period        Type         Group                     Load 
+----------------------------------------------------------------------------------------------
+0 -       top|clk     81.5 MHz      12.275        inferred     Autoconstr_clkgroup_0     519  
+==============================================================================================
 
 
 
 Clock Load Summary
 ***********************
 
-          Clock     Source     Clock Pin       Non-clock Pin     Non-clock Pin
-Clock     Load      Pin        Seq Example     Seq Example       Comb Example 
-------------------------------------------------------------------------------
-==============================================================================
+            Clock     Source        Clock Pin          Non-clock Pin     Non-clock Pin
+Clock       Load      Pin           Seq Example        Seq Example       Comb Example 
+--------------------------------------------------------------------------------------
+top|clk     519       clk(port)     cpu_din[2:0].C     -                 -            
+======================================================================================
+
+@W: MT529 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Found inferred clock top|clk which controls 519 sequential elements including cpu_instance.PC[31:0]. This clock has no specified timing constraint which may prevent conversion of gated or generated clocks and may adversely impact design performance. 
 
 ICG Latch Removal Summary:
 Number of ICG latches removed: 0
@@ -86,10 +95,15 @@ Number of ICG latches not removed:	0
 
 #### START OF PREMAP CLOCK OPTIMIZATION REPORT #####[
 
-0 non-gated/non-generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
+1 non-gated/non-generated clock tree(s) driving 519 clock pin(s) of sequential element(s)
 0 gated/generated clock tree(s) driving 0 clock pin(s) of sequential element(s)
 0 instances converted, 0 sequential instances remain driven by gated/generated clocks
 
+=========================== Non-Gated/Non-Generated Clocks ============================
+Clock Tree ID     Driving Element     Drive Element Type     Fanout     Sample Instance
+---------------------------------------------------------------------------------------
+@KP:ckid0_0       clk                 port                   519        led_R          
+=======================================================================================
 
 
 ##### END OF CLOCK OPTIMIZATION REPORT ######
@@ -98,19 +112,19 @@ Number of ICG latches not removed:	0
 Finished Pre Mapping Phase.
 @N: BN225 |Writing default property annotation file /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.sap.
 
-Starting constraint checker (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 326MB peak: 326MB)
+Starting constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 332MB peak: 332MB)
 
 
-Finished constraint checker preprocessing (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 326MB peak: 326MB)
+Finished constraint checker preprocessing (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 332MB peak: 332MB)
 
 
-Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 326MB peak: 326MB)
+Finished constraint checker (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 332MB peak: 332MB)
 
 Pre-mapping successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:01s; Memory used current: 326MB peak: 326MB)
+At Mapper Exit (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 332MB peak: 332MB)
 
-Process took 0h:00m:02s realtime, 0h:00m:01s cputime
-# Fri Mar 27 11:16:31 2020
+Process took 0h:00m:02s realtime, 0h:00m:02s cputime
+# Fri Mar 27 11:38:02 2020
 
 ###########################################################]

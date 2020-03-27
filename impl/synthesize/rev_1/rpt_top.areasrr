@@ -24,5 +24,61 @@ Part:			GW1N_1QFN48-6 (GoWin)
 ########   Utilization report for  Top level view:   top   ########
 ===================================================================
 
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     394                100 %                
+======================================================
+Total SEQUENTIAL ELEMENTS in the block top:	394 (8.62 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          3249               100 %                
+MUX2_LUT5     624                100 %                
+MUX2_LUT6     15                 100 %                
+ALU           269                100 %                
+======================================================
+Total COMBINATIONAL LOGIC in the block top:	4157 (90.98 % Utilization)
+
+---------------------------------------------------------
+########   Utilization report for  cell:   cpu   ########
+Instance path:   top.cpu                                 
+=========================================================
+
+SEQUENTIAL ELEMENTS
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+REGISTERS     388                98.5 %               
+======================================================
+Total SEQUENTIAL ELEMENTS in the block top.cpu:	388 (8.49 % Utilization)
+
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          3238               99.7 %               
+MUX2_LUT5     624                100 %                
+MUX2_LUT6     15                 100 %                
+ALU           269                100 %                
+======================================================
+Total COMBINATIONAL LOGIC in the block top.cpu:	4146 (90.74 % Utilization)
+
+-------------------------------------------------------------
+########   Utilization report for  cell:   instRom   ########
+Instance path:   cpu.instRom                                 
+=============================================================
+
+COMBINATIONAL LOGIC
+Name          Total elements     Utilization     Notes
+------------------------------------------------------
+LUTS          61                 1.88 %               
+MUX2_LUT5     6                  0.9620 %             
+MUX2_LUT6     1                  6.67 %               
+======================================================
+Total COMBINATIONAL LOGIC in the block cpu.instRom:	68 (1.49 % Utilization)
+
+
 ##### END OF AREA REPORT #####]
 

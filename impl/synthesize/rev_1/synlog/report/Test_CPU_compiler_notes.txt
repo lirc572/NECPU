@@ -5,8 +5,30 @@
 @N: CG364 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":4:7:4:13|Synthesizing module instRom in library work.
 @N: CG364 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":8:7:8:9|Synthesizing module cpu in library work.
 @N: CG364 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":1:7:1:9|Synthesizing module top in library work.
-@N: CL159 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":2:10:2:12|Input clk is unused.
-@N: CL159 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":3:10:3:16|Input buttonA is unused.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[31] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[30] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[29] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[28] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[27] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[26] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[25] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[24] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[23] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[22] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[21] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[20] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[19] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[18] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[17] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[16] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[15] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[14] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[13] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[12] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[11] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[10] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[9] is always 0.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[8] is always 0.
 @N: CL159 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":4:10:4:16|Input buttonB is unused.
 @N: CL159 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":10:10:10:12|Input rst is unused.
 @N|Running in 64-bit mode

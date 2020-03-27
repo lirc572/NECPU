@@ -5,9 +5,9 @@ module top (
     output reg led_R = 1, led_G = 1, led_B = 1
   );
   wire cpu_write, cpu_read;
-  wire [7:0] cpu_addr;
-  wire [7:0] cpu_dout;
-  reg  [7:0] cpu_din;
+  wire [31:0] cpu_addr;
+  wire [31:0] cpu_dout;
+  reg  [31:0] cpu_din;
   cpu cpu_instance (
     .clk(clk),                // clock
     .rst(buttonA),            // reset
@@ -26,7 +26,7 @@ module top (
       end
     end else if (cpu_read) begin
       if (cpu_addr == 'd2147483648) begin
-        cpu_din = {5'd0, ~led_R, ~led_G, ~led_B};
+        cpu_din = {29'd0, ~led_R, ~led_G, ~led_B};
       end
     end
   end

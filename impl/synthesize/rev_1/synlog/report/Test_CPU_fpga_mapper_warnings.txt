@@ -1,0 +1,72 @@
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":82:4:82:7|Removing user instance cpu_instance.rf_data[19]_39[31:0] because it is equivalent to instance cpu_instance.rf_data[18]_39[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":82:4:82:7|Removing user instance cpu_instance.rf_data[18]_39[31:0] because it is equivalent to instance cpu_instance.rf_data[16]_39[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance cpu_instance.rf_data[19][31:0] because it is equivalent to instance cpu_instance.rf_data[18][31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance cpu_instance.rf_data[18][31:0] because it is equivalent to instance cpu_instance.rf_data[16][31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":82:4:82:7|Removing user instance cpu_instance.rf_data[17]_39[31:0] because it is equivalent to instance cpu_instance.rf_data[16]_39[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance cpu_instance.rf_data[17][31:0] because it is equivalent to instance cpu_instance.rf_data[16][31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W: MT420 |Found inferred clock top|clk with period 23.38ns. Please declare a user-defined clock on port clk.
