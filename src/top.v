@@ -18,7 +18,7 @@ module top (
     .din(cpu_din)             // read data
   );
   
-  always @ (posedge clk) begin
+  always @ (negedge clk) begin
     cpu_din = 8'hxx;
     if (cpu_write) begin
       if (cpu_addr == 'd2147483648) begin
