@@ -1,4 +1,4 @@
 Info    (PA0001) : "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.vm" | Reading netlist file.
 Info    (PA0004) : Parsing netlist file '/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.vm' completed.
-Error   (PA2019) : The number(3518) of logic in the design exceeds the resource limit(1152) of current device, the logic resource usage is 3518(3249 LUTs, 269 ALUs, 0 ROM16s)/1152 305.38%, 0 SSRAMs/0 .
+Error   (PA2019) : The number(3918) of logic in the design exceeds the resource limit(1152) of current device, the logic resource usage is 3918(3620 LUTs, 298 ALUs, 0 ROM16s)/1152 340.10%, 0 SSRAMs/0 .
 Info    (PA0005) : Processing netlist completed with errors.

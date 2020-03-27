@@ -32,21 +32,21 @@ module instRom (
   
   
   always @ (address) begin
-    inst = {InstNOP, 12'b0};
+    inst = {InstNOP, 26'b0};
  
     case (address)
       // begin:
       0:  inst = {InstLLI,   5'd2, 5'd0, 16'b001};       // LLI R2, 1
       1:  inst = {InstLLI,   5'd1, 5'd0, 16'd0};         // LLI R1, 0
-      2:  inst = {InstLUI,   5'd1, 5'd0, 16'd32768};     // LLI R1, 32768 => R1 = 2147483648
-      2:  inst = {InstLLI,   5'd3, 5'd0, 16'b001};       // LLI R3, 1
-      3:  inst = {InstLLI,   5'd4, 5'd0, 16'd0};         // LLI R4, 0
-      4:  inst = {InstINV,   5'd4, 5'd4, 5'd0, 11'd0};   // INV R4, R4
-      5:  inst = {InstADD,   5'd2, 5'd2, 5'd3, 11'd0};   // ADD R2, R2, R3
-      6:  inst = {InstBNE,   5'd4, 5'd0, 16'd0};         // BNE R4, 0
+      2:  inst = {InstLUI,   5'd1, 5'd0, 16'd32768};     // LUI R1, 32768 => R1 = 2147483648
+      3:  inst = {InstLLI,   5'd3, 5'd0, 16'b001};       // LLI R3, 1
+      4:  inst = {InstLLI,   5'd4, 5'd0, 16'd0};         // LLI R4, 0
+      5:  inst = {InstINV,   5'd4, 5'd4, 5'd0, 11'd0};   // INV R4, R4
+      6:  inst = {InstADD,   5'd2, 5'd2, 5'd3, 11'd0};   // ADD R2, R2, R3
       7:  inst = {InstLLI,   5'd5, 5'd0, 16'd4};         // LLI R5, 4
-      7:  inst = {InstJMP,   5'd5, 5'd0, 16'd0};         // goto R5
-      8:  inst = {InstSW,    5'd2, 5'd1, 16'd0};         // SW R2, R1, 0
+      8:  inst = {InstBNE,   5'd4, 5'd0, 16'd0};         // BNE R4, 0
+      9:  inst = {InstJMP,   5'd5, 5'd0, 16'd0};         // goto R5
+      10: inst = {InstSW,    5'd2, 5'd1, 16'd0};         // SW R2, R1, 0
     endcase
   end
 endmodule
