@@ -4,27 +4,27 @@ Resource Usage Report for top
 Mapping to part: gw1n_1qfn48-6
 Cell usage:
 ALU             268 uses
-DFF             99 uses
-DFFE            287 uses
+DFFE            68 uses
 DFFN            3 uses
 DFFNSE          3 uses
-DFFR            1 use
+DFFR            32 uses
+DFFRE           288 uses
 GSR             1 use
 INV             7 uses
-MUX2_LUT5       521 uses
-MUX2_LUT6       33 uses
-LUT2            124 uses
-LUT3            2159 uses
-LUT4            1211 uses
+MUX2_LUT5       522 uses
+MUX2_LUT6       38 uses
+LUT2            118 uses
+LUT3            1906 uses
+LUT4            1407 uses
 
 I/O ports: 6
-I/O primitives: 4
-IBUF           1 use
+I/O primitives: 5
+IBUF           2 uses
 OBUF           3 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   393 of 864 (45%)
+Register bits not including I/Os:   394 of 864 (45%)
 
 @S |Mapping Summary:
-Total  LUTs: 3494 (303%)
+Total  LUTs: 3431 (297%)
 

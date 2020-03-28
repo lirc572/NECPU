@@ -1,8 +1,8 @@
 i clk
 m 0 0
 u 21 519
-p {p:clk}{t:cpu_instance.clk}{p:cpu_instance.clk}{t:cpu_instance.PC[31:0].C}
-e ckid0_0 {t:cpu_instance.PC[31:0].C} dff
+p {p:clk}{t:cpu_instance.clk}{p:cpu_instance.clk}{t:cpu_instance.ir_addr[31:0].C}
+e ckid0_0 {t:cpu_instance.ir_addr[31:0].C} dffe
 c ckid0_0 {p:clk} port Unsupported/too complex instance on clock path
 l 0 0 0 0 0
 r 0 0 0 0 0 0 0 0

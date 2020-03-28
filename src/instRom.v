@@ -1,5 +1,7 @@
-`define InstBusWidth  32    // Width of data bus of instruction memory
-`define InstAddrBus   32    // Width of address bus of instruction memory
+`ifndef ArchDef
+`define ArchDef
+`include "ArchDef.v"
+`endif
 
 module instRom (
     input  [`InstAddrBus-1:0]  address,

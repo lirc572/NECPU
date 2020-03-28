@@ -17,18 +17,23 @@ max stack size: 8388608 (bytes)
 Implementation : rev_1
 Synopsys HDL compiler and linker, Version comp2019q1p1, Build 307R, Built Sep 25 2019 09:31:06
 
-Modified Files: 0
+Modified Files: 1
 FID:  path (prevtimestamp, timestamp)
+0        /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v (2020-03-28 12:27:06, 2020-03-28 12:47:49)
 
 *******************************************************************
-Modules that may have changed as a result of file changes: 0
+Modules that may have changed as a result of file changes: 2
 MID:  lib.cell.view
+1        work.cpu.verilog may have changed because the following files changed:
+                        /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v (2020-03-28 12:27:06, 2020-03-28 12:47:49) <-- (module definition)
+2        work.instRom.verilog may have changed because the following files changed:
+                        /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v (2020-03-28 12:27:06, 2020-03-28 12:47:49) <-- (may instantiate this module)
 
 *******************************************************************
 Unmodified files: 8
 FID:  path (timestamp)
-0        /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v (2020-03-28 05:13:16)
-1        /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v (2020-03-28 03:20:25)
+10       /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/ArchDef.v (2020-03-28 11:54:30)
+1        /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v (2020-03-28 11:54:50)
 3        /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v (2020-03-28 04:08:25)
 4        /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/SynplifyPro/lib/generic/gw1n.v (2019-09-29 08:59:32)
 5        /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/SynplifyPro/lib/vlog/hypermods.v (2019-09-29 08:59:33)
@@ -37,8 +42,6 @@ FID:  path (timestamp)
 8        /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/SynplifyPro/lib/vlog/umr_capim.v (2019-09-29 08:59:33)
 
 *******************************************************************
-Unchanged modules: 3
+Unchanged modules: 1
 MID:  lib.cell.view
-1        work.cpu.verilog
-2        work.instRom.verilog
 4        work.top.verilog

@@ -1,8 +1,8 @@
-# Written by Synplify Pro version mapgw, Build 1450R. Synopsys Run ID: sid1585343640 
+# Written by Synplify Pro version mapgw, Build 1450R. Synopsys Run ID: sid1585370913 
 # Top Level Design Parameters 
 
 # Clocks 
-create_clock -period 24.058 -waveform {0.000 12.029} -name {top|clk} [get_ports {clk}] 
+create_clock -period 22.421 -waveform {0.000 11.211} -name {top|clk} [get_ports {clk}] 
 
 # Virtual Clocks 
 

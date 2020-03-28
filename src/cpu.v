@@ -1,9 +1,7 @@
-`define RegBusWidth   32    // Width of data bus of registers
-`define RegWidth      32    // Number of registers
-`define InstBusWidth  32    // Width of data bus of instruction memory
-`define InstAddrBus   32    // Width of address bus of instruction memory
-`define MemBusWidth   32    // Width of data bus of instruction memory
-`define MemAddrBus    32    // Width of address bus of instruction memory
+`ifndef ArchDef
+`define ArchDef
+`include "ArchDef.v"
+`endif
 
 module cpu (
     input clk,                             // clock
@@ -61,70 +59,79 @@ module cpu (
   assign func      = ir_inst[10:0];
   assign immediate = ir_inst[15:0];
   
+  integer i;
+  
   always @ (posedge clk) begin
-    // defaults
-    write   = 0;               // don't write
-    read    = 0;               // don't read
-    address = 8'hxx;           // don't care
-    dout    = 8'hxx;           // don't care
-    
-    ir_addr  = PC;             // reg 0 is program counter
-    
-    // Perform the operation
-    case (op)
-      InstLW   : begin
-        read = 1;                                     // request a read
-        address = rf_data[rs] + rt;                   // set the address
-        rf_data[rd] = din;                            // save the data
+    if (rst) begin //reset PC and registers
+      PC <= 0;
+      for (i=0; i<32; i++) begin
+        rf_data[i] <= 32'd0;
       end
-      InstSW  : begin
-        write = 1;                                    // request a write
-        dout = rf_data[rd];                           // output the data
-        address = rf_data[rs] + rt;                   // set the address
-      end
-      InstLLI:
-        rf_data[rd][15:0]  = immediate;               // set the lower half of reg to immediate
-      InstLUI:
-        rf_data[rd][31:16] = immediate;               // set the upper half of reg to immediate
-      InstSLT:
-        rf_data[rd] = rf_data[rs] < rf_data[rt];      // less-than comparison
-      InstSEQ:
-        rf_data[rd] = rf_data[rs] == rf_data[rt];     // equals comparison
-      InstBEQ:
-        if (rf_data[rd] == immediate)                 // if R[rd] == immediate
-          PC = PC + 1;                                // skip next instruction
-      InstBNE:
-        if (rf_data[rd] != immediate)                 // if R[rd] != immediate
-          PC = PC + 1;                                // skip next instruction
-      InstADD:
-        rf_data[rd] = rf_data[rs] + rf_data[rt];   // addition
-      InstADDi:
-        rf_data[rd] = rf_data[rs] + immediate;      // add immediate
-      InstSUB:
-        rf_data[rd] = rf_data[rs] - rf_data[rt];   // subtraction
-      InstSUBi:
-        rf_data[rd] = rf_data[rs] - immediate;      // subtract immediate
-      InstSLL:
-        rf_data[rd] = rf_data[rs] << rf_data[rt];  // shift left 
-      InstSRL:
-        rf_data[rd] = rf_data[rs] >> rf_data[rt];  // shift right
-      InstAND:
-        rf_data[rd] = rf_data[rs] & rf_data[rt];   // bit-wise AND
-      InstANDi:
-        rf_data[rd] = rf_data[rs] & immediate;      // bit-wise AND immediate
-      InstOR:
-        rf_data[rd] = rf_data[rs] | rf_data[rt];   // bit-wise OR
-      InstORi:
-        rf_data[rd] = rf_data[rs] | immediate;      // bit-wise OR
-      InstINV:
-        rf_data[rd] = ~rf_data[rs];                 // bit-wise invert
-      InstXOR:
-        rf_data[rd] = rf_data[rs] ^ rf_data[rt];   // bit-wise XOR
-      InstXORi:
-        rf_data[rd] = rf_data[rs] ^ immediate;      // bit-wise XOR
-      InstJMP:
-        PC = rf_data[rd];                             // Jump
-    endcase
-    PC = PC + 1;               // increment PC by default
+    end else begin
+      // defaults
+      write   <= 0;               // don't write
+      read    <= 0;               // don't read
+      address <= 8'hxx;           // don't care
+      dout    <= 8'hxx;           // don't care
+      
+      ir_addr  <= PC;             // reg 0 is program counter
+      PC <= PC + 1;               // increment PC by default
+      
+      // Perform the operation
+      case (op)
+        InstLW   : begin
+          read <= 1;                                     // request a read
+          address <= rf_data[rs] + rt;                   // set the address
+          rf_data[rd] <= din;                            // save the data
+        end
+        InstSW  : begin
+          write <= 1;                                    // request a write
+          dout <= rf_data[rd];                           // output the data
+          address <= rf_data[rs] + rt;                   // set the address
+        end
+        InstLLI:
+          rf_data[rd][15:0]  <= immediate;               // set the lower half of reg to immediate
+        InstLUI:
+          rf_data[rd][31:16] <= immediate;               // set the upper half of reg to immediate
+        InstSLT:
+          rf_data[rd] <= rf_data[rs] < rf_data[rt];      // less-than comparison
+        InstSEQ:
+          rf_data[rd] <= rf_data[rs] == rf_data[rt];     // equals comparison
+        InstBEQ:
+          if (rf_data[rd] == immediate)                  // if R[rd] == immediate
+            PC <= PC + 2;                                // skip next instruction
+        InstBNE:
+          if (rf_data[rd] != immediate)                  // if R[rd] != immediate
+            PC <= PC + 2;                                // skip next instruction
+        InstADD:
+          rf_data[rd] <= rf_data[rs] + rf_data[rt];      // addition
+        InstADDi:
+          rf_data[rd] <= rf_data[rs] + immediate;        // add immediate
+        InstSUB:
+          rf_data[rd] <= rf_data[rs] - rf_data[rt];      // subtraction
+        InstSUBi:
+          rf_data[rd] <= rf_data[rs] - immediate;        // subtract immediate
+        InstSLL:
+          rf_data[rd] <= rf_data[rs] << rf_data[rt];     // shift left 
+        InstSRL:
+          rf_data[rd] <= rf_data[rs] >> rf_data[rt];     // shift right
+        InstAND:
+          rf_data[rd] <= rf_data[rs] & rf_data[rt];      // bit-wise AND
+        InstANDi:
+          rf_data[rd] <= rf_data[rs] & immediate;        // bit-wise AND immediate
+        InstOR:
+          rf_data[rd] <= rf_data[rs] | rf_data[rt];      // bit-wise OR
+        InstORi:
+          rf_data[rd] <= rf_data[rs] | immediate;        // bit-wise OR
+        InstINV:
+          rf_data[rd] <= ~rf_data[rs];                   // bit-wise invert
+        InstXOR:
+          rf_data[rd] <= rf_data[rs] ^ rf_data[rt];      // bit-wise XOR
+        InstXORi:
+          rf_data[rd] <= rf_data[rs] ^ immediate;        // bit-wise XOR
+        InstJMP:
+          PC <= rf_data[rd];                             // Jump
+      endcase
+    end
   end
 endmodule

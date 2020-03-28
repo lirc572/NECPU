@@ -14,11 +14,11 @@ The file contains the job information from compiler to be displayed as part of t
   </job_status>
 <job_info> 
 			<info name="Notes">
-  <data>108</data>
+  <data>33</data>
   <report_link name="more"><data>/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synlog/report/Test_CPU_compiler_notes.txt</data></report_link>
   </info>
 			<info name="Warnings">
-  <data>5</data>
+  <data>1</data>
   <report_link name="more"><data>/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synlog/report/Test_CPU_compiler_warnings.txt</data></report_link>
   </info>
 			<info name="Errors">
@@ -29,13 +29,13 @@ The file contains the job information from compiler to be displayed as part of t
   <data>-</data>
   </info>
 			<info name="Real Time">
-  <data>00h:00m:26s</data>
+  <data>00h:00m:25s</data>
   </info>
 			<info name="Peak Memory">
   <data>-</data>
   </info>
 			<info name="Date &amp;Time">
-  <data type="timestamp">1585343635</data>
+  <data type="timestamp">1585370909</data>
   </info>
 			</job_info>
 </job_run_status>

@@ -1,4 +1,4 @@
-# Sat Mar 28 05:14:00 2020
+# Sat Mar 28 12:48:33 2020
 
 
 Copyright (C) 1994-2019 Synopsys, Inc.
@@ -46,114 +46,131 @@ Available hyper_sources - for debug and ip models
 	None Found
 
 @N: MT206 |Auto Constrain mode is enabled
-@W: FA239 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":37:4:37:7|ROM inst_1[0] (in view: work.instRom(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
-@N: MO106 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":37:4:37:7|Found ROM inst_1[0] (in view: work.instRom(verilog)) with 11 words by 1 bit.
-@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":81:4:81:7|Removing user instance cpu_instance.rf_data[19]_39[31:0] because it is equivalent to instance cpu_instance.rf_data[18]_39[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":81:4:81:7|Removing user instance cpu_instance.rf_data[18]_39[31:0] because it is equivalent to instance cpu_instance.rf_data[16]_39[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance cpu_instance.rf_data[19][31:0] because it is equivalent to instance cpu_instance.rf_data[18][31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance cpu_instance.rf_data[18][31:0] because it is equivalent to instance cpu_instance.rf_data[16][31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":81:4:81:7|Removing user instance cpu_instance.rf_data[17]_39[31:0] because it is equivalent to instance cpu_instance.rf_data[16]_39[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance cpu_instance.rf_data[17][31:0] because it is equivalent to instance cpu_instance.rf_data[16][31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: FA239 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":39:4:39:7|ROM inst_1[0] (in view: work.instRom(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":39:4:39:7|Found ROM inst_1[0] (in view: work.instRom(verilog)) with 11 words by 1 bit.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":65:4:65:5|Removing user instance cpu_instance.rf_data[19]_41[31:0] because it is equivalent to instance cpu_instance.rf_data[18]_41[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":65:4:65:5|Removing user instance cpu_instance.rf_data[18]_41[31:0] because it is equivalent to instance cpu_instance.rf_data[16]_41[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance cpu_instance.rf_data[19][31:0] because it is equivalent to instance cpu_instance.rf_data[18][31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance cpu_instance.rf_data[18][31:0] because it is equivalent to instance cpu_instance.rf_data[16][31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":65:4:65:5|Removing user instance cpu_instance.rf_data[17]_41[31:0] because it is equivalent to instance cpu_instance.rf_data[16]_41[31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance cpu_instance.rf_data[17][31:0] because it is equivalent to instance cpu_instance.rf_data[16][31:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
 
 Finished RTL optimizations (Real Time elapsed 0h:00m:01s; CPU Time elapsed 0h:00m:01s; Memory used current: 326MB peak: 326MB)
 
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[3] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[4] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[5] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[6] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[7] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[8] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[9] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[10] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[11] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[12] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[13] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[14] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[15] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[16] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[17] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[18] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[19] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[20] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[21] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[22] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[23] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[24] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[25] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[26] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[27] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[28] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[29] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[30] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance dout[31] (in view: work.cpu(verilog)) of type view:PrimLib.dff(prim) because it does not drive other instances.
-@N: MF179 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":99:22:99:48|Found 32 by 32 bit equality operator ('==') rf_data\[31\]_11[0] (in view: work.cpu(verilog))
-@N: MF179 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":101:12:101:36|Found 32 by 32 bit equality operator ('==') PC5 (in view: work.cpu(verilog))
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[3] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[4] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[5] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[6] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[7] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[8] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[9] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[10] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[11] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[12] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[13] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[14] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[15] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[16] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[17] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[18] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[19] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[20] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[21] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[22] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[23] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[24] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[25] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[26] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[27] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[28] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[29] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[30] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[31] (in view: work.cpu(verilog)) because it does not drive other instances.
+@N: MF179 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":99:25:99:51|Found 32 by 32 bit equality operator ('==') rf_data\[31\]_12[0] (in view: work.cpu(verilog))
+@N: MF179 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":101:14:101:38|Found 32 by 32 bit equality operator ('==') PC10 (in view: work.cpu(verilog))
 
-Starting factoring (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:05s; Memory used current: 364MB peak: 364MB)
-
-
-Finished factoring (Real Time elapsed 0h:00m:06s; CPU Time elapsed 0h:00m:06s; Memory used current: 364MB peak: 364MB)
-
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":71:2:71:7|Removing sequential instance rf_data\[16\][17] (in view: work.cpu(verilog)) because it does not drive other instances.
-
-Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 371MB peak: 371MB)
+Starting factoring (Real Time elapsed 0h:00m:02s; CPU Time elapsed 0h:00m:02s; Memory used current: 331MB peak: 331MB)
 
 
-Starting Early Timing Optimization (Real Time elapsed 0h:00m:08s; CPU Time elapsed 0h:00m:08s; Memory used current: 371MB peak: 371MB)
+Finished factoring (Real Time elapsed 0h:00m:03s; CPU Time elapsed 0h:00m:03s; Memory used current: 346MB peak: 346MB)
 
 
-Finished Early Timing Optimization (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:14s; Memory used current: 371MB peak: 371MB)
+Finished generic timing optimizations - Pass 1 (Real Time elapsed 0h:00m:04s; CPU Time elapsed 0h:00m:04s; Memory used current: 354MB peak: 354MB)
 
 
-Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:14s; Memory used current: 371MB peak: 371MB)
-
-@W: FA239 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":37:4:37:7|ROM iR.inst_1_0[23:21] (in view: work.cpu(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
-@N: MO106 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":37:4:37:7|Found ROM iR.inst_1_0[23:21] (in view: work.cpu(verilog)) with 11 words by 3 bits.
-@W: FA239 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":37:4:37:7|ROM iR.inst_1_0[30:26] (in view: work.cpu(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
-@N: MO106 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":37:4:37:7|Found ROM iR.inst_1_0[30:26] (in view: work.cpu(verilog)) with 11 words by 5 bits.
-@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":37:4:37:7|Removing sequential instance cpu_instance.iR.inst_1_0_areg_0[3:0] because it is equivalent to instance cpu_instance.iR.inst_1_0_areg[3:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":37:4:37:7|Removing instance cpu_instance.iR.inst_1_0_areg[0] because it is equivalent to instance cpu_instance.ir_addr[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":37:4:37:7|Removing instance cpu_instance.iR.inst_1_0_areg[1] because it is equivalent to instance cpu_instance.ir_addr[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":37:4:37:7|Removing instance cpu_instance.iR.inst_1_0_areg[2] because it is equivalent to instance cpu_instance.ir_addr[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":37:4:37:7|Removing instance cpu_instance.iR.inst_1_0_areg[3] because it is equivalent to instance cpu_instance.ir_addr[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
-
-Finished preparing to map (Real Time elapsed 0h:00m:15s; CPU Time elapsed 0h:00m:15s; Memory used current: 371MB peak: 371MB)
+Starting Early Timing Optimization (Real Time elapsed 0h:00m:05s; CPU Time elapsed 0h:00m:04s; Memory used current: 354MB peak: 354MB)
 
 
-Finished technology mapping (Real Time elapsed 0h:00m:19s; CPU Time elapsed 0h:00m:18s; Memory used current: 401MB peak: 401MB)
+Finished Early Timing Optimization (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 354MB peak: 354MB)
+
+
+Finished generic timing optimizations - Pass 2 (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:06s; Memory used current: 354MB peak: 354MB)
+
+@W: FA239 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":39:4:39:7|ROM iR.inst_1_0[23:21] (in view: work.cpu(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":39:4:39:7|Found ROM iR.inst_1_0[23:21] (in view: work.cpu(verilog)) with 11 words by 3 bits.
+@W: FA239 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":39:4:39:7|ROM iR.inst_1_0[30:26] (in view: work.cpu(verilog)) mapped in logic. To map to a technology ROM, apply attribute syn_romstyle on this instance.
+@N: MO106 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":39:4:39:7|Found ROM iR.inst_1_0[30:26] (in view: work.cpu(verilog)) with 11 words by 5 bits.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":39:4:39:7|Removing sequential instance cpu_instance.iR.inst_1_0_areg_0[3:0] because it is equivalent to instance cpu_instance.iR.inst_1_0_areg[3:0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":39:4:39:7|Removing instance cpu_instance.iR.inst_1_0_areg[0] because it is equivalent to instance cpu_instance.ir_addr[0]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":39:4:39:7|Removing instance cpu_instance.iR.inst_1_0_areg[1] because it is equivalent to instance cpu_instance.ir_addr[1]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":39:4:39:7|Removing instance cpu_instance.iR.inst_1_0_areg[2] because it is equivalent to instance cpu_instance.ir_addr[2]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+@W: BN132 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":39:4:39:7|Removing instance cpu_instance.iR.inst_1_0_areg[3] because it is equivalent to instance cpu_instance.ir_addr[3]. To keep the instance, apply constraint syn_preserve=1 on the instance.
+
+Finished preparing to map (Real Time elapsed 0h:00m:07s; CPU Time elapsed 0h:00m:07s; Memory used current: 354MB peak: 354MB)
+
+
+Finished technology mapping (Real Time elapsed 0h:00m:12s; CPU Time elapsed 0h:00m:11s; Memory used current: 399MB peak: 399MB)
 
 Pass		 CPU time		Worst Slack		Luts / Registers
 ------------------------------------------------------------
-   1		0h:00m:19s		    -8.00ns		3371 /       393
-   2		0h:00m:19s		    -7.59ns		3358 /       393
-   3		0h:00m:20s		    -7.02ns		3365 /       393
-   4		0h:00m:23s		    -6.78ns		3434 /       393
-   5		0h:00m:28s		    -6.76ns		3515 /       393
-   6		0h:00m:30s		    -6.50ns		3528 /       393
-   7		0h:00m:35s		    -6.70ns		3556 /       393
-   8		0h:00m:37s		    -6.76ns		3556 /       393
-   9		0h:00m:38s		    -6.76ns		3556 /       393
-  10		0h:00m:39s		    -6.76ns		3556 /       393
+   1		0h:00m:11s		    -7.44ns		3388 /       394
+   2		0h:00m:11s		    -7.44ns		3361 /       394
+   3		0h:00m:18s		    -7.33ns		3508 /       394
+   4		0h:00m:21s		    -7.08ns		3501 /       394
+   5		0h:00m:26s		    -6.93ns		3583 /       394
+   6		0h:00m:29s		    -7.18ns		3583 /       394
+   7		0h:00m:30s		    -6.93ns		3581 /       394
+   8		0h:00m:34s		    -6.99ns		3580 /       394
+   9		0h:00m:36s		    -6.93ns		3580 /       394
 
-  11		0h:00m:45s		    -6.25ns		3560 /       393
-  12		0h:00m:46s		    -6.50ns		3561 /       393
+  10		0h:00m:41s		    -6.67ns		3583 /       394
+  11		0h:00m:41s		    -6.93ns		3585 /       394
+  12		0h:00m:42s		    -6.93ns		3587 /       394
 
 
-  13		0h:00m:47s		    -5.42ns		3548 /       393
-  14		0h:00m:47s		    -5.30ns		3552 /       393
-  15		0h:00m:48s		    -4.91ns		3553 /       393
-  16		0h:00m:50s		    -5.04ns		3554 /       393
-  17		0h:00m:51s		    -5.04ns		3558 /       393
-  18		0h:00m:52s		    -5.81ns		3559 /       393
-  19		0h:00m:52s		    -5.81ns		3559 /       393
+  13		0h:00m:44s		    -6.41ns		3599 /       394
+  14		0h:00m:44s		    -6.67ns		3603 /       394
+  15		0h:00m:45s		    -6.61ns		3604 /       394
+  16		0h:00m:45s		    -6.61ns		3604 /       394
+  17		0h:00m:45s		    -6.56ns		3604 /       394
 
-Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:53s; CPU Time elapsed 0h:00m:53s; Memory used current: 420MB peak: 420MB)
+Finished technology timing optimizations and critical path resynthesis (Real Time elapsed 0h:00m:46s; CPU Time elapsed 0h:00m:45s; Memory used current: 411MB peak: 411MB)
 
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
 @W:|Converting bidirection inout port to output port. Because it's a pure output port
 @W:|Converting bidirection inout port to output port. Because it's a pure output port
 @W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
 @W:|Converting bidirection inout port to inpure port. Because it's a pure input port
 @W:|Converting bidirection inout port to output port. Because it's a pure output port
 @W:|Converting bidirection inout port to output port. Because it's a pure output port
@@ -171,49 +188,49 @@ Finished technology timing optimizations and critical path resynthesis (Real Tim
 @W:|Converting bidirection inout port to output port. Because it's a pure output port
 @W:|Converting bidirection inout port to output port. Because it's a pure output port
 @W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to inpure port. Because it's a pure input port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
+@W:|Converting bidirection inout port to output port. Because it's a pure output port
 @W:|Converting bidirection inout port to output port. Because it's a pure output port
 @W:|Converting bidirection inout port to output port. Because it's a pure output port
 @W:|Converting bidirection inout port to output port. Because it's a pure output port
 @W:|Converting bidirection inout port to inpure port. Because it's a pure input port
 @W:|Converting bidirection inout port to output port. Because it's a pure output port
-@W:|Converting bidirection inout port to output port. Because it's a pure output port
-@W:|Converting bidirection inout port to output port. Because it's a pure output port
-@W:|Converting bidirection inout port to output port. Because it's a pure output port
 @W:|Converting bidirection inout port to inpure port. Because it's a pure input port
 @W:|Converting bidirection inout port to inpure port. Because it's a pure input port
-@W:|Converting bidirection inout port to output port. Because it's a pure output port
 
-Finished restoring hierarchy (Real Time elapsed 0h:00m:54s; CPU Time elapsed 0h:00m:54s; Memory used current: 423MB peak: 423MB)
+Finished restoring hierarchy (Real Time elapsed 0h:00m:47s; CPU Time elapsed 0h:00m:46s; Memory used current: 413MB peak: 413MB)
 
 
-Start Writing Netlists (Real Time elapsed 0h:00m:54s; CPU Time elapsed 0h:00m:54s; Memory used current: 424MB peak: 424MB)
+Start Writing Netlists (Real Time elapsed 0h:00m:47s; CPU Time elapsed 0h:00m:47s; Memory used current: 414MB peak: 414MB)
 
 Writing Analyst data base /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/Test_CPU_m.srm
 
-Finished Writing Netlist Databases (Real Time elapsed 0h:00m:55s; CPU Time elapsed 0h:00m:55s; Memory used current: 424MB peak: 424MB)
+Finished Writing Netlist Databases (Real Time elapsed 0h:00m:48s; CPU Time elapsed 0h:00m:48s; Memory used current: 414MB peak: 414MB)
 
 Writing Verilog Simulation files
 
-Writing scf file... (Real Time elapsed 0h:00m:57s; CPU Time elapsed 0h:00m:56s; Memory used current: 424MB peak: 424MB)
+Writing scf file... (Real Time elapsed 0h:00m:50s; CPU Time elapsed 0h:00m:49s; Memory used current: 414MB peak: 414MB)
 
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 
 
-Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:57s; CPU Time elapsed 0h:00m:56s; Memory used current: 424MB peak: 424MB)
+Finished Writing Verilog Simulation files (Real Time elapsed 0h:00m:50s; CPU Time elapsed 0h:00m:49s; Memory used current: 414MB peak: 414MB)
 
 
-Start final timing analysis (Real Time elapsed 0h:00m:58s; CPU Time elapsed 0h:00m:57s; Memory used current: 424MB peak: 424MB)
+Start final timing analysis (Real Time elapsed 0h:00m:51s; CPU Time elapsed 0h:00m:50s; Memory used current: 414MB peak: 414MB)
 
-@W: MT420 |Found inferred clock top|clk with period 24.06ns. Please declare a user-defined clock on port clk.
+@W: MT420 |Found inferred clock top|clk with period 22.42ns. Please declare a user-defined clock on port clk.
 
 
 ##### START OF TIMING REPORT #####[
-# Timing report written on Sat Mar 28 05:14:58 2020
+# Timing report written on Sat Mar 28 12:49:24 2020
 #
 
 
 Top view:               top
-Requested Frequency:    41.6 MHz
+Requested Frequency:    44.6 MHz
 Wire load mode:         top
 Paths requested:        5
 Constraint File(s):    
@@ -227,13 +244,13 @@ Performance Summary
 *******************
 
 
-Worst slack in design: -4.245
+Worst slack in design: -3.957
 
                    Requested     Estimated     Requested     Estimated                Clock        Clock                
 Starting Clock     Frequency     Frequency     Period        Period        Slack      Type         Group                
 ------------------------------------------------------------------------------------------------------------------------
-top|clk            41.6 MHz      35.3 MHz      24.058        28.303        -4.245     inferred     Autoconstr_clkgroup_0
-System             100.0 MHz     NA            10.000        NA            22.904     system       system_clkgroup      
+top|clk            44.6 MHz      37.9 MHz      22.421        26.378        -3.957     inferred     Autoconstr_clkgroup_0
+System             100.0 MHz     NA            10.000        NA            20.901     system       system_clkgroup      
 ========================================================================================================================
 Estimated period and frequency reported as NA means no slack depends directly on the clock waveform
 
@@ -248,9 +265,9 @@ Clocks             |    rise  to  rise    |    fall  to  fall   |    rise  to  f
 ------------------------------------------------------------------------------------------------------------
 Starting  Ending   |  constraint  slack   |  constraint  slack  |  constraint  slack   |  constraint  slack 
 ------------------------------------------------------------------------------------------------------------
-System    top|clk  |  24.058      22.904  |  No paths    -      |  24.058      22.904  |  No paths    -     
-top|clk   System   |  24.058      15.260  |  No paths    -      |  No paths    -       |  24.058      22.670
-top|clk   top|clk  |  24.058      -4.245  |  No paths    -      |  12.029      5.131   |  12.029      2.579 
+System    top|clk  |  22.421      20.901  |  No paths    -      |  22.421      21.267  |  No paths    -     
+top|clk   System   |  22.421      21.033  |  No paths    -      |  No paths    -       |  22.421      21.033
+top|clk   top|clk  |  22.421      -3.957  |  No paths    -      |  11.211      4.313   |  11.211      3.153 
 ============================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
@@ -277,37 +294,37 @@ Starting Points with Worst Slack
 Instance                     Reference     Type     Pin     Net             Time        Slack 
                              Clock                                                            
 ----------------------------------------------------------------------------------------------
-cpu_instance.ir_addr[21]     top|clk       DFF      Q       ir_addr[21]     0.367       -4.245
-cpu_instance.ir_addr[16]     top|clk       DFF      Q       ir_addr[16]     0.367       -4.178
-cpu_instance.ir_addr[18]     top|clk       DFF      Q       ir_addr[18]     0.367       -4.178
-cpu_instance.ir_addr[19]     top|clk       DFF      Q       ir_addr[19]     0.367       -4.178
-cpu_instance.ir_addr[4]      top|clk       DFF      Q       ir_addr[4]      0.367       -4.111
-cpu_instance.ir_addr[17]     top|clk       DFF      Q       ir_addr[17]     0.367       -4.111
-cpu_instance.ir_addr[26]     top|clk       DFF      Q       ir_addr[26]     0.367       -4.111
-cpu_instance.ir_addr[23]     top|clk       DFF      Q       ir_addr[23]     0.367       -4.044
-cpu_instance.ir_addr[6]      top|clk       DFF      Q       ir_addr[6]      0.367       -3.969
-cpu_instance.ir_addr[22]     top|clk       DFF      Q       ir_addr[22]     0.367       -3.969
+cpu_instance.ir_addr[21]     top|clk       DFFE     Q       ir_addr[21]     0.367       -3.957
+cpu_instance.ir_addr[14]     top|clk       DFFE     Q       ir_addr[14]     0.367       -3.892
+cpu_instance.ir_addr[17]     top|clk       DFFE     Q       ir_addr[17]     0.367       -3.890
+cpu_instance.ir_addr[20]     top|clk       DFFE     Q       ir_addr[20]     0.367       -3.890
+cpu_instance.ir_addr[13]     top|clk       DFFE     Q       ir_addr[13]     0.367       -3.825
+cpu_instance.ir_addr[16]     top|clk       DFFE     Q       ir_addr[16]     0.367       -3.823
+cpu_instance.ir_addr[22]     top|clk       DFFE     Q       ir_addr[22]     0.367       -3.680
+cpu_instance.ir_addr[25]     top|clk       DFFE     Q       ir_addr[25]     0.367       -3.680
+cpu_instance.ir_addr[15]     top|clk       DFFE     Q       ir_addr[15]     0.367       -3.615
+cpu_instance.ir_addr[18]     top|clk       DFFE     Q       ir_addr[18]     0.367       -3.613
 ==============================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                                  Starting                                               Required           
-Instance                          Reference     Type     Pin     Net                     Time         Slack 
-                                  Clock                                                                     
-------------------------------------------------------------------------------------------------------------
-cpu_instance.rf_data\[1\][30]     top|clk       DFFE     D       rf_data\[1\]_39[30]     23.925       -4.245
-cpu_instance.rf_data\[0\][27]     top|clk       DFFE     D       rf_data\[0\]_39[27]     23.925       -4.209
-cpu_instance.rf_data\[1\][27]     top|clk       DFFE     D       rf_data\[1\]_39[27]     23.925       -4.142
-cpu_instance.rf_data\[2\][27]     top|clk       DFFE     D       rf_data\[2\]_39[27]     23.925       -4.142
-cpu_instance.rf_data\[5\][27]     top|clk       DFFE     D       rf_data\[5\]_39[27]     23.925       -4.142
-cpu_instance.rf_data\[6\][27]     top|clk       DFFE     D       rf_data\[6\]_39[27]     23.925       -4.142
-cpu_instance.rf_data\[7\][27]     top|clk       DFFE     D       rf_data\[7\]_39[27]     23.925       -4.142
-cpu_instance.rf_data\[0\][8]      top|clk       DFFE     D       rf_data\[0\]_39[8]      23.925       -4.134
-cpu_instance.rf_data\[2\][8]      top|clk       DFFE     D       rf_data\[2\]_39[8]      23.925       -4.134
-cpu_instance.rf_data\[5\][8]      top|clk       DFFE     D       rf_data\[5\]_39[8]      23.925       -4.134
-============================================================================================================
+                                  Starting                                                Required           
+Instance                          Reference     Type      Pin     Net                     Time         Slack 
+                                  Clock                                                                      
+-------------------------------------------------------------------------------------------------------------
+cpu_instance.rf_data\[0\][27]     top|clk       DFFRE     D       rf_data\[0\]_41[27]     22.288       -3.957
+cpu_instance.rf_data\[1\][27]     top|clk       DFFRE     D       rf_data\[1\]_41[27]     22.288       -3.957
+cpu_instance.rf_data\[2\][27]     top|clk       DFFRE     D       rf_data\[2\]_41[27]     22.288       -3.957
+cpu_instance.rf_data\[3\][27]     top|clk       DFFRE     D       rf_data\[3\]_41[27]     22.288       -3.957
+cpu_instance.rf_data\[4\][27]     top|clk       DFFRE     D       rf_data\[4\]_41[27]     22.288       -3.957
+cpu_instance.rf_data\[6\][27]     top|clk       DFFRE     D       rf_data\[6\]_41[27]     22.288       -3.957
+cpu_instance.rf_data\[7\][27]     top|clk       DFFRE     D       rf_data\[7\]_41[27]     22.288       -3.957
+cpu_instance.rf_data\[0\][11]     top|clk       DFFRE     D       rf_data\[0\]_41[11]     22.288       -3.814
+cpu_instance.rf_data\[1\][11]     top|clk       DFFRE     D       rf_data\[1\]_41[11]     22.288       -3.747
+cpu_instance.rf_data\[2\][11]     top|clk       DFFRE     D       rf_data\[2\]_41[11]     22.288       -3.747
+=============================================================================================================
 
 
 
@@ -316,683 +333,332 @@ Worst Path Information
 
 
 Path information for path number 1: 
-      Requested Period:                      24.058
+      Requested Period:                      22.421
     - Setup time:                            0.133
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         23.925
+    = Required time:                         22.288
 
-    - Propagation time:                      28.170
+    - Propagation time:                      26.245
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (critical) :                     -4.245
+    = Slack (critical) :                     -3.957
 
-    Number of logic level(s):                42
-    Starting point:                          cpu_instance.ir_addr[21] / Q
-    Ending point:                            cpu_instance.rf_data\[1\][30] / D
-    The start point is clocked by            top|clk [rising] on pin CLK
-    The end   point is clocked by            top|clk [rising] on pin CLK
-
-Instance / Net                                          Pin      Pin               Arrival     No. of    
-Name                                      Type          Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------------
-cpu_instance.ir_addr[21]                  DFF           Q        Out     0.367     0.367       -         
-ir_addr[21]                               Net           -        -       1.021     -           2         
-cpu_instance.iR.inst36_0_a2_0_10          LUT4          I1       In      -         1.388       -         
-cpu_instance.iR.inst36_0_a2_0_10          LUT4          F        Out     1.099     2.487       -         
-inst36_0_a2_0_10                          Net           -        -       0.766     -           1         
-cpu_instance.iR.inst36_0_a2_0_17          LUT4          I1       In      -         3.253       -         
-cpu_instance.iR.inst36_0_a2_0_17          LUT4          F        Out     1.099     4.352       -         
-inst36_0_a2_0_17                          Net           -        -       1.021     -           6         
-cpu_instance.iR.inst32_0_a2_0             LUT4          I1       In      -         5.373       -         
-cpu_instance.iR.inst32_0_a2_0             LUT4          F        Out     1.099     6.472       -         
-N_6431                                    Net           -        -       1.326     -           53        
-cpu_instance.un329_rf_data_3[2]           LUT4          I0       In      -         7.798       -         
-cpu_instance.un329_rf_data_3[2]           LUT4          F        Out     1.032     8.830       -         
-N_5805                                    Net           -        -       1.021     -           5         
-cpu_instance.un329_rf_data_7[2]           LUT3          I0       In      -         9.851       -         
-cpu_instance.un329_rf_data_7[2]           LUT3          F        Out     1.032     10.883      -         
-rf_data\[31\]_9_1                         Net           -        -       1.143     -           25        
-cpu_instance.un738_rf_data_axb_2          LUT4          I2       In      -         12.025      -         
-cpu_instance.un738_rf_data_axb_2          LUT4          F        Out     0.822     12.848      -         
-un738_rf_data_axb_2                       Net           -        -       0.766     -           1         
-cpu_instance.un738_rf_data_axb_2_lfx      LUT2          I1       In      -         13.613      -         
-cpu_instance.un738_rf_data_axb_2_lfx      LUT2          F        Out     1.099     14.712      -         
-un738_rf_data_axb_2_lfx                   Net           -        -       1.021     -           1         
-cpu_instance.un738_rf_data_cry_2_0        ALU           I0       In      -         15.733      -         
-cpu_instance.un738_rf_data_cry_2_0        ALU           COUT     Out     0.958     16.691      -         
-un738_rf_data_cry_2                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_3_0        ALU           CIN      In      -         16.691      -         
-cpu_instance.un738_rf_data_cry_3_0        ALU           COUT     Out     0.057     16.748      -         
-un738_rf_data_cry_3                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_4_0        ALU           CIN      In      -         16.748      -         
-cpu_instance.un738_rf_data_cry_4_0        ALU           COUT     Out     0.057     16.805      -         
-un738_rf_data_cry_4                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_5_0        ALU           CIN      In      -         16.805      -         
-cpu_instance.un738_rf_data_cry_5_0        ALU           COUT     Out     0.057     16.862      -         
-un738_rf_data_cry_5                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_6_0        ALU           CIN      In      -         16.862      -         
-cpu_instance.un738_rf_data_cry_6_0        ALU           COUT     Out     0.057     16.919      -         
-un738_rf_data_cry_6                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_7_0        ALU           CIN      In      -         16.919      -         
-cpu_instance.un738_rf_data_cry_7_0        ALU           COUT     Out     0.057     16.976      -         
-un738_rf_data_cry_7                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_8_0        ALU           CIN      In      -         16.976      -         
-cpu_instance.un738_rf_data_cry_8_0        ALU           COUT     Out     0.057     17.033      -         
-un738_rf_data_cry_8                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_9_0        ALU           CIN      In      -         17.033      -         
-cpu_instance.un738_rf_data_cry_9_0        ALU           COUT     Out     0.057     17.090      -         
-un738_rf_data_cry_9                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_10_0       ALU           CIN      In      -         17.090      -         
-cpu_instance.un738_rf_data_cry_10_0       ALU           COUT     Out     0.057     17.147      -         
-un738_rf_data_cry_10                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_11_0       ALU           CIN      In      -         17.147      -         
-cpu_instance.un738_rf_data_cry_11_0       ALU           COUT     Out     0.057     17.204      -         
-un738_rf_data_cry_11                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_12_0       ALU           CIN      In      -         17.204      -         
-cpu_instance.un738_rf_data_cry_12_0       ALU           COUT     Out     0.057     17.261      -         
-un738_rf_data_cry_12                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_13_0       ALU           CIN      In      -         17.261      -         
-cpu_instance.un738_rf_data_cry_13_0       ALU           COUT     Out     0.057     17.318      -         
-un738_rf_data_cry_13                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_14_0       ALU           CIN      In      -         17.318      -         
-cpu_instance.un738_rf_data_cry_14_0       ALU           COUT     Out     0.057     17.375      -         
-un738_rf_data_cry_14                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_15_0       ALU           CIN      In      -         17.375      -         
-cpu_instance.un738_rf_data_cry_15_0       ALU           COUT     Out     0.057     17.432      -         
-un738_rf_data_cry_15                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_16_0       ALU           CIN      In      -         17.432      -         
-cpu_instance.un738_rf_data_cry_16_0       ALU           COUT     Out     0.057     17.489      -         
-un738_rf_data_cry_16                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_17_0       ALU           CIN      In      -         17.489      -         
-cpu_instance.un738_rf_data_cry_17_0       ALU           COUT     Out     0.057     17.546      -         
-un738_rf_data_cry_17                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_18_0       ALU           CIN      In      -         17.546      -         
-cpu_instance.un738_rf_data_cry_18_0       ALU           COUT     Out     0.057     17.603      -         
-un738_rf_data_cry_18                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_19_0       ALU           CIN      In      -         17.603      -         
-cpu_instance.un738_rf_data_cry_19_0       ALU           COUT     Out     0.057     17.660      -         
-un738_rf_data_cry_19                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_20_0       ALU           CIN      In      -         17.660      -         
-cpu_instance.un738_rf_data_cry_20_0       ALU           COUT     Out     0.057     17.717      -         
-un738_rf_data_cry_20                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_21_0       ALU           CIN      In      -         17.717      -         
-cpu_instance.un738_rf_data_cry_21_0       ALU           COUT     Out     0.057     17.774      -         
-un738_rf_data_cry_21                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_22_0       ALU           CIN      In      -         17.774      -         
-cpu_instance.un738_rf_data_cry_22_0       ALU           COUT     Out     0.057     17.831      -         
-un738_rf_data_cry_22                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_23_0       ALU           CIN      In      -         17.831      -         
-cpu_instance.un738_rf_data_cry_23_0       ALU           COUT     Out     0.057     17.888      -         
-un738_rf_data_cry_23                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_24_0       ALU           CIN      In      -         17.888      -         
-cpu_instance.un738_rf_data_cry_24_0       ALU           COUT     Out     0.057     17.945      -         
-un738_rf_data_cry_24                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_25_0       ALU           CIN      In      -         17.945      -         
-cpu_instance.un738_rf_data_cry_25_0       ALU           COUT     Out     0.057     18.002      -         
-un738_rf_data_cry_25                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_26_0       ALU           CIN      In      -         18.002      -         
-cpu_instance.un738_rf_data_cry_26_0       ALU           COUT     Out     0.057     18.059      -         
-un738_rf_data_cry_26                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_27_0       ALU           CIN      In      -         18.059      -         
-cpu_instance.un738_rf_data_cry_27_0       ALU           COUT     Out     0.057     18.116      -         
-un738_rf_data_cry_27                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_28_0       ALU           CIN      In      -         18.116      -         
-cpu_instance.un738_rf_data_cry_28_0       ALU           COUT     Out     0.057     18.173      -         
-un738_rf_data_cry_28                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_29_0       ALU           CIN      In      -         18.173      -         
-cpu_instance.un738_rf_data_cry_29_0       ALU           COUT     Out     0.057     18.230      -         
-un738_rf_data_cry_29                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_30_0       ALU           CIN      In      -         18.230      -         
-cpu_instance.un738_rf_data_cry_30_0       ALU           SUM      Out     0.563     18.793      -         
-un738_rf_data_cry_30_0_SUM                Net           -        -       1.021     -           9         
-cpu_instance.rf_data\[1\]_39_3[30]        LUT3          I0       In      -         19.814      -         
-cpu_instance.rf_data\[1\]_39_3[30]        LUT3          F        Out     1.032     20.846      -         
-rf_data\[1\]_39_3[30]                     Net           -        -       0.000     -           1         
-cpu_instance.rf_data\[1\]_39_4[30]        MUX2_LUT5     I1       In      -         20.846      -         
-cpu_instance.rf_data\[1\]_39_4[30]        MUX2_LUT5     O        Out     0.150     20.996      -         
-rf_data\[1\]_39_4[30]                     Net           -        -       1.021     -           1         
-cpu_instance.rf_data\[1\]_39_5[30]        LUT4          I0       In      -         22.017      -         
-cpu_instance.rf_data\[1\]_39_5[30]        LUT4          F        Out     1.032     23.049      -         
-rf_data\[1\]_39_5[30]                     Net           -        -       0.766     -           1         
-cpu_instance.rf_data\[1\]_39_12_d[30]     LUT3          I1       In      -         23.815      -         
-cpu_instance.rf_data\[1\]_39_12_d[30]     LUT3          F        Out     1.099     24.914      -         
-rf_data\[1\]_39_12_d[30]                  Net           -        -       0.766     -           1         
-cpu_instance.rf_data\[1\]_39_18_1[30]     LUT3          I1       In      -         25.679      -         
-cpu_instance.rf_data\[1\]_39_18_1[30]     LUT3          F        Out     1.099     26.778      -         
-rf_data\[1\]_39_18_1[30]                  Net           -        -       0.766     -           1         
-cpu_instance.rf_data\[1\]_39_18[30]       LUT4          I3       In      -         27.544      -         
-cpu_instance.rf_data\[1\]_39_18[30]       LUT4          F        Out     0.626     28.170      -         
-rf_data\[1\]_39[30]                       Net           -        -       0.000     -           1         
-cpu_instance.rf_data\[1\][30]             DFFE          D        In      -         28.170      -         
-=========================================================================================================
-Total path delay (propagation time + setup) of 28.303 is 15.880(56.1%) logic and 12.424(43.9%) route.
-Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
-
-
-Path information for path number 2: 
-      Requested Period:                      24.058
-    - Setup time:                            0.133
-    + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         23.925
-
-    - Propagation time:                      28.134
-    - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -4.209
-
-    Number of logic level(s):                14
+    Number of logic level(s):                13
     Starting point:                          cpu_instance.ir_addr[21] / Q
     Ending point:                            cpu_instance.rf_data\[0\][27] / D
     The start point is clocked by            top|clk [rising] on pin CLK
     The end   point is clocked by            top|clk [rising] on pin CLK
 
-Instance / Net                                         Pin      Pin               Arrival     No. of    
-Name                                          Type     Name     Dir     Delay     Time        Fan Out(s)
---------------------------------------------------------------------------------------------------------
-cpu_instance.ir_addr[21]                      DFF      Q        Out     0.367     0.367       -         
-ir_addr[21]                                   Net      -        -       1.021     -           2         
-cpu_instance.iR.inst36_0_a2_0_10              LUT4     I1       In      -         1.388       -         
-cpu_instance.iR.inst36_0_a2_0_10              LUT4     F        Out     1.099     2.487       -         
-inst36_0_a2_0_10                              Net      -        -       0.766     -           1         
-cpu_instance.iR.inst36_0_a2_0_17              LUT4     I1       In      -         3.253       -         
-cpu_instance.iR.inst36_0_a2_0_17              LUT4     F        Out     1.099     4.352       -         
-inst36_0_a2_0_17                              Net      -        -       1.021     -           6         
-cpu_instance.iR.inst32_0_a2_0                 LUT4     I1       In      -         5.373       -         
-cpu_instance.iR.inst32_0_a2_0                 LUT4     F        Out     1.099     6.472       -         
-N_6431                                        Net      -        -       1.326     -           53        
-cpu_instance.un329_rf_data_3[12]              LUT4     I0       In      -         7.798       -         
-cpu_instance.un329_rf_data_3[12]              LUT4     F        Out     1.032     8.830       -         
-N_5815                                        Net      -        -       0.766     -           1         
-cpu_instance.un329_rf_data_7[12]              LUT3     I0       In      -         9.595       -         
-cpu_instance.un329_rf_data_7[12]              LUT3     F        Out     1.032     10.627      -         
-rf_data\[31\]_9_11                            Net      -        -       1.021     -           8         
-cpu_instance.OVER_16                          LUT4     I1       In      -         11.648      -         
-cpu_instance.OVER_16                          LUT4     F        Out     1.099     12.747      -         
-OVER_16                                       Net      -        -       0.766     -           1         
-cpu_instance.OVER_24                          LUT4     I1       In      -         13.513      -         
-cpu_instance.OVER_24                          LUT4     F        Out     1.099     14.612      -         
-OVER_24                                       Net      -        -       1.021     -           4         
-cpu_instance.OVER                             LUT3     I1       In      -         15.633      -         
-cpu_instance.OVER                             LUT3     F        Out     1.099     16.732      -         
-OVER                                          Net      -        -       1.082     -           11        
-cpu_instance.rf_data\[0\]_39_9_0_a2_0[24]     LUT3     I0       In      -         17.814      -         
-cpu_instance.rf_data\[0\]_39_9_0_a2_0[24]     LUT3     F        Out     1.032     18.846      -         
-N_6748                                        Net      -        -       1.082     -           16        
-cpu_instance.rf_data\[0\]_39_10_1[27]         LUT4     I0       In      -         19.928      -         
-cpu_instance.rf_data\[0\]_39_10_1[27]         LUT4     F        Out     1.032     20.960      -         
-rf_data\[0\]_39_10_1[27]                      Net      -        -       0.766     -           1         
-cpu_instance.rf_data\[0\]_39_10[27]           LUT4     I1       In      -         21.725      -         
-cpu_instance.rf_data\[0\]_39_10[27]           LUT4     F        Out     1.099     22.824      -         
-rf_data\[0\]_39_10[27]                        Net      -        -       1.021     -           9         
-cpu_instance.rf_data\[0\]_39_11_1[27]         LUT3     I1       In      -         23.845      -         
-cpu_instance.rf_data\[0\]_39_11_1[27]         LUT3     F        Out     1.099     24.944      -         
-rf_data\[0\]_39_11_1[27]                      Net      -        -       0.766     -           1         
-cpu_instance.rf_data\[0\]_39_11[27]           LUT4     I3       In      -         25.710      -         
-cpu_instance.rf_data\[0\]_39_11[27]           LUT4     F        Out     0.626     26.336      -         
-N_452                                         Net      -        -       0.766     -           1         
-cpu_instance.rf_data\[0\]_39_18[27]           LUT4     I0       In      -         27.102      -         
-cpu_instance.rf_data\[0\]_39_18[27]           LUT4     F        Out     1.032     28.134      -         
-rf_data\[0\]_39[27]                           Net      -        -       0.000     -           1         
-cpu_instance.rf_data\[0\][27]                 DFFE     D        In      -         28.134      -         
-========================================================================================================
-Total path delay (propagation time + setup) of 28.267 is 15.078(53.3%) logic and 13.189(46.7%) route.
+Instance / Net                                       Pin      Pin               Arrival     No. of    
+Name                                       Type      Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------
+cpu_instance.ir_addr[21]                   DFFE      Q        Out     0.367     0.367       -         
+ir_addr[21]                                Net       -        -       1.021     -           1         
+cpu_instance.iR.inst28_30_9                LUT4      I1       In      -         1.388       -         
+cpu_instance.iR.inst28_30_9                LUT4      F        Out     1.099     2.487       -         
+inst28_30_9                                Net       -        -       0.766     -           1         
+cpu_instance.iR.inst28_30                  LUT4      I1       In      -         3.253       -         
+cpu_instance.iR.inst28_30                  LUT4      F        Out     1.099     4.352       -         
+inst28_30                                  Net       -        -       1.082     -           15        
+cpu_instance.iR.inst32                     LUT4      I2       In      -         5.434       -         
+cpu_instance.iR.inst32                     LUT4      F        Out     0.822     6.256       -         
+inst32                                     Net       -        -       1.539     -           111       
+cpu_instance.iR.un4_address_6_mb_1[27]     LUT4      I2       In      -         7.795       -         
+cpu_instance.iR.un4_address_6_mb_1[27]     LUT4      F        Out     0.822     8.617       -         
+un4_address_6_mb_1[27]                     Net       -        -       0.766     -           1         
+cpu_instance.iR.un4_address_6_mb[27]       LUT4      I0       In      -         9.382       -         
+cpu_instance.iR.un4_address_6_mb[27]       LUT4      F        Out     1.032     10.414      -         
+N_5541                                     Net       -        -       1.021     -           5         
+cpu_instance.iR.un4_address_7[27]          LUT3      I1       In      -         11.435      -         
+cpu_instance.iR.un4_address_7[27]          LUT3      F        Out     1.099     12.534      -         
+un843_rf_data_axb_27_i                     Net       -        -       1.082     -           14        
+cpu_instance.m27_0_0                       LUT3      I2       In      -         13.616      -         
+cpu_instance.m27_0_0                       LUT3      F        Out     0.822     14.438      -         
+m27_0                                      Net       -        -       1.021     -           3         
+cpu_instance.m27_0_03                      LUT3      I0       In      -         15.459      -         
+cpu_instance.m27_0_03                      LUT3      F        Out     1.032     16.491      -         
+m27_0_03                                   Net       -        -       1.021     -           3         
+cpu_instance.m27_2_01                      LUT3      I0       In      -         17.512      -         
+cpu_instance.m27_2_01                      LUT3      F        Out     1.032     18.544      -         
+m27_2_01                                   Net       -        -       1.021     -           2         
+cpu_instance.rf_data\[0\]_41_9[27]         LUT3      I0       In      -         19.565      -         
+cpu_instance.rf_data\[0\]_41_9[27]         LUT3      F        Out     1.032     20.597      -         
+rf_data\[0\]_41_9[27]                      Net       -        -       0.766     -           1         
+cpu_instance.rf_data\[0\]_41_10[27]        LUT4      I0       In      -         21.363      -         
+cpu_instance.rf_data\[0\]_41_10[27]        LUT4      F        Out     1.032     22.395      -         
+rf_data\[0\]_41_10[27]                     Net       -        -       1.021     -           9         
+cpu_instance.rf_data\[0\]_41_11[27]        LUT3      I0       In      -         23.416      -         
+cpu_instance.rf_data\[0\]_41_11[27]        LUT3      F        Out     1.032     24.448      -         
+rf_data\[0\]_41_11[27]                     Net       -        -       0.766     -           1         
+cpu_instance.rf_data\[0\]_41_18[27]        LUT4      I0       In      -         25.213      -         
+cpu_instance.rf_data\[0\]_41_18[27]        LUT4      F        Out     1.032     26.245      -         
+rf_data\[0\]_41[27]                        Net       -        -       0.000     -           1         
+cpu_instance.rf_data\[0\][27]              DFFRE     D        In      -         26.245      -         
+======================================================================================================
+Total path delay (propagation time + setup) of 26.378 is 13.486(51.1%) logic and 12.892(48.9%) route.
+Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
+
+
+Path information for path number 2: 
+      Requested Period:                      22.421
+    - Setup time:                            0.133
+    + Clock delay at ending point:           0.000 (ideal)
+    = Required time:                         22.288
+
+    - Propagation time:                      26.245
+    - Clock delay at starting point:         0.000 (ideal)
+    = Slack (critical) :                     -3.957
+
+    Number of logic level(s):                13
+    Starting point:                          cpu_instance.ir_addr[21] / Q
+    Ending point:                            cpu_instance.rf_data\[3\][27] / D
+    The start point is clocked by            top|clk [rising] on pin CLK
+    The end   point is clocked by            top|clk [rising] on pin CLK
+
+Instance / Net                                       Pin      Pin               Arrival     No. of    
+Name                                       Type      Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------
+cpu_instance.ir_addr[21]                   DFFE      Q        Out     0.367     0.367       -         
+ir_addr[21]                                Net       -        -       1.021     -           1         
+cpu_instance.iR.inst28_30_9                LUT4      I1       In      -         1.388       -         
+cpu_instance.iR.inst28_30_9                LUT4      F        Out     1.099     2.487       -         
+inst28_30_9                                Net       -        -       0.766     -           1         
+cpu_instance.iR.inst28_30                  LUT4      I1       In      -         3.253       -         
+cpu_instance.iR.inst28_30                  LUT4      F        Out     1.099     4.352       -         
+inst28_30                                  Net       -        -       1.082     -           15        
+cpu_instance.iR.inst32                     LUT4      I2       In      -         5.434       -         
+cpu_instance.iR.inst32                     LUT4      F        Out     0.822     6.256       -         
+inst32                                     Net       -        -       1.539     -           111       
+cpu_instance.iR.un4_address_6_mb_1[27]     LUT4      I2       In      -         7.795       -         
+cpu_instance.iR.un4_address_6_mb_1[27]     LUT4      F        Out     0.822     8.617       -         
+un4_address_6_mb_1[27]                     Net       -        -       0.766     -           1         
+cpu_instance.iR.un4_address_6_mb[27]       LUT4      I0       In      -         9.382       -         
+cpu_instance.iR.un4_address_6_mb[27]       LUT4      F        Out     1.032     10.414      -         
+N_5541                                     Net       -        -       1.021     -           5         
+cpu_instance.iR.un4_address_7[27]          LUT3      I1       In      -         11.435      -         
+cpu_instance.iR.un4_address_7[27]          LUT3      F        Out     1.099     12.534      -         
+un843_rf_data_axb_27_i                     Net       -        -       1.082     -           14        
+cpu_instance.m27_0_0                       LUT3      I2       In      -         13.616      -         
+cpu_instance.m27_0_0                       LUT3      F        Out     0.822     14.438      -         
+m27_0                                      Net       -        -       1.021     -           3         
+cpu_instance.m27_0_03                      LUT3      I0       In      -         15.459      -         
+cpu_instance.m27_0_03                      LUT3      F        Out     1.032     16.491      -         
+m27_0_03                                   Net       -        -       1.021     -           3         
+cpu_instance.m27_2_01                      LUT3      I0       In      -         17.512      -         
+cpu_instance.m27_2_01                      LUT3      F        Out     1.032     18.544      -         
+m27_2_01                                   Net       -        -       1.021     -           2         
+cpu_instance.rf_data\[0\]_41_9[27]         LUT3      I0       In      -         19.565      -         
+cpu_instance.rf_data\[0\]_41_9[27]         LUT3      F        Out     1.032     20.597      -         
+rf_data\[0\]_41_9[27]                      Net       -        -       0.766     -           1         
+cpu_instance.rf_data\[0\]_41_10[27]        LUT4      I0       In      -         21.363      -         
+cpu_instance.rf_data\[0\]_41_10[27]        LUT4      F        Out     1.032     22.395      -         
+rf_data\[0\]_41_10[27]                     Net       -        -       1.021     -           9         
+cpu_instance.rf_data\[3\]_41_11[27]        LUT3      I0       In      -         23.416      -         
+cpu_instance.rf_data\[3\]_41_11[27]        LUT3      F        Out     1.032     24.448      -         
+rf_data\[3\]_41_11[27]                     Net       -        -       0.766     -           1         
+cpu_instance.rf_data\[3\]_41_18[27]        LUT4      I0       In      -         25.213      -         
+cpu_instance.rf_data\[3\]_41_18[27]        LUT4      F        Out     1.032     26.245      -         
+rf_data\[3\]_41[27]                        Net       -        -       0.000     -           1         
+cpu_instance.rf_data\[3\][27]              DFFRE     D        In      -         26.245      -         
+======================================================================================================
+Total path delay (propagation time + setup) of 26.378 is 13.486(51.1%) logic and 12.892(48.9%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 3: 
-      Requested Period:                      24.058
+      Requested Period:                      22.421
     - Setup time:                            0.133
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         23.925
+    = Required time:                         22.288
 
-    - Propagation time:                      28.103
+    - Propagation time:                      26.245
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -4.178
+    = Slack (critical) :                     -3.957
 
-    Number of logic level(s):                42
-    Starting point:                          cpu_instance.ir_addr[16] / Q
-    Ending point:                            cpu_instance.rf_data\[1\][30] / D
+    Number of logic level(s):                13
+    Starting point:                          cpu_instance.ir_addr[21] / Q
+    Ending point:                            cpu_instance.rf_data\[7\][27] / D
     The start point is clocked by            top|clk [rising] on pin CLK
     The end   point is clocked by            top|clk [rising] on pin CLK
 
-Instance / Net                                           Pin      Pin               Arrival     No. of    
-Name                                       Type          Name     Dir     Delay     Time        Fan Out(s)
-----------------------------------------------------------------------------------------------------------
-cpu_instance.ir_addr[16]                   DFF           Q        Out     0.367     0.367       -         
-ir_addr[16]                                Net           -        -       1.021     -           2         
-cpu_instance.iR.inst36_0_a2_0_18_N_3L3     LUT4          I1       In      -         1.388       -         
-cpu_instance.iR.inst36_0_a2_0_18_N_3L3     LUT4          F        Out     1.099     2.487       -         
-inst36_0_a2_0_18_N_3L3                     Net           -        -       1.021     -           6         
-cpu_instance.iR.inst32_0_a2_0_sx           LUT4          I1       In      -         3.508       -         
-cpu_instance.iR.inst32_0_a2_0_sx           LUT4          F        Out     1.099     4.607       -         
-inst32_0_a2_0_sx                           Net           -        -       0.766     -           1         
-cpu_instance.iR.inst32_0_a2_0              LUT4          I0       In      -         5.373       -         
-cpu_instance.iR.inst32_0_a2_0              LUT4          F        Out     1.032     6.405       -         
-N_6431                                     Net           -        -       1.326     -           53        
-cpu_instance.un329_rf_data_3[2]            LUT4          I0       In      -         7.731       -         
-cpu_instance.un329_rf_data_3[2]            LUT4          F        Out     1.032     8.762       -         
-N_5805                                     Net           -        -       1.021     -           5         
-cpu_instance.un329_rf_data_7[2]            LUT3          I0       In      -         9.784       -         
-cpu_instance.un329_rf_data_7[2]            LUT3          F        Out     1.032     10.815      -         
-rf_data\[31\]_9_1                          Net           -        -       1.143     -           25        
-cpu_instance.un738_rf_data_axb_2           LUT4          I2       In      -         11.958      -         
-cpu_instance.un738_rf_data_axb_2           LUT4          F        Out     0.822     12.780      -         
-un738_rf_data_axb_2                        Net           -        -       0.766     -           1         
-cpu_instance.un738_rf_data_axb_2_lfx       LUT2          I1       In      -         13.546      -         
-cpu_instance.un738_rf_data_axb_2_lfx       LUT2          F        Out     1.099     14.645      -         
-un738_rf_data_axb_2_lfx                    Net           -        -       1.021     -           1         
-cpu_instance.un738_rf_data_cry_2_0         ALU           I0       In      -         15.666      -         
-cpu_instance.un738_rf_data_cry_2_0         ALU           COUT     Out     0.958     16.624      -         
-un738_rf_data_cry_2                        Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_3_0         ALU           CIN      In      -         16.624      -         
-cpu_instance.un738_rf_data_cry_3_0         ALU           COUT     Out     0.057     16.681      -         
-un738_rf_data_cry_3                        Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_4_0         ALU           CIN      In      -         16.681      -         
-cpu_instance.un738_rf_data_cry_4_0         ALU           COUT     Out     0.057     16.738      -         
-un738_rf_data_cry_4                        Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_5_0         ALU           CIN      In      -         16.738      -         
-cpu_instance.un738_rf_data_cry_5_0         ALU           COUT     Out     0.057     16.795      -         
-un738_rf_data_cry_5                        Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_6_0         ALU           CIN      In      -         16.795      -         
-cpu_instance.un738_rf_data_cry_6_0         ALU           COUT     Out     0.057     16.852      -         
-un738_rf_data_cry_6                        Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_7_0         ALU           CIN      In      -         16.852      -         
-cpu_instance.un738_rf_data_cry_7_0         ALU           COUT     Out     0.057     16.909      -         
-un738_rf_data_cry_7                        Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_8_0         ALU           CIN      In      -         16.909      -         
-cpu_instance.un738_rf_data_cry_8_0         ALU           COUT     Out     0.057     16.966      -         
-un738_rf_data_cry_8                        Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_9_0         ALU           CIN      In      -         16.966      -         
-cpu_instance.un738_rf_data_cry_9_0         ALU           COUT     Out     0.057     17.023      -         
-un738_rf_data_cry_9                        Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_10_0        ALU           CIN      In      -         17.023      -         
-cpu_instance.un738_rf_data_cry_10_0        ALU           COUT     Out     0.057     17.080      -         
-un738_rf_data_cry_10                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_11_0        ALU           CIN      In      -         17.080      -         
-cpu_instance.un738_rf_data_cry_11_0        ALU           COUT     Out     0.057     17.137      -         
-un738_rf_data_cry_11                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_12_0        ALU           CIN      In      -         17.137      -         
-cpu_instance.un738_rf_data_cry_12_0        ALU           COUT     Out     0.057     17.194      -         
-un738_rf_data_cry_12                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_13_0        ALU           CIN      In      -         17.194      -         
-cpu_instance.un738_rf_data_cry_13_0        ALU           COUT     Out     0.057     17.251      -         
-un738_rf_data_cry_13                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_14_0        ALU           CIN      In      -         17.251      -         
-cpu_instance.un738_rf_data_cry_14_0        ALU           COUT     Out     0.057     17.308      -         
-un738_rf_data_cry_14                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_15_0        ALU           CIN      In      -         17.308      -         
-cpu_instance.un738_rf_data_cry_15_0        ALU           COUT     Out     0.057     17.365      -         
-un738_rf_data_cry_15                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_16_0        ALU           CIN      In      -         17.365      -         
-cpu_instance.un738_rf_data_cry_16_0        ALU           COUT     Out     0.057     17.422      -         
-un738_rf_data_cry_16                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_17_0        ALU           CIN      In      -         17.422      -         
-cpu_instance.un738_rf_data_cry_17_0        ALU           COUT     Out     0.057     17.479      -         
-un738_rf_data_cry_17                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_18_0        ALU           CIN      In      -         17.479      -         
-cpu_instance.un738_rf_data_cry_18_0        ALU           COUT     Out     0.057     17.536      -         
-un738_rf_data_cry_18                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_19_0        ALU           CIN      In      -         17.536      -         
-cpu_instance.un738_rf_data_cry_19_0        ALU           COUT     Out     0.057     17.593      -         
-un738_rf_data_cry_19                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_20_0        ALU           CIN      In      -         17.593      -         
-cpu_instance.un738_rf_data_cry_20_0        ALU           COUT     Out     0.057     17.650      -         
-un738_rf_data_cry_20                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_21_0        ALU           CIN      In      -         17.650      -         
-cpu_instance.un738_rf_data_cry_21_0        ALU           COUT     Out     0.057     17.707      -         
-un738_rf_data_cry_21                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_22_0        ALU           CIN      In      -         17.707      -         
-cpu_instance.un738_rf_data_cry_22_0        ALU           COUT     Out     0.057     17.764      -         
-un738_rf_data_cry_22                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_23_0        ALU           CIN      In      -         17.764      -         
-cpu_instance.un738_rf_data_cry_23_0        ALU           COUT     Out     0.057     17.821      -         
-un738_rf_data_cry_23                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_24_0        ALU           CIN      In      -         17.821      -         
-cpu_instance.un738_rf_data_cry_24_0        ALU           COUT     Out     0.057     17.878      -         
-un738_rf_data_cry_24                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_25_0        ALU           CIN      In      -         17.878      -         
-cpu_instance.un738_rf_data_cry_25_0        ALU           COUT     Out     0.057     17.935      -         
-un738_rf_data_cry_25                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_26_0        ALU           CIN      In      -         17.935      -         
-cpu_instance.un738_rf_data_cry_26_0        ALU           COUT     Out     0.057     17.992      -         
-un738_rf_data_cry_26                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_27_0        ALU           CIN      In      -         17.992      -         
-cpu_instance.un738_rf_data_cry_27_0        ALU           COUT     Out     0.057     18.049      -         
-un738_rf_data_cry_27                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_28_0        ALU           CIN      In      -         18.049      -         
-cpu_instance.un738_rf_data_cry_28_0        ALU           COUT     Out     0.057     18.106      -         
-un738_rf_data_cry_28                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_29_0        ALU           CIN      In      -         18.106      -         
-cpu_instance.un738_rf_data_cry_29_0        ALU           COUT     Out     0.057     18.163      -         
-un738_rf_data_cry_29                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_30_0        ALU           CIN      In      -         18.163      -         
-cpu_instance.un738_rf_data_cry_30_0        ALU           SUM      Out     0.563     18.726      -         
-un738_rf_data_cry_30_0_SUM                 Net           -        -       1.021     -           9         
-cpu_instance.rf_data\[1\]_39_3[30]         LUT3          I0       In      -         19.747      -         
-cpu_instance.rf_data\[1\]_39_3[30]         LUT3          F        Out     1.032     20.779      -         
-rf_data\[1\]_39_3[30]                      Net           -        -       0.000     -           1         
-cpu_instance.rf_data\[1\]_39_4[30]         MUX2_LUT5     I1       In      -         20.779      -         
-cpu_instance.rf_data\[1\]_39_4[30]         MUX2_LUT5     O        Out     0.150     20.929      -         
-rf_data\[1\]_39_4[30]                      Net           -        -       1.021     -           1         
-cpu_instance.rf_data\[1\]_39_5[30]         LUT4          I0       In      -         21.950      -         
-cpu_instance.rf_data\[1\]_39_5[30]         LUT4          F        Out     1.032     22.982      -         
-rf_data\[1\]_39_5[30]                      Net           -        -       0.766     -           1         
-cpu_instance.rf_data\[1\]_39_12_d[30]      LUT3          I1       In      -         23.748      -         
-cpu_instance.rf_data\[1\]_39_12_d[30]      LUT3          F        Out     1.099     24.847      -         
-rf_data\[1\]_39_12_d[30]                   Net           -        -       0.766     -           1         
-cpu_instance.rf_data\[1\]_39_18_1[30]      LUT3          I1       In      -         25.612      -         
-cpu_instance.rf_data\[1\]_39_18_1[30]      LUT3          F        Out     1.099     26.711      -         
-rf_data\[1\]_39_18_1[30]                   Net           -        -       0.766     -           1         
-cpu_instance.rf_data\[1\]_39_18[30]        LUT4          I3       In      -         27.477      -         
-cpu_instance.rf_data\[1\]_39_18[30]        LUT4          F        Out     0.626     28.103      -         
-rf_data\[1\]_39[30]                        Net           -        -       0.000     -           1         
-cpu_instance.rf_data\[1\][30]              DFFE          D        In      -         28.103      -         
-==========================================================================================================
-Total path delay (propagation time + setup) of 28.236 is 15.813(56.0%) logic and 12.424(44.0%) route.
+Instance / Net                                       Pin      Pin               Arrival     No. of    
+Name                                       Type      Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------
+cpu_instance.ir_addr[21]                   DFFE      Q        Out     0.367     0.367       -         
+ir_addr[21]                                Net       -        -       1.021     -           1         
+cpu_instance.iR.inst28_30_9                LUT4      I1       In      -         1.388       -         
+cpu_instance.iR.inst28_30_9                LUT4      F        Out     1.099     2.487       -         
+inst28_30_9                                Net       -        -       0.766     -           1         
+cpu_instance.iR.inst28_30                  LUT4      I1       In      -         3.253       -         
+cpu_instance.iR.inst28_30                  LUT4      F        Out     1.099     4.352       -         
+inst28_30                                  Net       -        -       1.082     -           15        
+cpu_instance.iR.inst32                     LUT4      I2       In      -         5.434       -         
+cpu_instance.iR.inst32                     LUT4      F        Out     0.822     6.256       -         
+inst32                                     Net       -        -       1.539     -           111       
+cpu_instance.iR.un4_address_6_mb_1[27]     LUT4      I2       In      -         7.795       -         
+cpu_instance.iR.un4_address_6_mb_1[27]     LUT4      F        Out     0.822     8.617       -         
+un4_address_6_mb_1[27]                     Net       -        -       0.766     -           1         
+cpu_instance.iR.un4_address_6_mb[27]       LUT4      I0       In      -         9.382       -         
+cpu_instance.iR.un4_address_6_mb[27]       LUT4      F        Out     1.032     10.414      -         
+N_5541                                     Net       -        -       1.021     -           5         
+cpu_instance.iR.un4_address_7[27]          LUT3      I1       In      -         11.435      -         
+cpu_instance.iR.un4_address_7[27]          LUT3      F        Out     1.099     12.534      -         
+un843_rf_data_axb_27_i                     Net       -        -       1.082     -           14        
+cpu_instance.m27_0_0                       LUT3      I2       In      -         13.616      -         
+cpu_instance.m27_0_0                       LUT3      F        Out     0.822     14.438      -         
+m27_0                                      Net       -        -       1.021     -           3         
+cpu_instance.m27_0_03                      LUT3      I0       In      -         15.459      -         
+cpu_instance.m27_0_03                      LUT3      F        Out     1.032     16.491      -         
+m27_0_03                                   Net       -        -       1.021     -           3         
+cpu_instance.m27_2_01                      LUT3      I0       In      -         17.512      -         
+cpu_instance.m27_2_01                      LUT3      F        Out     1.032     18.544      -         
+m27_2_01                                   Net       -        -       1.021     -           2         
+cpu_instance.rf_data\[0\]_41_9[27]         LUT3      I0       In      -         19.565      -         
+cpu_instance.rf_data\[0\]_41_9[27]         LUT3      F        Out     1.032     20.597      -         
+rf_data\[0\]_41_9[27]                      Net       -        -       0.766     -           1         
+cpu_instance.rf_data\[0\]_41_10[27]        LUT4      I0       In      -         21.363      -         
+cpu_instance.rf_data\[0\]_41_10[27]        LUT4      F        Out     1.032     22.395      -         
+rf_data\[0\]_41_10[27]                     Net       -        -       1.021     -           9         
+cpu_instance.rf_data\[7\]_41_11[27]        LUT3      I0       In      -         23.416      -         
+cpu_instance.rf_data\[7\]_41_11[27]        LUT3      F        Out     1.032     24.448      -         
+rf_data\[7\]_41_11[27]                     Net       -        -       0.766     -           1         
+cpu_instance.rf_data\[7\]_41_18[27]        LUT4      I0       In      -         25.213      -         
+cpu_instance.rf_data\[7\]_41_18[27]        LUT4      F        Out     1.032     26.245      -         
+rf_data\[7\]_41[27]                        Net       -        -       0.000     -           1         
+cpu_instance.rf_data\[7\][27]              DFFRE     D        In      -         26.245      -         
+======================================================================================================
+Total path delay (propagation time + setup) of 26.378 is 13.486(51.1%) logic and 12.892(48.9%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 4: 
-      Requested Period:                      24.058
+      Requested Period:                      22.421
     - Setup time:                            0.133
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         23.925
+    = Required time:                         22.288
 
-    - Propagation time:                      28.103
+    - Propagation time:                      26.245
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -4.178
+    = Slack (critical) :                     -3.957
 
-    Number of logic level(s):                42
-    Starting point:                          cpu_instance.ir_addr[18] / Q
-    Ending point:                            cpu_instance.rf_data\[1\][30] / D
+    Number of logic level(s):                13
+    Starting point:                          cpu_instance.ir_addr[21] / Q
+    Ending point:                            cpu_instance.rf_data\[4\][27] / D
     The start point is clocked by            top|clk [rising] on pin CLK
     The end   point is clocked by            top|clk [rising] on pin CLK
 
-Instance / Net                                          Pin      Pin               Arrival     No. of    
-Name                                      Type          Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------------
-cpu_instance.ir_addr[18]                  DFF           Q        Out     0.367     0.367       -         
-ir_addr[18]                               Net           -        -       1.021     -           2         
-cpu_instance.iR.inst36_0_a2_0_9           LUT3          I1       In      -         1.388       -         
-cpu_instance.iR.inst36_0_a2_0_9           LUT3          F        Out     1.099     2.487       -         
-inst36_0_a2_0_9                           Net           -        -       0.766     -           1         
-cpu_instance.iR.inst36_0_a2_0_17          LUT4          I0       In      -         3.253       -         
-cpu_instance.iR.inst36_0_a2_0_17          LUT4          F        Out     1.032     4.285       -         
-inst36_0_a2_0_17                          Net           -        -       1.021     -           6         
-cpu_instance.iR.inst32_0_a2_0             LUT4          I1       In      -         5.306       -         
-cpu_instance.iR.inst32_0_a2_0             LUT4          F        Out     1.099     6.405       -         
-N_6431                                    Net           -        -       1.326     -           53        
-cpu_instance.un329_rf_data_3[2]           LUT4          I0       In      -         7.731       -         
-cpu_instance.un329_rf_data_3[2]           LUT4          F        Out     1.032     8.762       -         
-N_5805                                    Net           -        -       1.021     -           5         
-cpu_instance.un329_rf_data_7[2]           LUT3          I0       In      -         9.784       -         
-cpu_instance.un329_rf_data_7[2]           LUT3          F        Out     1.032     10.815      -         
-rf_data\[31\]_9_1                         Net           -        -       1.143     -           25        
-cpu_instance.un738_rf_data_axb_2          LUT4          I2       In      -         11.958      -         
-cpu_instance.un738_rf_data_axb_2          LUT4          F        Out     0.822     12.780      -         
-un738_rf_data_axb_2                       Net           -        -       0.766     -           1         
-cpu_instance.un738_rf_data_axb_2_lfx      LUT2          I1       In      -         13.546      -         
-cpu_instance.un738_rf_data_axb_2_lfx      LUT2          F        Out     1.099     14.645      -         
-un738_rf_data_axb_2_lfx                   Net           -        -       1.021     -           1         
-cpu_instance.un738_rf_data_cry_2_0        ALU           I0       In      -         15.666      -         
-cpu_instance.un738_rf_data_cry_2_0        ALU           COUT     Out     0.958     16.624      -         
-un738_rf_data_cry_2                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_3_0        ALU           CIN      In      -         16.624      -         
-cpu_instance.un738_rf_data_cry_3_0        ALU           COUT     Out     0.057     16.681      -         
-un738_rf_data_cry_3                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_4_0        ALU           CIN      In      -         16.681      -         
-cpu_instance.un738_rf_data_cry_4_0        ALU           COUT     Out     0.057     16.738      -         
-un738_rf_data_cry_4                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_5_0        ALU           CIN      In      -         16.738      -         
-cpu_instance.un738_rf_data_cry_5_0        ALU           COUT     Out     0.057     16.795      -         
-un738_rf_data_cry_5                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_6_0        ALU           CIN      In      -         16.795      -         
-cpu_instance.un738_rf_data_cry_6_0        ALU           COUT     Out     0.057     16.852      -         
-un738_rf_data_cry_6                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_7_0        ALU           CIN      In      -         16.852      -         
-cpu_instance.un738_rf_data_cry_7_0        ALU           COUT     Out     0.057     16.909      -         
-un738_rf_data_cry_7                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_8_0        ALU           CIN      In      -         16.909      -         
-cpu_instance.un738_rf_data_cry_8_0        ALU           COUT     Out     0.057     16.966      -         
-un738_rf_data_cry_8                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_9_0        ALU           CIN      In      -         16.966      -         
-cpu_instance.un738_rf_data_cry_9_0        ALU           COUT     Out     0.057     17.023      -         
-un738_rf_data_cry_9                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_10_0       ALU           CIN      In      -         17.023      -         
-cpu_instance.un738_rf_data_cry_10_0       ALU           COUT     Out     0.057     17.080      -         
-un738_rf_data_cry_10                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_11_0       ALU           CIN      In      -         17.080      -         
-cpu_instance.un738_rf_data_cry_11_0       ALU           COUT     Out     0.057     17.137      -         
-un738_rf_data_cry_11                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_12_0       ALU           CIN      In      -         17.137      -         
-cpu_instance.un738_rf_data_cry_12_0       ALU           COUT     Out     0.057     17.194      -         
-un738_rf_data_cry_12                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_13_0       ALU           CIN      In      -         17.194      -         
-cpu_instance.un738_rf_data_cry_13_0       ALU           COUT     Out     0.057     17.251      -         
-un738_rf_data_cry_13                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_14_0       ALU           CIN      In      -         17.251      -         
-cpu_instance.un738_rf_data_cry_14_0       ALU           COUT     Out     0.057     17.308      -         
-un738_rf_data_cry_14                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_15_0       ALU           CIN      In      -         17.308      -         
-cpu_instance.un738_rf_data_cry_15_0       ALU           COUT     Out     0.057     17.365      -         
-un738_rf_data_cry_15                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_16_0       ALU           CIN      In      -         17.365      -         
-cpu_instance.un738_rf_data_cry_16_0       ALU           COUT     Out     0.057     17.422      -         
-un738_rf_data_cry_16                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_17_0       ALU           CIN      In      -         17.422      -         
-cpu_instance.un738_rf_data_cry_17_0       ALU           COUT     Out     0.057     17.479      -         
-un738_rf_data_cry_17                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_18_0       ALU           CIN      In      -         17.479      -         
-cpu_instance.un738_rf_data_cry_18_0       ALU           COUT     Out     0.057     17.536      -         
-un738_rf_data_cry_18                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_19_0       ALU           CIN      In      -         17.536      -         
-cpu_instance.un738_rf_data_cry_19_0       ALU           COUT     Out     0.057     17.593      -         
-un738_rf_data_cry_19                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_20_0       ALU           CIN      In      -         17.593      -         
-cpu_instance.un738_rf_data_cry_20_0       ALU           COUT     Out     0.057     17.650      -         
-un738_rf_data_cry_20                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_21_0       ALU           CIN      In      -         17.650      -         
-cpu_instance.un738_rf_data_cry_21_0       ALU           COUT     Out     0.057     17.707      -         
-un738_rf_data_cry_21                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_22_0       ALU           CIN      In      -         17.707      -         
-cpu_instance.un738_rf_data_cry_22_0       ALU           COUT     Out     0.057     17.764      -         
-un738_rf_data_cry_22                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_23_0       ALU           CIN      In      -         17.764      -         
-cpu_instance.un738_rf_data_cry_23_0       ALU           COUT     Out     0.057     17.821      -         
-un738_rf_data_cry_23                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_24_0       ALU           CIN      In      -         17.821      -         
-cpu_instance.un738_rf_data_cry_24_0       ALU           COUT     Out     0.057     17.878      -         
-un738_rf_data_cry_24                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_25_0       ALU           CIN      In      -         17.878      -         
-cpu_instance.un738_rf_data_cry_25_0       ALU           COUT     Out     0.057     17.935      -         
-un738_rf_data_cry_25                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_26_0       ALU           CIN      In      -         17.935      -         
-cpu_instance.un738_rf_data_cry_26_0       ALU           COUT     Out     0.057     17.992      -         
-un738_rf_data_cry_26                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_27_0       ALU           CIN      In      -         17.992      -         
-cpu_instance.un738_rf_data_cry_27_0       ALU           COUT     Out     0.057     18.049      -         
-un738_rf_data_cry_27                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_28_0       ALU           CIN      In      -         18.049      -         
-cpu_instance.un738_rf_data_cry_28_0       ALU           COUT     Out     0.057     18.106      -         
-un738_rf_data_cry_28                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_29_0       ALU           CIN      In      -         18.106      -         
-cpu_instance.un738_rf_data_cry_29_0       ALU           COUT     Out     0.057     18.163      -         
-un738_rf_data_cry_29                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_30_0       ALU           CIN      In      -         18.163      -         
-cpu_instance.un738_rf_data_cry_30_0       ALU           SUM      Out     0.563     18.726      -         
-un738_rf_data_cry_30_0_SUM                Net           -        -       1.021     -           9         
-cpu_instance.rf_data\[1\]_39_3[30]        LUT3          I0       In      -         19.747      -         
-cpu_instance.rf_data\[1\]_39_3[30]        LUT3          F        Out     1.032     20.779      -         
-rf_data\[1\]_39_3[30]                     Net           -        -       0.000     -           1         
-cpu_instance.rf_data\[1\]_39_4[30]        MUX2_LUT5     I1       In      -         20.779      -         
-cpu_instance.rf_data\[1\]_39_4[30]        MUX2_LUT5     O        Out     0.150     20.929      -         
-rf_data\[1\]_39_4[30]                     Net           -        -       1.021     -           1         
-cpu_instance.rf_data\[1\]_39_5[30]        LUT4          I0       In      -         21.950      -         
-cpu_instance.rf_data\[1\]_39_5[30]        LUT4          F        Out     1.032     22.982      -         
-rf_data\[1\]_39_5[30]                     Net           -        -       0.766     -           1         
-cpu_instance.rf_data\[1\]_39_12_d[30]     LUT3          I1       In      -         23.748      -         
-cpu_instance.rf_data\[1\]_39_12_d[30]     LUT3          F        Out     1.099     24.847      -         
-rf_data\[1\]_39_12_d[30]                  Net           -        -       0.766     -           1         
-cpu_instance.rf_data\[1\]_39_18_1[30]     LUT3          I1       In      -         25.612      -         
-cpu_instance.rf_data\[1\]_39_18_1[30]     LUT3          F        Out     1.099     26.711      -         
-rf_data\[1\]_39_18_1[30]                  Net           -        -       0.766     -           1         
-cpu_instance.rf_data\[1\]_39_18[30]       LUT4          I3       In      -         27.477      -         
-cpu_instance.rf_data\[1\]_39_18[30]       LUT4          F        Out     0.626     28.103      -         
-rf_data\[1\]_39[30]                       Net           -        -       0.000     -           1         
-cpu_instance.rf_data\[1\][30]             DFFE          D        In      -         28.103      -         
-=========================================================================================================
-Total path delay (propagation time + setup) of 28.236 is 15.813(56.0%) logic and 12.424(44.0%) route.
+Instance / Net                                       Pin      Pin               Arrival     No. of    
+Name                                       Type      Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------
+cpu_instance.ir_addr[21]                   DFFE      Q        Out     0.367     0.367       -         
+ir_addr[21]                                Net       -        -       1.021     -           1         
+cpu_instance.iR.inst28_30_9                LUT4      I1       In      -         1.388       -         
+cpu_instance.iR.inst28_30_9                LUT4      F        Out     1.099     2.487       -         
+inst28_30_9                                Net       -        -       0.766     -           1         
+cpu_instance.iR.inst28_30                  LUT4      I1       In      -         3.253       -         
+cpu_instance.iR.inst28_30                  LUT4      F        Out     1.099     4.352       -         
+inst28_30                                  Net       -        -       1.082     -           15        
+cpu_instance.iR.inst32                     LUT4      I2       In      -         5.434       -         
+cpu_instance.iR.inst32                     LUT4      F        Out     0.822     6.256       -         
+inst32                                     Net       -        -       1.539     -           111       
+cpu_instance.iR.un4_address_6_mb_1[27]     LUT4      I2       In      -         7.795       -         
+cpu_instance.iR.un4_address_6_mb_1[27]     LUT4      F        Out     0.822     8.617       -         
+un4_address_6_mb_1[27]                     Net       -        -       0.766     -           1         
+cpu_instance.iR.un4_address_6_mb[27]       LUT4      I0       In      -         9.382       -         
+cpu_instance.iR.un4_address_6_mb[27]       LUT4      F        Out     1.032     10.414      -         
+N_5541                                     Net       -        -       1.021     -           5         
+cpu_instance.iR.un4_address_7[27]          LUT3      I1       In      -         11.435      -         
+cpu_instance.iR.un4_address_7[27]          LUT3      F        Out     1.099     12.534      -         
+un843_rf_data_axb_27_i                     Net       -        -       1.082     -           14        
+cpu_instance.m27_0_0                       LUT3      I2       In      -         13.616      -         
+cpu_instance.m27_0_0                       LUT3      F        Out     0.822     14.438      -         
+m27_0                                      Net       -        -       1.021     -           3         
+cpu_instance.m27_0_03                      LUT3      I0       In      -         15.459      -         
+cpu_instance.m27_0_03                      LUT3      F        Out     1.032     16.491      -         
+m27_0_03                                   Net       -        -       1.021     -           3         
+cpu_instance.m27_2_01                      LUT3      I0       In      -         17.512      -         
+cpu_instance.m27_2_01                      LUT3      F        Out     1.032     18.544      -         
+m27_2_01                                   Net       -        -       1.021     -           2         
+cpu_instance.rf_data\[0\]_41_9[27]         LUT3      I0       In      -         19.565      -         
+cpu_instance.rf_data\[0\]_41_9[27]         LUT3      F        Out     1.032     20.597      -         
+rf_data\[0\]_41_9[27]                      Net       -        -       0.766     -           1         
+cpu_instance.rf_data\[0\]_41_10[27]        LUT4      I0       In      -         21.363      -         
+cpu_instance.rf_data\[0\]_41_10[27]        LUT4      F        Out     1.032     22.395      -         
+rf_data\[0\]_41_10[27]                     Net       -        -       1.021     -           9         
+cpu_instance.rf_data\[4\]_41_11[27]        LUT3      I0       In      -         23.416      -         
+cpu_instance.rf_data\[4\]_41_11[27]        LUT3      F        Out     1.032     24.448      -         
+rf_data\[4\]_41_11[27]                     Net       -        -       0.766     -           1         
+cpu_instance.rf_data\[4\]_41_18[27]        LUT4      I0       In      -         25.213      -         
+cpu_instance.rf_data\[4\]_41_18[27]        LUT4      F        Out     1.032     26.245      -         
+rf_data\[4\]_41[27]                        Net       -        -       0.000     -           1         
+cpu_instance.rf_data\[4\][27]              DFFRE     D        In      -         26.245      -         
+======================================================================================================
+Total path delay (propagation time + setup) of 26.378 is 13.486(51.1%) logic and 12.892(48.9%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
 Path information for path number 5: 
-      Requested Period:                      24.058
+      Requested Period:                      22.421
     - Setup time:                            0.133
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         23.925
+    = Required time:                         22.288
 
-    - Propagation time:                      28.103
+    - Propagation time:                      26.245
     - Clock delay at starting point:         0.000 (ideal)
-    = Slack (non-critical) :                 -4.178
+    = Slack (critical) :                     -3.957
 
-    Number of logic level(s):                42
-    Starting point:                          cpu_instance.ir_addr[19] / Q
-    Ending point:                            cpu_instance.rf_data\[1\][30] / D
+    Number of logic level(s):                13
+    Starting point:                          cpu_instance.ir_addr[21] / Q
+    Ending point:                            cpu_instance.rf_data\[6\][27] / D
     The start point is clocked by            top|clk [rising] on pin CLK
     The end   point is clocked by            top|clk [rising] on pin CLK
 
-Instance / Net                                          Pin      Pin               Arrival     No. of    
-Name                                      Type          Name     Dir     Delay     Time        Fan Out(s)
----------------------------------------------------------------------------------------------------------
-cpu_instance.ir_addr[19]                  DFF           Q        Out     0.367     0.367       -         
-ir_addr[19]                               Net           -        -       1.021     -           2         
-cpu_instance.iR.inst36_0_a2_0_10          LUT4          I0       In      -         1.388       -         
-cpu_instance.iR.inst36_0_a2_0_10          LUT4          F        Out     1.032     2.420       -         
-inst36_0_a2_0_10                          Net           -        -       0.766     -           1         
-cpu_instance.iR.inst36_0_a2_0_17          LUT4          I1       In      -         3.186       -         
-cpu_instance.iR.inst36_0_a2_0_17          LUT4          F        Out     1.099     4.285       -         
-inst36_0_a2_0_17                          Net           -        -       1.021     -           6         
-cpu_instance.iR.inst32_0_a2_0             LUT4          I1       In      -         5.306       -         
-cpu_instance.iR.inst32_0_a2_0             LUT4          F        Out     1.099     6.405       -         
-N_6431                                    Net           -        -       1.326     -           53        
-cpu_instance.un329_rf_data_3[2]           LUT4          I0       In      -         7.731       -         
-cpu_instance.un329_rf_data_3[2]           LUT4          F        Out     1.032     8.762       -         
-N_5805                                    Net           -        -       1.021     -           5         
-cpu_instance.un329_rf_data_7[2]           LUT3          I0       In      -         9.784       -         
-cpu_instance.un329_rf_data_7[2]           LUT3          F        Out     1.032     10.815      -         
-rf_data\[31\]_9_1                         Net           -        -       1.143     -           25        
-cpu_instance.un738_rf_data_axb_2          LUT4          I2       In      -         11.958      -         
-cpu_instance.un738_rf_data_axb_2          LUT4          F        Out     0.822     12.780      -         
-un738_rf_data_axb_2                       Net           -        -       0.766     -           1         
-cpu_instance.un738_rf_data_axb_2_lfx      LUT2          I1       In      -         13.546      -         
-cpu_instance.un738_rf_data_axb_2_lfx      LUT2          F        Out     1.099     14.645      -         
-un738_rf_data_axb_2_lfx                   Net           -        -       1.021     -           1         
-cpu_instance.un738_rf_data_cry_2_0        ALU           I0       In      -         15.666      -         
-cpu_instance.un738_rf_data_cry_2_0        ALU           COUT     Out     0.958     16.624      -         
-un738_rf_data_cry_2                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_3_0        ALU           CIN      In      -         16.624      -         
-cpu_instance.un738_rf_data_cry_3_0        ALU           COUT     Out     0.057     16.681      -         
-un738_rf_data_cry_3                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_4_0        ALU           CIN      In      -         16.681      -         
-cpu_instance.un738_rf_data_cry_4_0        ALU           COUT     Out     0.057     16.738      -         
-un738_rf_data_cry_4                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_5_0        ALU           CIN      In      -         16.738      -         
-cpu_instance.un738_rf_data_cry_5_0        ALU           COUT     Out     0.057     16.795      -         
-un738_rf_data_cry_5                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_6_0        ALU           CIN      In      -         16.795      -         
-cpu_instance.un738_rf_data_cry_6_0        ALU           COUT     Out     0.057     16.852      -         
-un738_rf_data_cry_6                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_7_0        ALU           CIN      In      -         16.852      -         
-cpu_instance.un738_rf_data_cry_7_0        ALU           COUT     Out     0.057     16.909      -         
-un738_rf_data_cry_7                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_8_0        ALU           CIN      In      -         16.909      -         
-cpu_instance.un738_rf_data_cry_8_0        ALU           COUT     Out     0.057     16.966      -         
-un738_rf_data_cry_8                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_9_0        ALU           CIN      In      -         16.966      -         
-cpu_instance.un738_rf_data_cry_9_0        ALU           COUT     Out     0.057     17.023      -         
-un738_rf_data_cry_9                       Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_10_0       ALU           CIN      In      -         17.023      -         
-cpu_instance.un738_rf_data_cry_10_0       ALU           COUT     Out     0.057     17.080      -         
-un738_rf_data_cry_10                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_11_0       ALU           CIN      In      -         17.080      -         
-cpu_instance.un738_rf_data_cry_11_0       ALU           COUT     Out     0.057     17.137      -         
-un738_rf_data_cry_11                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_12_0       ALU           CIN      In      -         17.137      -         
-cpu_instance.un738_rf_data_cry_12_0       ALU           COUT     Out     0.057     17.194      -         
-un738_rf_data_cry_12                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_13_0       ALU           CIN      In      -         17.194      -         
-cpu_instance.un738_rf_data_cry_13_0       ALU           COUT     Out     0.057     17.251      -         
-un738_rf_data_cry_13                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_14_0       ALU           CIN      In      -         17.251      -         
-cpu_instance.un738_rf_data_cry_14_0       ALU           COUT     Out     0.057     17.308      -         
-un738_rf_data_cry_14                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_15_0       ALU           CIN      In      -         17.308      -         
-cpu_instance.un738_rf_data_cry_15_0       ALU           COUT     Out     0.057     17.365      -         
-un738_rf_data_cry_15                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_16_0       ALU           CIN      In      -         17.365      -         
-cpu_instance.un738_rf_data_cry_16_0       ALU           COUT     Out     0.057     17.422      -         
-un738_rf_data_cry_16                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_17_0       ALU           CIN      In      -         17.422      -         
-cpu_instance.un738_rf_data_cry_17_0       ALU           COUT     Out     0.057     17.479      -         
-un738_rf_data_cry_17                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_18_0       ALU           CIN      In      -         17.479      -         
-cpu_instance.un738_rf_data_cry_18_0       ALU           COUT     Out     0.057     17.536      -         
-un738_rf_data_cry_18                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_19_0       ALU           CIN      In      -         17.536      -         
-cpu_instance.un738_rf_data_cry_19_0       ALU           COUT     Out     0.057     17.593      -         
-un738_rf_data_cry_19                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_20_0       ALU           CIN      In      -         17.593      -         
-cpu_instance.un738_rf_data_cry_20_0       ALU           COUT     Out     0.057     17.650      -         
-un738_rf_data_cry_20                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_21_0       ALU           CIN      In      -         17.650      -         
-cpu_instance.un738_rf_data_cry_21_0       ALU           COUT     Out     0.057     17.707      -         
-un738_rf_data_cry_21                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_22_0       ALU           CIN      In      -         17.707      -         
-cpu_instance.un738_rf_data_cry_22_0       ALU           COUT     Out     0.057     17.764      -         
-un738_rf_data_cry_22                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_23_0       ALU           CIN      In      -         17.764      -         
-cpu_instance.un738_rf_data_cry_23_0       ALU           COUT     Out     0.057     17.821      -         
-un738_rf_data_cry_23                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_24_0       ALU           CIN      In      -         17.821      -         
-cpu_instance.un738_rf_data_cry_24_0       ALU           COUT     Out     0.057     17.878      -         
-un738_rf_data_cry_24                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_25_0       ALU           CIN      In      -         17.878      -         
-cpu_instance.un738_rf_data_cry_25_0       ALU           COUT     Out     0.057     17.935      -         
-un738_rf_data_cry_25                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_26_0       ALU           CIN      In      -         17.935      -         
-cpu_instance.un738_rf_data_cry_26_0       ALU           COUT     Out     0.057     17.992      -         
-un738_rf_data_cry_26                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_27_0       ALU           CIN      In      -         17.992      -         
-cpu_instance.un738_rf_data_cry_27_0       ALU           COUT     Out     0.057     18.049      -         
-un738_rf_data_cry_27                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_28_0       ALU           CIN      In      -         18.049      -         
-cpu_instance.un738_rf_data_cry_28_0       ALU           COUT     Out     0.057     18.106      -         
-un738_rf_data_cry_28                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_29_0       ALU           CIN      In      -         18.106      -         
-cpu_instance.un738_rf_data_cry_29_0       ALU           COUT     Out     0.057     18.163      -         
-un738_rf_data_cry_29                      Net           -        -       0.000     -           1         
-cpu_instance.un738_rf_data_cry_30_0       ALU           CIN      In      -         18.163      -         
-cpu_instance.un738_rf_data_cry_30_0       ALU           SUM      Out     0.563     18.726      -         
-un738_rf_data_cry_30_0_SUM                Net           -        -       1.021     -           9         
-cpu_instance.rf_data\[1\]_39_3[30]        LUT3          I0       In      -         19.747      -         
-cpu_instance.rf_data\[1\]_39_3[30]        LUT3          F        Out     1.032     20.779      -         
-rf_data\[1\]_39_3[30]                     Net           -        -       0.000     -           1         
-cpu_instance.rf_data\[1\]_39_4[30]        MUX2_LUT5     I1       In      -         20.779      -         
-cpu_instance.rf_data\[1\]_39_4[30]        MUX2_LUT5     O        Out     0.150     20.929      -         
-rf_data\[1\]_39_4[30]                     Net           -        -       1.021     -           1         
-cpu_instance.rf_data\[1\]_39_5[30]        LUT4          I0       In      -         21.950      -         
-cpu_instance.rf_data\[1\]_39_5[30]        LUT4          F        Out     1.032     22.982      -         
-rf_data\[1\]_39_5[30]                     Net           -        -       0.766     -           1         
-cpu_instance.rf_data\[1\]_39_12_d[30]     LUT3          I1       In      -         23.748      -         
-cpu_instance.rf_data\[1\]_39_12_d[30]     LUT3          F        Out     1.099     24.847      -         
-rf_data\[1\]_39_12_d[30]                  Net           -        -       0.766     -           1         
-cpu_instance.rf_data\[1\]_39_18_1[30]     LUT3          I1       In      -         25.612      -         
-cpu_instance.rf_data\[1\]_39_18_1[30]     LUT3          F        Out     1.099     26.711      -         
-rf_data\[1\]_39_18_1[30]                  Net           -        -       0.766     -           1         
-cpu_instance.rf_data\[1\]_39_18[30]       LUT4          I3       In      -         27.477      -         
-cpu_instance.rf_data\[1\]_39_18[30]       LUT4          F        Out     0.626     28.103      -         
-rf_data\[1\]_39[30]                       Net           -        -       0.000     -           1         
-cpu_instance.rf_data\[1\][30]             DFFE          D        In      -         28.103      -         
-=========================================================================================================
-Total path delay (propagation time + setup) of 28.236 is 15.813(56.0%) logic and 12.424(44.0%) route.
+Instance / Net                                       Pin      Pin               Arrival     No. of    
+Name                                       Type      Name     Dir     Delay     Time        Fan Out(s)
+------------------------------------------------------------------------------------------------------
+cpu_instance.ir_addr[21]                   DFFE      Q        Out     0.367     0.367       -         
+ir_addr[21]                                Net       -        -       1.021     -           1         
+cpu_instance.iR.inst28_30_9                LUT4      I1       In      -         1.388       -         
+cpu_instance.iR.inst28_30_9                LUT4      F        Out     1.099     2.487       -         
+inst28_30_9                                Net       -        -       0.766     -           1         
+cpu_instance.iR.inst28_30                  LUT4      I1       In      -         3.253       -         
+cpu_instance.iR.inst28_30                  LUT4      F        Out     1.099     4.352       -         
+inst28_30                                  Net       -        -       1.082     -           15        
+cpu_instance.iR.inst32                     LUT4      I2       In      -         5.434       -         
+cpu_instance.iR.inst32                     LUT4      F        Out     0.822     6.256       -         
+inst32                                     Net       -        -       1.539     -           111       
+cpu_instance.iR.un4_address_6_mb_1[27]     LUT4      I2       In      -         7.795       -         
+cpu_instance.iR.un4_address_6_mb_1[27]     LUT4      F        Out     0.822     8.617       -         
+un4_address_6_mb_1[27]                     Net       -        -       0.766     -           1         
+cpu_instance.iR.un4_address_6_mb[27]       LUT4      I0       In      -         9.382       -         
+cpu_instance.iR.un4_address_6_mb[27]       LUT4      F        Out     1.032     10.414      -         
+N_5541                                     Net       -        -       1.021     -           5         
+cpu_instance.iR.un4_address_7[27]          LUT3      I1       In      -         11.435      -         
+cpu_instance.iR.un4_address_7[27]          LUT3      F        Out     1.099     12.534      -         
+un843_rf_data_axb_27_i                     Net       -        -       1.082     -           14        
+cpu_instance.m27_0_0                       LUT3      I2       In      -         13.616      -         
+cpu_instance.m27_0_0                       LUT3      F        Out     0.822     14.438      -         
+m27_0                                      Net       -        -       1.021     -           3         
+cpu_instance.m27_0_03                      LUT3      I0       In      -         15.459      -         
+cpu_instance.m27_0_03                      LUT3      F        Out     1.032     16.491      -         
+m27_0_03                                   Net       -        -       1.021     -           3         
+cpu_instance.m27_2_01                      LUT3      I0       In      -         17.512      -         
+cpu_instance.m27_2_01                      LUT3      F        Out     1.032     18.544      -         
+m27_2_01                                   Net       -        -       1.021     -           2         
+cpu_instance.rf_data\[0\]_41_9[27]         LUT3      I0       In      -         19.565      -         
+cpu_instance.rf_data\[0\]_41_9[27]         LUT3      F        Out     1.032     20.597      -         
+rf_data\[0\]_41_9[27]                      Net       -        -       0.766     -           1         
+cpu_instance.rf_data\[0\]_41_10[27]        LUT4      I0       In      -         21.363      -         
+cpu_instance.rf_data\[0\]_41_10[27]        LUT4      F        Out     1.032     22.395      -         
+rf_data\[0\]_41_10[27]                     Net       -        -       1.021     -           9         
+cpu_instance.rf_data\[6\]_41_11[27]        LUT3      I0       In      -         23.416      -         
+cpu_instance.rf_data\[6\]_41_11[27]        LUT3      F        Out     1.032     24.448      -         
+rf_data\[6\]_41_11[27]                     Net       -        -       0.766     -           1         
+cpu_instance.rf_data\[6\]_41_18[27]        LUT4      I0       In      -         25.213      -         
+cpu_instance.rf_data\[6\]_41_18[27]        LUT4      F        Out     1.032     26.245      -         
+rf_data\[6\]_41[27]                        Net       -        -       0.000     -           1         
+cpu_instance.rf_data\[6\][27]              DFFRE     D        In      -         26.245      -         
+======================================================================================================
+Total path delay (propagation time + setup) of 26.378 is 13.486(51.1%) logic and 12.892(48.9%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1007,35 +673,38 @@ Detailed Report for Clock: System
 Starting Points with Worst Slack
 ********************************
 
-                          Starting                                         Arrival           
-Instance                  Reference     Type     Pin     Net               Time        Slack 
-                          Clock                                                              
----------------------------------------------------------------------------------------------
-cpu_instance.N_6836_i     System        INV      O       N_6836_i          0.000       22.904
-cpu_dout_i[0]             System        INV      O       cpu_dout_i[0]     0.000       22.904
-cpu_dout_i[1]             System        INV      O       cpu_dout_i[1]     0.000       22.904
-cpu_dout_i[2]             System        INV      O       cpu_dout_i[2]     0.000       22.904
-led_B_c_i                 System        INV      O       led_B_c_i         0.000       22.904
-led_G_c_i                 System        INV      O       led_G_c_i         0.000       22.904
-led_R_c_i                 System        INV      O       led_R_c_i         0.000       22.904
-=============================================================================================
+                       Starting                                         Arrival           
+Instance               Reference     Type     Pin     Net               Time        Slack 
+                       Clock                                                              
+------------------------------------------------------------------------------------------
+cpu_instance.rst_i     System        INV      O       rst_i             0.000       20.901
+cpu_dout_i[0]          System        INV      O       cpu_dout_i[0]     0.000       21.267
+cpu_dout_i[1]          System        INV      O       cpu_dout_i[1]     0.000       21.267
+cpu_dout_i[2]          System        INV      O       cpu_dout_i[2]     0.000       21.267
+led_B_c_i              System        INV      O       led_B_c_i         0.000       21.267
+led_G_c_i              System        INV      O       led_G_c_i         0.000       21.267
+led_R_c_i              System        INV      O       led_R_c_i         0.000       21.267
+==========================================================================================
 
 
 Ending Points with Worst Slack
 ******************************
 
-                       Starting                                             Required           
-Instance               Reference     Type       Pin       Net               Time         Slack 
-                       Clock                                                                   
------------------------------------------------------------------------------------------------
-cpu_din[0]             System        DFFN       D         led_B_c_i         23.925       22.904
-cpu_din[1]             System        DFFN       D         led_G_c_i         23.925       22.904
-cpu_din[2]             System        DFFN       D         led_R_c_i         23.925       22.904
-led_B                  System        DFFNSE     D         cpu_dout_i[0]     23.925       22.904
-led_G                  System        DFFNSE     D         cpu_dout_i[1]     23.925       22.904
-led_R                  System        DFFNSE     D         cpu_dout_i[2]     23.925       22.904
-cpu_instance.write     System        DFFR       RESET     N_6836_i          23.925       22.904
-===============================================================================================
+                            Starting                                 Required           
+Instance                    Reference     Type     Pin     Net       Time         Slack 
+                            Clock                                                       
+----------------------------------------------------------------------------------------
+cpu_instance.address[0]     System        DFFE     CE      rst_i     22.288       20.901
+cpu_instance.address[1]     System        DFFE     CE      rst_i     22.288       20.901
+cpu_instance.address[2]     System        DFFE     CE      rst_i     22.288       20.901
+cpu_instance.address[3]     System        DFFE     CE      rst_i     22.288       20.901
+cpu_instance.address[4]     System        DFFE     CE      rst_i     22.288       20.901
+cpu_instance.address[5]     System        DFFE     CE      rst_i     22.288       20.901
+cpu_instance.address[6]     System        DFFE     CE      rst_i     22.288       20.901
+cpu_instance.address[7]     System        DFFE     CE      rst_i     22.288       20.901
+cpu_instance.address[8]     System        DFFE     CE      rst_i     22.288       20.901
+cpu_instance.address[9]     System        DFFE     CE      rst_i     22.288       20.901
+========================================================================================
 
 
 
@@ -1044,30 +713,30 @@ Worst Path Information
 
 
 Path information for path number 1: 
-      Requested Period:                      24.058
+      Requested Period:                      22.421
     - Setup time:                            0.133
     + Clock delay at ending point:           0.000 (ideal)
-    = Required time:                         23.925
+    = Required time:                         22.288
 
-    - Propagation time:                      1.021
+    - Propagation time:                      1.387
     - Clock delay at starting point:         0.000 (ideal)
     - Estimated clock delay at start point:  -0.000
-    = Slack (non-critical) :                 22.904
+    = Slack (non-critical) :                 20.901
 
     Number of logic level(s):                0
-    Starting point:                          cpu_instance.N_6836_i / O
-    Ending point:                            cpu_instance.write / RESET
+    Starting point:                          cpu_instance.rst_i / O
+    Ending point:                            cpu_instance.address[0] / CE
     The start point is clocked by            System [rising]
     The end   point is clocked by            top|clk [rising] on pin CLK
 
-Instance / Net                     Pin       Pin               Arrival     No. of    
-Name                      Type     Name      Dir     Delay     Time        Fan Out(s)
--------------------------------------------------------------------------------------
-cpu_instance.N_6836_i     INV      O         Out     0.000     0.000       -         
-N_6836_i                  Net      -         -       1.021     -           1         
-cpu_instance.write        DFFR     RESET     In      -         1.021       -         
-=====================================================================================
-Total path delay (propagation time + setup) of 1.154 is 0.133(11.5%) logic and 1.021(88.5%) route.
+Instance / Net                       Pin      Pin               Arrival     No. of    
+Name                        Type     Name     Dir     Delay     Time        Fan Out(s)
+--------------------------------------------------------------------------------------
+cpu_instance.rst_i          INV      O        Out     0.000     0.000       -         
+rst_i                       Net      -        -       1.387     -           68        
+cpu_instance.address[0]     DFFE     CE       In      -         1.387       -         
+======================================================================================
+Total path delay (propagation time + setup) of 1.520 is 0.133(8.7%) logic and 1.387(91.3%) route.
 Path delay compensated for clock skew. Clock skew is added to clock-to-out value, and is subtracted from setup time value
 
 
@@ -1076,10 +745,10 @@ Path delay compensated for clock skew. Clock skew is added to clock-to-out value
 
 Timing exceptions that could not be applied
 
-Finished final timing analysis (Real Time elapsed 0h:00m:58s; CPU Time elapsed 0h:00m:57s; Memory used current: 424MB peak: 424MB)
+Finished final timing analysis (Real Time elapsed 0h:00m:51s; CPU Time elapsed 0h:00m:50s; Memory used current: 414MB peak: 414MB)
 
 
-Finished timing report (Real Time elapsed 0h:00m:58s; CPU Time elapsed 0h:00m:57s; Memory used current: 424MB peak: 424MB)
+Finished timing report (Real Time elapsed 0h:00m:51s; CPU Time elapsed 0h:00m:50s; Memory used current: 414MB peak: 414MB)
 
 ---------------------------------------
 Resource Usage Report for top 
@@ -1087,37 +756,37 @@ Resource Usage Report for top
 Mapping to part: gw1n_1qfn48-6
 Cell usage:
 ALU             268 uses
-DFF             99 uses
-DFFE            287 uses
+DFFE            68 uses
 DFFN            3 uses
 DFFNSE          3 uses
-DFFR            1 use
+DFFR            32 uses
+DFFRE           288 uses
 GSR             1 use
 INV             7 uses
-MUX2_LUT5       521 uses
-MUX2_LUT6       33 uses
-LUT2            124 uses
-LUT3            2159 uses
-LUT4            1211 uses
+MUX2_LUT5       522 uses
+MUX2_LUT6       38 uses
+LUT2            118 uses
+LUT3            1906 uses
+LUT4            1407 uses
 
 I/O ports: 6
-I/O primitives: 4
-IBUF           1 use
+I/O primitives: 5
+IBUF           2 uses
 OBUF           3 uses
 
 I/O Register bits:                  0
-Register bits not including I/Os:   393 of 864 (45%)
+Register bits not including I/Os:   394 of 864 (45%)
 Total load per clock:
-   top|clk: 393
+   top|clk: 394
 
 @S |Mapping Summary:
-Total  LUTs: 3494 (303%)
+Total  LUTs: 3431 (297%)
 
 Mapper successful!
 
-At Mapper Exit (Real Time elapsed 0h:00m:58s; CPU Time elapsed 0h:00m:57s; Memory used current: 424MB peak: 424MB)
+At Mapper Exit (Real Time elapsed 0h:00m:51s; CPU Time elapsed 0h:00m:50s; Memory used current: 414MB peak: 414MB)
 
-Process took 0h:00m:58s realtime, 0h:00m:57s cputime
-# Sat Mar 28 05:14:58 2020
+Process took 0h:00m:51s realtime, 0h:00m:50s cputime
+# Sat Mar 28 12:49:24 2020
 
 ###########################################################]

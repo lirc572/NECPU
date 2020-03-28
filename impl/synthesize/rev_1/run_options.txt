@@ -1,13 +1,14 @@
 #--  Synopsys, Inc.
 #--  Version P-2019.03G
 #--  Project file /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/run_options.txt
-#--  Written on Sat Mar 28 05:13:28 2020
+#--  Written on Sat Mar 28 12:48:04 2020
 
 
 #project files
 add_file -verilog "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v"
 add_file -verilog "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v"
 add_file -verilog "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v"
+add_file -verilog "/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/ArchDef.v"
 
 
 
