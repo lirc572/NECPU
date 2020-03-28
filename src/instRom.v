@@ -35,7 +35,6 @@ module instRom (
   
   always @ (address) begin
     inst = {InstNOP, 26'b0};
- 
     case (address)
       // begin:
       0:  inst = {InstLLI,   5'd2, 5'd0, 16'b001};       // LLI R2, 1

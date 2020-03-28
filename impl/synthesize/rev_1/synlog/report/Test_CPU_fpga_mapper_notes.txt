@@ -2,7 +2,7 @@
 @N: MF248 |Running in 64-bit mode.
 @N: MF666 |Clock conversion enabled. (Command "set_option -fix_gated_and_generated_clocks 1" in the project file.)
 @N: MT206 |Auto Constrain mode is enabled
-@N: MO106 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":39:4:39:7|Found ROM inst_1[0] (in view: work.instRom(verilog)) with 11 words by 1 bit.
+@N: MO106 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":38:4:38:7|Found ROM inst_1[0] (in view: work.instRom(verilog)) with 11 words by 1 bit.
 @N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[3] (in view: work.cpu(verilog)) because it does not drive other instances.
 @N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[4] (in view: work.cpu(verilog)) because it does not drive other instances.
 @N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[5] (in view: work.cpu(verilog)) because it does not drive other instances.
@@ -34,8 +34,8 @@
 @N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance dout[31] (in view: work.cpu(verilog)) because it does not drive other instances.
 @N: MF179 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":99:25:99:51|Found 32 by 32 bit equality operator ('==') rf_data\[31\]_12[0] (in view: work.cpu(verilog))
 @N: MF179 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":101:14:101:38|Found 32 by 32 bit equality operator ('==') PC10 (in view: work.cpu(verilog))
-@N: MO106 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":39:4:39:7|Found ROM iR.inst_1_0[23:21] (in view: work.cpu(verilog)) with 11 words by 3 bits.
-@N: MO106 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":39:4:39:7|Found ROM iR.inst_1_0[30:26] (in view: work.cpu(verilog)) with 11 words by 5 bits.
+@N: MO106 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":38:4:38:7|Found ROM iR.inst_1_0[23:21] (in view: work.cpu(verilog)) with 11 words by 3 bits.
+@N: MO106 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":38:4:38:7|Found ROM iR.inst_1_0[30:26] (in view: work.cpu(verilog)) with 11 words by 5 bits.
 @N: FX164 |The option to pack registers in the IOB has not been specified. Please set syn_useioff attribute.  
 @N: BW103 |The default time unit for the Synopsys Constraint File (SDC or FDC) is 1ns.
 @N: BW107 |Synopsys Constraint File capacitance units using default value of 1pF 

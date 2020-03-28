@@ -46,11 +46,11 @@ module cpu (
   instRom iR ( .address(ir_addr), .inst(ir_inst) );  // program ROM
   
   wire [5:0]  op;         // opcode
-  wire [4:0]  rs;         // first arg
-  wire [4:0]  rt;         // second arg
-  wire [4:0]  rd;         // rdination arg
-  wire [10:0] func;       // function
-  wire [15:0] immediate;  // immediate arg
+  wire [4:0]  rs;         // source reg
+  wire [4:0]  rt;         // target reg
+  wire [4:0]  rd;         // destination reg
+  wire [10:0] func;       // function 
+  wire [15:0] immediate;  // immediate
   
   assign op        = ir_inst[31:26];
   assign rd        = ir_inst[25:21];
@@ -64,7 +64,7 @@ module cpu (
   always @ (posedge clk) begin
     if (rst) begin //reset PC and registers
       PC <= 0;
-      for (i=0; i<32; i++) begin
+      for (i=0; i<32; i=i+1) begin
         rf_data[i] <= 32'd0;
       end
     end else begin
@@ -79,12 +79,12 @@ module cpu (
       
       // Perform the operation
       case (op)
-        InstLW   : begin
+        InstLW : begin                                                                            //NEED TWO CLOCK CYCLES!!!
           read <= 1;                                     // request a read
           address <= rf_data[rs] + rt;                   // set the address
           rf_data[rd] <= din;                            // save the data
         end
-        InstSW  : begin
+        InstSW : begin                                                                            //NEED TWO CLOCK CYCLES!!!
           write <= 1;                                    // request a write
           dout <= rf_data[rd];                           // output the data
           address <= rf_data[rs] + rt;                   // set the address

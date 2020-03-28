@@ -2,7 +2,7 @@
 // Written by Synplify Pro 
 // Product Version "P-2019.03G"
 // Program "Synplify Pro", Mapper "mapgw, Build 1450R"
-// Sat Mar 28 12:49:23 2020
+// Sat Mar 28 16:13:42 2020
 //
 // Source file index table:
 // Object locations will have the form <file>:<line>
@@ -406,7 +406,7 @@ defparam \un330_rf_data_3[27] .INIT=8'hCA;
 	.F(op[3])
 );
 defparam inst_1_3dflt.INIT=16'h8000;
-// @8:39
+// @8:38
   LUT4 inst_1_2dflt (
 	.I0(inst28_18_1z),
 	.I1(inst28_26_1z),
@@ -424,7 +424,7 @@ defparam inst_1_2dflt.INIT=16'h8000;
 	.F(op[1])
 );
 defparam inst_1_1dflt.INIT=16'h8000;
-// @8:39
+// @8:38
   LUT4 inst_1_2dflt_0 (
 	.I0(inst28_18_1z),
 	.I1(inst28_26_1z),
@@ -433,7 +433,7 @@ defparam inst_1_1dflt.INIT=16'h8000;
 	.F(rd[2])
 );
 defparam inst_1_2dflt_0.INIT=16'h8000;
-// @8:39
+// @8:38
   LUT4 inst_1_1dflt_0 (
 	.I0(inst28_18_1z),
 	.I1(inst28_26_1z),
@@ -442,7 +442,7 @@ defparam inst_1_2dflt_0.INIT=16'h8000;
 	.F(rd[1])
 );
 defparam inst_1_1dflt_0.INIT=16'h8000;
-// @8:39
+// @8:38
   LUT4 inst_1_0dflt_30 (
 	.I0(inst28_18_1z),
 	.I1(inst28_26_1z),
@@ -451,7 +451,7 @@ defparam inst_1_1dflt_0.INIT=16'h8000;
 	.F(rd[0])
 );
 defparam inst_1_0dflt_30.INIT=16'h8000;
-// @8:39
+// @8:38
   LUT4 inst_1_0dflt_29 (
 	.I0(inst28_18_1z),
 	.I1(inst28_26_1z),
@@ -460,7 +460,7 @@ defparam inst_1_0dflt_30.INIT=16'h8000;
 	.F(op[0])
 );
 defparam inst_1_0dflt_29.INIT=16'h8000;
-// @8:39
+// @8:38
   LUT4 inst_1_4dflt (
 	.I0(inst28_18_1z),
 	.I1(inst28_26_1z),
@@ -478,7 +478,7 @@ defparam inst_1_4dflt.INIT=16'h8000;
 	.F(rs_0)
 );
 defparam inst36.INIT=16'h8000;
-// @8:39
+// @8:38
   LUT4 \inst_1_0_0[27]  (
 	.I0(ir_addr[0]),
 	.I1(ir_addr[1]),
@@ -487,7 +487,7 @@ defparam inst36.INIT=16'h8000;
 	.F(inst_1_1ro)
 );
 defparam \inst_1_0_0[27] .INIT=16'h06BB;
-// @8:43
+// @8:42
   LUT4 inst28_30 (
 	.I0(inst28_30_8),
 	.I1(inst28_30_9),
@@ -496,7 +496,7 @@ defparam \inst_1_0_0[27] .INIT=16'h06BB;
 	.F(inst28_30_1z)
 );
 defparam inst28_30.INIT=16'h8000;
-// @8:39
+// @8:38
   LUT4 \inst_1_0_0_m2[28]  (
 	.I0(ir_addr[0]),
 	.I1(ir_addr[1]),
@@ -505,7 +505,7 @@ defparam inst28_30.INIT=16'h8000;
 	.F(inst_1_2ro)
 );
 defparam \inst_1_0_0_m2[28] .INIT=16'h0204;
-// @8:39
+// @8:38
   LUT4 \inst_1_0_0[21]  (
 	.I0(ir_addr[0]),
 	.I1(ir_addr[1]),
@@ -514,7 +514,7 @@ defparam \inst_1_0_0_m2[28] .INIT=16'h0204;
 	.F(inst_1_0ro_0)
 );
 defparam \inst_1_0_0[21] .INIT=16'h028E;
-// @8:39
+// @8:38
   LUT4 \inst_1_0_0[22]  (
 	.I0(ir_addr[0]),
 	.I1(ir_addr[1]),
@@ -523,7 +523,7 @@ defparam \inst_1_0_0[21] .INIT=16'h028E;
 	.F(inst_1_1ro_0)
 );
 defparam \inst_1_0_0[22] .INIT=16'h0449;
-// @8:39
+// @8:38
   LUT4 \inst_1_0_0[23]  (
 	.I0(ir_addr[0]),
 	.I1(ir_addr[1]),
@@ -532,7 +532,7 @@ defparam \inst_1_0_0[22] .INIT=16'h0449;
 	.F(inst_1_2ro_0)
 );
 defparam \inst_1_0_0[23] .INIT=16'h03B0;
-// @8:39
+// @8:38
   LUT4 \inst_1_0_0[29]  (
 	.I0(ir_addr[0]),
 	.I1(ir_addr[1]),
@@ -541,7 +541,7 @@ defparam \inst_1_0_0[23] .INIT=16'h03B0;
 	.F(inst_1_3ro)
 );
 defparam \inst_1_0_0[29] .INIT=16'h0140;
-// @8:39
+// @8:38
   LUT4 inst_1_0dflt_4_cZ (
 	.I0(N_6396_i),
 	.I1(inst_1_0dflt_1),
@@ -550,7 +550,7 @@ defparam \inst_1_0_0[29] .INIT=16'h0140;
 	.F(inst_1_0dflt_4)
 );
 defparam inst_1_0dflt_4_cZ.INIT=16'h0004;
-// @8:39
+// @8:38
   LUT4 inst_1_0dflt_29_0_cZ (
 	.I0(ir_addr[0]),
 	.I1(ir_addr[1]),
@@ -559,7 +559,7 @@ defparam inst_1_0dflt_4_cZ.INIT=16'h0004;
 	.F(inst_1_0dflt_29_0)
 );
 defparam inst_1_0dflt_29_0_cZ.INIT=16'h00FB;
-// @8:43
+// @8:42
   LUT4 inst28_18 (
 	.I0(ir_addr[4]),
 	.I1(ir_addr[5]),
@@ -568,7 +568,7 @@ defparam inst_1_0dflt_29_0_cZ.INIT=16'h00FB;
 	.F(inst28_18_1z)
 );
 defparam inst28_18.INIT=16'h0001;
-// @8:43
+// @8:42
   LUT3 inst28_26_1_0_cZ (
 	.I0(ir_addr[13]),
 	.I1(ir_addr[14]),
@@ -576,7 +576,7 @@ defparam inst28_18.INIT=16'h0001;
 	.F(inst28_26_1_0)
 );
 defparam inst28_26_1_0_cZ.INIT=8'h01;
-// @8:43
+// @8:42
   LUT4 inst28_30_8_cZ (
 	.I0(ir_addr[16]),
 	.I1(ir_addr[17]),
@@ -585,7 +585,7 @@ defparam inst28_26_1_0_cZ.INIT=8'h01;
 	.F(inst28_30_8)
 );
 defparam inst28_30_8_cZ.INIT=16'h0001;
-// @8:43
+// @8:42
   LUT4 inst28_30_9_cZ (
 	.I0(ir_addr[20]),
 	.I1(ir_addr[21]),
@@ -594,7 +594,7 @@ defparam inst28_30_8_cZ.INIT=16'h0001;
 	.F(inst28_30_9)
 );
 defparam inst28_30_9_cZ.INIT=16'h0001;
-// @8:43
+// @8:42
   LUT4 inst28_30_10_cZ (
 	.I0(ir_addr[24]),
 	.I1(ir_addr[25]),
@@ -603,7 +603,7 @@ defparam inst28_30_9_cZ.INIT=16'h0001;
 	.F(inst28_30_10)
 );
 defparam inst28_30_10_cZ.INIT=16'h0001;
-// @8:43
+// @8:42
   LUT4 inst28_30_11_cZ (
 	.I0(ir_addr[28]),
 	.I1(ir_addr[29]),
@@ -612,7 +612,7 @@ defparam inst28_30_10_cZ.INIT=16'h0001;
 	.F(inst28_30_11)
 );
 defparam inst28_30_11_cZ.INIT=16'h0001;
-// @8:39
+// @8:38
   LUT4 inst_1_0dflt_1_cZ (
 	.I0(ir_addr[6]),
 	.I1(ir_addr[7]),
@@ -621,7 +621,7 @@ defparam inst28_30_11_cZ.INIT=16'h0001;
 	.F(inst_1_0dflt_1)
 );
 defparam inst_1_0dflt_1_cZ.INIT=16'h0001;
-// @8:39
+// @8:38
   LUT4 inst_1_0dflt_2_cZ (
 	.I0(ir_addr[10]),
 	.I1(ir_addr[11]),
@@ -630,7 +630,7 @@ defparam inst_1_0dflt_1_cZ.INIT=16'h0001;
 	.F(inst_1_0dflt_2)
 );
 defparam inst_1_0dflt_2_cZ.INIT=16'h0001;
-// @8:39
+// @8:38
   LUT4 inst_1_0dflt_3_cZ (
 	.I0(ir_addr[2]),
 	.I1(ir_addr[3]),
@@ -639,7 +639,7 @@ defparam inst_1_0dflt_2_cZ.INIT=16'h0001;
 	.F(inst_1_0dflt_3)
 );
 defparam inst_1_0dflt_3_cZ.INIT=16'h0001;
-// @8:48
+// @8:47
   LUT4 inst33_1_cZ (
 	.I0(ir_addr[0]),
 	.I1(ir_addr[1]),
@@ -648,7 +648,7 @@ defparam inst_1_0dflt_3_cZ.INIT=16'h0001;
 	.F(inst33_1)
 );
 defparam inst33_1_cZ.INIT=16'h0080;
-// @8:51
+// @8:50
   LUT4 inst36_2_cZ (
 	.I0(ir_addr[0]),
 	.I1(ir_addr[1]),
@@ -657,7 +657,7 @@ defparam inst33_1_cZ.INIT=16'h0080;
 	.F(inst36_2)
 );
 defparam inst36_2_cZ.INIT=16'h0400;
-// @8:43
+// @8:42
   LUT4 inst28_0_0_cZ (
 	.I0(ir_addr[0]),
 	.I1(ir_addr[1]),
@@ -666,7 +666,7 @@ defparam inst36_2_cZ.INIT=16'h0400;
 	.F(inst28_0_0)
 );
 defparam inst28_0_0_cZ.INIT=16'h0004;
-// @8:46
+// @8:45
   LUT4 inst31_1_0 (
 	.I0(ir_addr[0]),
 	.I1(ir_addr[1]),
@@ -675,7 +675,7 @@ defparam inst28_0_0_cZ.INIT=16'h0004;
 	.F(inst31_1)
 );
 defparam inst31_1_0.INIT=16'h0020;
-// @8:47
+// @8:46
   LUT4 inst32_2 (
 	.I0(ir_addr[0]),
 	.I1(ir_addr[1]),
@@ -684,7 +684,7 @@ defparam inst31_1_0.INIT=16'h0020;
 	.F(inst32_2_1z)
 );
 defparam inst32_2.INIT=16'h0040;
-// @8:39
+// @8:38
   LUT4 inst_1_4dflt_0_cZ (
 	.I0(ir_addr[0]),
 	.I1(ir_addr[1]),
@@ -693,14 +693,14 @@ defparam inst32_2.INIT=16'h0040;
 	.F(inst_1_4dflt_0)
 );
 defparam inst_1_4dflt_0_cZ.INIT=16'h0220;
-// @8:39
+// @8:38
   LUT2 \inst_1_0_0_x2[22]  (
 	.I0(ir_addr[0]),
 	.I1(ir_addr[1]),
 	.F(N_6396_i)
 );
 defparam \inst_1_0_0_x2[22] .INIT=4'h6;
-// @8:46
+// @8:45
   LUT4 inst31 (
 	.I0(inst28_18_1z),
 	.I1(inst28_26_1z),
@@ -745,7 +745,7 @@ defparam \un4_address_3_mb_1_cZ[27] .INIT=16'h03F5;
 	.F(N_5445)
 );
 defparam \un4_address_3_mb[27] .INIT=16'hD855;
-// @8:39
+// @8:38
   LUT4 inst_1_0dflt (
 	.I0(inst28_30_1z),
 	.I1(inst_1_0dflt_2),
@@ -754,7 +754,7 @@ defparam \un4_address_3_mb[27] .INIT=16'hD855;
 	.F(ir_inst_0)
 );
 defparam inst_1_0dflt.INIT=16'h8000;
-// @8:48
+// @8:47
   LUT4 inst33 (
 	.I0(inst28_18_1z),
 	.I1(inst28_26_1z),
@@ -771,7 +771,7 @@ defparam inst33.INIT=16'h8000;
 	.F(\rf_data[31]_10_26 )
 );
 defparam \un330_rf_data_7[27] .INIT=8'hCA;
-// @8:47
+// @8:46
   LUT4 inst32 (
 	.I0(inst28_18_1z),
 	.I1(inst28_26_1z),
@@ -780,7 +780,7 @@ defparam \un330_rf_data_7[27] .INIT=8'hCA;
 	.F(inst32_1z)
 );
 defparam inst32.INIT=16'h8000;
-// @8:43
+// @8:42
   LUT4 inst28 (
 	.I0(inst28_0_0),
 	.I1(inst28_18_1z),
@@ -868,7 +868,7 @@ defparam inst28_26_0_1_cZ.INIT=16'h0000;
 	.S0(ir_addr[8]),
 	.O(inst28_26_1)
 );
-// @8:43
+// @8:42
   MUX2_LUT6 inst28_26 (
 	.I0(inst28_26_0),
 	.I1(inst28_26_1),
