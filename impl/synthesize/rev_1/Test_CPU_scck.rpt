@@ -16,7 +16,7 @@ max stack size: 8388608 (bytes)
 
 Implementation : rev_1
 
-# Written on Sat Mar 28 16:12:40 2020
+# Written on Mon Mar 30 03:55:28 2020
 
 ##### FILES SYNTAX CHECKED ##############################################
 Constraint File(s):      (none)
@@ -36,7 +36,7 @@ Clock Summary
           Start       Requested     Requested     Clock        Clock                     Clock
 Level     Clock       Frequency     Period        Type         Group                     Load 
 ----------------------------------------------------------------------------------------------
-0 -       top|clk     95.8 MHz      10.438        inferred     Autoconstr_clkgroup_0     519  
+0 -       top|clk     87.0 MHz      11.493        inferred     Autoconstr_clkgroup_0     519  
 ==============================================================================================
 
 

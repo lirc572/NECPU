@@ -4,6 +4,6 @@
 @N: FX493 |Applying initial value "1" on instance led_B.
 @N: FX493 |Applying initial value "1" on instance led_G.
 @N: FX493 |Applying initial value "1" on instance led_R.
-@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":64:2:64:7|Removing sequential instance read (in view: work.cpu(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
+@N: BN362 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":66:2:66:7|Removing sequential instance read (in view: work.cpu(verilog)) of type view:PrimLib.dffe(prim) because it does not drive other instances.
 @N: FX1143 |Skipping assigning INTERNAL_VREF to iobanks, because the table of mapping from pin to iobank is not initialized.
 @N: BN225 |Writing default property annotation file /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/Test_CPU.sap.

@@ -19,15 +19,15 @@ Synopsys HDL compiler and linker, Version comp2019q1p1, Build 307R, Built Sep 25
 
 Modified Files: 1
 FID:  path (prevtimestamp, timestamp)
-0        /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v (2020-03-28 13:36:57, 2020-03-28 16:11:57)
+0        /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v (2020-03-28 16:11:57, 2020-03-30 03:54:18)
 
 *******************************************************************
 Modules that may have changed as a result of file changes: 2
 MID:  lib.cell.view
 1        work.cpu.verilog may have changed because the following files changed:
-                        /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v (2020-03-28 13:36:57, 2020-03-28 16:11:57) <-- (module definition)
+                        /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v (2020-03-28 16:11:57, 2020-03-30 03:54:18) <-- (module definition)
 2        work.instRom.verilog may have changed because the following files changed:
-                        /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v (2020-03-28 13:36:57, 2020-03-28 16:11:57) <-- (may instantiate this module)
+                        /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v (2020-03-28 16:11:57, 2020-03-30 03:54:18) <-- (may instantiate this module)
 
 *******************************************************************
 Unmodified files: 8

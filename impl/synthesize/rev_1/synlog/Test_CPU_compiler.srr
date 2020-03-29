@@ -59,6 +59,7 @@ Selecting top level module top
 Running optimization stage 1 on instRom .......
 @N: CG364 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":6:7:6:9|Synthesizing module cpu in library work.
 Running optimization stage 1 on cpu .......
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":66:2:66:7|Register bit stage is always 0.
 @N: CG364 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":1:7:1:9|Synthesizing module top in library work.
 Running optimization stage 1 on top .......
 @N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[31] is always 0.
@@ -96,12 +97,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:24s; CPU Time elapsed 0h:00m:24s; Memory used current: 312MB peak: 312MB)
+At c_ver Exit (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:29s; Memory used current: 304MB peak: 304MB)
 
-Process took 0h:00m:24s realtime, 0h:00m:24s cputime
+Process took 0h:00m:29s realtime, 0h:00m:29s cputime
 
 Process completed successfully.
-# Sat Mar 28 16:12:38 2020
+# Mon Mar 30 03:55:25 2020
 
 ###########################################################]
 ###########################################################[
@@ -131,7 +132,7 @@ At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Sat Mar 28 16:12:38 2020
+# Mon Mar 30 03:55:25 2020
 
 ###########################################################]
 
@@ -141,11 +142,11 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:25s; CPU Time elapsed 0h:00m:24s; Memory used current: 55MB peak: 55MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:30s; CPU Time elapsed 0h:00m:29s; Memory used current: 55MB peak: 55MB)
 
-Process took 0h:00m:25s realtime, 0h:00m:24s cputime
+Process took 0h:00m:30s realtime, 0h:00m:29s cputime
 
 Process completed successfully.
-# Sat Mar 28 16:12:38 2020
+# Mon Mar 30 03:55:25 2020
 
 ###########################################################]

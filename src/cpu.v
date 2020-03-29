@@ -61,13 +61,15 @@ module cpu (
   
   integer i;
   
+  reg stage = 'b0;
+  
   always @ (posedge clk) begin
     if (rst) begin //reset PC and registers
       PC <= 0;
       for (i=0; i<32; i=i+1) begin
         rf_data[i] <= 32'd0;
       end
-    end else begin
+    end else if (stage == 'b0) begin
       // defaults
       write   <= 0;               // don't write
       read    <= 0;               // don't read
@@ -99,10 +101,10 @@ module cpu (
           rf_data[rd] <= rf_data[rs] == rf_data[rt];     // equals comparison
         InstBEQ:
           if (rf_data[rd] == immediate)                  // if R[rd] == immediate
-            PC <= PC + 2;                                // skip next instruction
+            PC <= ir_addr + 2;                                // skip next instruction
         InstBNE:
           if (rf_data[rd] != immediate)                  // if R[rd] != immediate
-            PC <= PC + 2;                                // skip next instruction
+            PC <= ir_addr + 2;                                // skip next instruction
         InstADD:
           rf_data[rd] <= rf_data[rs] + rf_data[rt];      // addition
         InstADDi:
@@ -132,6 +134,10 @@ module cpu (
         InstJMP:
           PC <= rf_data[rd];                             // Jump
       endcase
+    end else if (stage == 'b1) begin
+      stage <= 'b0;
+      ir_addr <= PC;
+      PC <= PC + 'd1;
     end
   end
 endmodule

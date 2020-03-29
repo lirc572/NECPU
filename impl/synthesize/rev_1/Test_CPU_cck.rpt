@@ -16,7 +16,7 @@ max stack size: 8388608 (bytes)
 
 Implementation : rev_1
 
-# Written on Sat Mar 28 16:12:43 2020
+# Written on Mon Mar 30 03:55:31 2020
 
 ##### DESIGN INFO #######################################################
 
@@ -40,7 +40,7 @@ Clock Relationships
 
 Starting     Ending      |     rise to rise     |     fall to fall     |     rise to fall     |     fall to rise                     
 ------------------------------------------------------------------------------------------------------------------------------------
-top|clk      top|clk     |     10.438           |     10.438           |     5.219            |     5.219                            
+top|clk      top|clk     |     11.493           |     11.493           |     5.746            |     5.746                            
 ====================================================================================================================================
  Note: 'No paths' indicates there are no paths in the design for that pair of clock edges.
        'Diff grp' indicates that paths exist but the starting clock and ending clock are in different clock groups.
