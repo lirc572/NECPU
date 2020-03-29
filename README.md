@@ -18,7 +18,7 @@ The **NECPU** is a 32-bit general purpose register architecture processor with t
 
 **NECPU** can accomodate up to 4294967296 (2^32) addressable memory where each memory location holds 4 bytes (32 bits). **NECPU** is word (4 bytes) addressable. (It is not byte addressable!)
 
-**Except for** `BEQ`, `BNE` and `JMP`, every other instruction of **NECPU** takes exactly *one clock cycle* to complete. The above three instructions, however, take **2 clock cycles** to complete, since they require changing the *PC*. Hence, the time taken of a code snippet can easily be calculated.
+**Except for** `BEQ`, `BNE` and `JMP`, every other instruction of **NECPU** takes exactly **one clock cycle** to complete. The above three instructions, however, take **2 clock cycles** to complete, since they require changing the *PC*. Hence, the time taken of a code snippet can easily be calculated.
 
 ## Instruction Set
 
