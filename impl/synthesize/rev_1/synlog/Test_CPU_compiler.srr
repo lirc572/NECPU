@@ -49,45 +49,24 @@ Synopsys Verilog Compiler, Version comp2019q1p1, Build 307R, Built Sep 25 2019 0
 @I::"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/SynplifyPro/lib/vlog/scemi_objects.v" (library snps_haps)
 @I::"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/SynplifyPro/lib/vlog/scemi_pipes.svh" (library snps_haps)
 @I::"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v" (library work)
+@W: CG289 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":29:19:29:30|Specified digits overflow the number's size
 @I::"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v" (library work)
 @I:"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/ArchDef.v" (library work)
 @I::"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v" (library work)
 Verilog syntax check successful!
+File /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v changed - recompiling
 File /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v changed - recompiling
 Selecting top level module top
 @N: CG364 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/instRom.v":6:7:6:13|Synthesizing module instRom in library work.
 Running optimization stage 1 on instRom .......
 @N: CG364 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":6:7:6:9|Synthesizing module cpu in library work.
 Running optimization stage 1 on cpu .......
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/cpu.v":66:2:66:7|Register bit stage is always 0.
 @N: CG364 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":1:7:1:9|Synthesizing module top in library work.
 Running optimization stage 1 on top .......
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[31] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[30] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[29] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[28] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[27] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[26] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[25] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[24] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[23] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[22] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[21] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[20] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[19] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[18] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[17] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[16] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[15] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[14] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[13] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[12] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[11] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[10] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[9] is always 0.
-@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[8] is always 0.
-@W: CL279 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Pruning register bits 31 to 3 of cpu_din[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
 Running optimization stage 2 on top .......
+@W: CL279 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Pruning register bits 31 to 4 of cpu_din[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@N: CL189 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Register bit cpu_din[3] is always 0.
+@W: CL260 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Pruning register bit 3 of cpu_din[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 @N: CL159 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":4:10:4:16|Input buttonB is unused.
 Running optimization stage 2 on cpu .......
 Running optimization stage 2 on instRom .......
@@ -97,12 +76,12 @@ For a summary of runtime and memory usage per design unit, please see file:
 @L: /home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/impl/synthesize/rev_1/synwork/layer0.rt.csv
 
 
-At c_ver Exit (Real Time elapsed 0h:00m:29s; CPU Time elapsed 0h:00m:29s; Memory used current: 304MB peak: 304MB)
+At c_ver Exit (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:17s; Memory used current: 335MB peak: 335MB)
 
-Process took 0h:00m:29s realtime, 0h:00m:29s cputime
+Process took 0h:00m:17s realtime, 0h:00m:17s cputime
 
 Process completed successfully.
-# Mon Mar 30 03:55:25 2020
+# Mon Mar 30 05:52:52 2020
 
 ###########################################################]
 ###########################################################[
@@ -127,12 +106,12 @@ Synopsys Synopsys Netlist Linker, Version comp2019q1p1, Build 307R, Built Sep 25
 
 @N|Running in 64-bit mode
 
-At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 145MB peak: 146MB)
+At syn_nfilter Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 146MB peak: 146MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
 
 Process completed successfully.
-# Mon Mar 30 03:55:25 2020
+# Mon Mar 30 05:52:53 2020
 
 ###########################################################]
 
@@ -142,11 +121,11 @@ For a summary of runtime and memory usage for all design units, please see file:
 
 @END
 
-At c_hdl Exit (Real Time elapsed 0h:00m:30s; CPU Time elapsed 0h:00m:29s; Memory used current: 55MB peak: 55MB)
+At c_hdl Exit (Real Time elapsed 0h:00m:17s; CPU Time elapsed 0h:00m:17s; Memory used current: 55MB peak: 55MB)
 
-Process took 0h:00m:30s realtime, 0h:00m:29s cputime
+Process took 0h:00m:17s realtime, 0h:00m:17s cputime
 
 Process completed successfully.
-# Mon Mar 30 03:55:25 2020
+# Mon Mar 30 05:52:53 2020
 
 ###########################################################]

@@ -40,10 +40,8 @@ module cpu (
   reg  [`RegBusWidth-1:0] rf_data [`RegWidth-1:0];
   
   reg [`InstAddrBus-1:0] PC;
-  
-  reg  [`InstAddrBus-1:0]  ir_addr;
   wire [`InstBusWidth-1:0] ir_inst;
-  instRom iR ( .address(ir_addr), .inst(ir_inst) );  // program ROM
+  instRom iR ( .address(PC), .inst(ir_inst) );  // program ROM
   
   wire [5:0]  op;         // opcode
   wire [4:0]  rs;         // source reg
@@ -62,7 +60,8 @@ module cpu (
   integer i;
   
   reg stage = 'b0;
-  
+  reg [4:0] writereg;
+
   always @ (posedge clk) begin
     if (rst) begin //reset PC and registers
       PC <= 0;
@@ -76,7 +75,6 @@ module cpu (
       address <= 8'hxx;           // don't care
       dout    <= 8'hxx;           // don't care
       
-      ir_addr  <= PC;             // reg 0 is program counter
       PC <= PC + 1;               // increment PC by default
       
       // Perform the operation
@@ -84,12 +82,14 @@ module cpu (
         InstLW : begin                                                                            //NEED TWO CLOCK CYCLES!!!
           read <= 1;                                     // request a read
           address <= rf_data[rs] + rt;                   // set the address
-          rf_data[rd] <= din;                            // save the data
+          writereg <= rd;                                                     //store destination reg
+          stage <= 'd1;                                                       //LW takes two clock cycles
         end
         InstSW : begin                                                                            //NEED TWO CLOCK CYCLES!!!
           write <= 1;                                    // request a write
-          dout <= rf_data[rd];                           // output the data
           address <= rf_data[rs] + rt;                   // set the address
+          dout <= rf_data[rd];                           // output the data
+          stage <= 'd0;                                  //SW takes one clock cycle
         end
         InstLLI:
           rf_data[rd][15:0]  <= immediate;               // set the lower half of reg to immediate
@@ -101,10 +101,10 @@ module cpu (
           rf_data[rd] <= rf_data[rs] == rf_data[rt];     // equals comparison
         InstBEQ:
           if (rf_data[rd] == immediate)                  // if R[rd] == immediate
-            PC <= ir_addr + 2;                                // skip next instruction
+            PC <= PC + 2;                                // skip next instruction
         InstBNE:
           if (rf_data[rd] != immediate)                  // if R[rd] != immediate
-            PC <= ir_addr + 2;                                // skip next instruction
+            PC <= PC + 2;                                // skip next instruction
         InstADD:
           rf_data[rd] <= rf_data[rs] + rf_data[rt];      // addition
         InstADDi:
@@ -135,9 +135,10 @@ module cpu (
           PC <= rf_data[rd];                             // Jump
       endcase
     end else if (stage == 'b1) begin
-      stage <= 'b0;
-      ir_addr <= PC;
-      PC <= PC + 'd1;
+      rf_data[writereg] <= din;
+      read    <= 'd0;                // don't read
+      address <= 8'hxx;              // don't care
+      stage   <= 'd0;
     end
   end
 endmodule

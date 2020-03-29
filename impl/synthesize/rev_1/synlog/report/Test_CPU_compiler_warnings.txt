@@ -1,2 +1,4 @@
-@W: CL279 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Pruning register bits 31 to 3 of cpu_din[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CG289 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":29:19:29:30|Specified digits overflow the number's size
+@W: CL279 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Pruning register bits 31 to 4 of cpu_din[31:0]. If this is not the intended behavior, drive the inputs with valid values, or inputs from the top level.
+@W: CL260 :"/home/rochor/APPLICATIONS/Gowin_V1.9.2.02Beta/FPGA_Projects/Test_CPU/src/top.v":21:2:21:7|Pruning register bit 3 of cpu_din[3:0]. If this is not the intended behavior, drive the input with valid values, or an input from the top level.
 

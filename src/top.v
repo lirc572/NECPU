@@ -19,14 +19,14 @@ module top (
   );
   
   always @ (negedge clk) begin
-    cpu_din = 8'hxx;
+    cpu_din = 32'hxxxxxxxx;
     if (cpu_write) begin
       if (cpu_addr == 'd2147483648) begin
         {led_R, led_G, led_B} = ~cpu_dout[2:0];
       end
     end else if (cpu_read) begin
       if (cpu_addr == 'd2147483648) begin
-        cpu_din = {29'd0, ~led_R, ~led_G, ~led_B};
+        cpu_din = {29'hxxxxxxxx, ~led_R, ~led_G, ~led_B};
       end
     end
   end
