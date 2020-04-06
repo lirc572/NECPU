@@ -72,8 +72,8 @@ module cpu (
       // defaults
       write   <= 0;               // don't write
       read    <= 0;               // don't read
-      address <= 8'hxx;           // don't care
-      dout    <= 8'hxx;           // don't care
+      address <= 32'hxx;          // don't care
+      dout    <= 32'hxx;          // don't care
       
       PC <= PC + 1;               // increment PC by default
       
@@ -136,8 +136,8 @@ module cpu (
       endcase
     end else if (stage == 'b1) begin
       rf_data[writereg] <= din;
-      read    <= 'd0;                // don't read
-      address <= 8'hxx;              // don't care
+      read    <= 'd0;                     // don't read
+      address <= 'hxxxxxxxx;              // don't care
       stage   <= 'd0;
     end
   end
